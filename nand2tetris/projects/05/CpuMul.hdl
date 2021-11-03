@@ -1,0 +1,32 @@
+// This file is part of nand2tetris, as taught in The Hebrew University,
+// and was written by Aviv Yaish, and is published under the Creative 
+// Common Attribution-NonCommercial-ShareAlike 3.0 Unported License 
+// https://creativecommons.org/licenses/by-nc-sa/3.0/
+
+// This chip is an extension of the regular CPU that uses the extended ALU.
+// If instruction[15]==0 or (instruction[14]==1 and instruction[13]==1),
+// the CpuMul behaves exactly the same as the regular CPU.
+// If instruction[15]==1 and instruction[14]==0 the chip will behave as follows:
+//  Instruction  | 12 | 11 | 10 |
+// ______________________________
+// dest=D<<;jump | 0  | 1  | 1  |
+// dest=A<<;jump | 0  | 1  | 0  |
+// dest=M<<;jump | 1  | 1  | 0  |
+// dest=D>>;jump | 0  | 0  | 1  |
+// dest=A>>;jump | 0  | 0  | 0  |
+// dest=M>>;jump | 1  | 0  | 0  |
+
+CHIP CpuMul {
+    IN  inM[16],         // M value input  (M = contents of RAM[A])
+        instruction[16], // Instruction for execution
+        reset;           // Signals whether to re-start the current
+                         // program (reset=1) or continue executing
+                         // the current program (reset=0).
+    OUT outM[16],        // M value output
+        writeM,          // Write into M? 
+        addressM[15],    // Address in data memory (of M)
+        pc[15];          // address of next instruction
+    
+    PARTS:
+    // Put you code here:
+}

@@ -1,0 +1,23 @@
+// This file is part of nand2tetris, as taught in The Hebrew University,
+// and was written by Aviv Yaish, and is published under the Creative 
+// Common Attribution-NonCommercial-ShareAlike 3.0 Unported License 
+// https://creativecommons.org/licenses/by-nc-sa/3.0/
+
+// The inputs of the extended ALU are instruction[9], x[16], y[16].
+// The "ng" and "zr" output pins behave the same as in the regular ALU.
+// The "out" output is defined as follows:
+// If instruction[8]=1 and instruction[7]=1 the output is identical to the 
+// regular ALU, where:
+// instruction[5]=zx, instruction[4]=nx, ..., instruction[0]=no
+// Else, if instruction[8]=0 and instruction[7]=1 the output is a shift:
+// - If instruction[4] == 0, the input "y" will be shifted, otherwise "x", .
+// - If instruction[5] == 0, the shift will be a right-shift, otherwise left.
+// - All other inputs are undefined.
+
+CHIP ExtendAlu {
+     IN x[16], y[16], instruction[9];
+     OUT out[16], zr, ng;
+     
+     PARTS:
+     // Put you code here:
+}

@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# **** Why do we need this file? ****
+# The purpose of this file is to run your project.
+# We want our users to have a simple API to run the project. 
+# So, we need a "wrapper" that will hide all  details to do so,
+# enabling users to simply type 'Assembler <path>' in order to use it.
+
+# **** What are '#!/bin/sh' and '$*'? ****
+# '$*' is a variable that holds all the arguments this file has received. So, if you
+# run "Assembler trout mask replica", $* will hold "trout mask replica".
+
+# **** What should I change in this file to make it work with my project? ****
+# IMPORTANT: This file assumes that the main is contained in "Main.py".
+#			 If your main is contained elsewhere, you will need to change this.
+
+python3 Main.py $*
