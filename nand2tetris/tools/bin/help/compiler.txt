@@ -1,0 +1,15 @@
+
+Jack Compiler, Version 2.6
+
+This program is part of the software suite that accompanies the book:
+
+The Elements of Computing Systems
+by Noam Nisan and Shimon Schocken
+MIT Press, 2005
+Book site: www.idc.ac.il/tecs
+
+Software Architects: Yaron Ukrainitz and Yannai A. Gonczarowski
+
+Updates by: Aviv Yaish
+
+Usage instruction and tips can be found in the relevant book chapters.
