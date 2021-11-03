@@ -1,0 +1,12 @@
+// This file is part of nand2tetris, as taught in The Hebrew University,
+// and was written by Aviv Yaish, and is published under the Creative 
+// Common Attribution-NonCommercial-ShareAlike 3.0 Unported License 
+// https://creativecommons.org/licenses/by-nc-sa/3.0/
+
+CHIP ShiftLeft{
+    IN in[16];
+    OUT out[16];
+     
+    PARTS:
+	// Put you code here:
+}
