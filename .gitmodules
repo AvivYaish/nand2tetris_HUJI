@@ -1,0 +1,3 @@
+[submodule "nand2tetris/syntax_highlighting/Notepad++/NAND2TET-1-Dark"]
+	path = nand2tetris/syntax_highlighting/Notepad++/NAND2TET-1-Dark
+	url = https://github.com/AvivYaish/NAND2TET-1-Dark
