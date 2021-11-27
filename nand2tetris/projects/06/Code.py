@@ -28,7 +28,7 @@ class Code:
             mnemonic (str): a comp mnemonic string.
 
         Returns:
-            str: 7-bit long binary code of the given mnemonic.
+            str: the binary code of the given mnemonic.
         """
         # Your code goes here!
         pass

@@ -12,8 +12,7 @@ class CompilationEngine:
     output stream.
     """
 
-    def __init__(self, input_stream: typing.TextIO,
-                output_stream: typing.TextIO) -> None:
+    def __init__(self, input_stream: "JackTokenizer", output_stream) -> None:
         """
         Creates a new compilation engine with the given input and output. The
         next routine called must be compileClass()
