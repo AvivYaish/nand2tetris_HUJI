@@ -130,3 +130,5 @@ dmypy.json
 
 .gitignore
 .gitmodules
+
+desktop.ini
