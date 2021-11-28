@@ -23,7 +23,5 @@ This software suite contains many modifications which are unique to the Hebrew U
 ### JackCompiler:
 - `^`, `#` are unary operators for left and right shifts (respectively).
 
-This file is part of nand2tetris, as taught in The Hebrew University,
-and was written by Aviv Yaish, and is published under the Creative 
-Common Attribution-NonCommercial-ShareAlike 3.0 Unported License 
-https://creativecommons.org/licenses/by-nc-sa/3.0/
+This repository is published under the 
+[Creative Common Attribution-NonCommercial-ShareAlike 3.0 Unported License](https://creativecommons.org/licenses/by-nc-sa/3.0/).
