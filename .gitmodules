@@ -1,6 +1,0 @@
-[submodule "nand2tetris/syntax_highlighting/Notepad++/NAND2TET-1-Dark"]
-	path = nand2tetris/syntax_highlighting/Notepad++/NAND2TET-1-Dark
-	url = https://github.com/AvivYaish/NAND2TET-1-Dark
-[submodule "nand2tetris/syntax_highlighting/Vim/vim-nand2tetris-syntax"]
-	path = nand2tetris/syntax_highlighting/Vim/vim-nand2tetris-syntax
-	url = https://github.com/sevko/vim-nand2tetris-syntax
