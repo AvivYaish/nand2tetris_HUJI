@@ -13,10 +13,10 @@ This software suite contains many modifications which are unique to the Hebrew U
 ### Assembler, CPUEmulator:
 - `dest=D<<;jump  // left-shift`
 - `dest=D>>;jump  // right-shift`
-- Both also work with A, M
+- Both also work with A, M.
 
 ### VMEmulator: 
-- `shiftleft`, `shiftright` are unary operations that perforn their namesake
+- `shiftleft`, `shiftright` are unary operations that perform their namesake.
 
 ### JackCompiler:
-- `^`, `#` are unary operators for left and right shifts (respectively)
+- `^`, `#` are unary operators for left and right shifts (respectively).
