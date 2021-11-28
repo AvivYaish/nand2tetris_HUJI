@@ -56,11 +56,30 @@ def assemble_file(
     After the command is translated, write the translation to the output file.
     
     Tools:
-    Two useful tools are the supplied Assembler and the supplied CPU Emulator, both available in your tools directory. These tools allow experimenting with a working assembler before setting out to build one yourself. In addition, the supplied assembler provides a visual line-level translation GUI, and allows code comparisons with the outputs that your assembler will generate. For more information, see the tutorial in the lectures and in the submission page.
+    Two useful tools are the supplied Assembler and the supplied CPU
+    Emulator, both available in your tools directory. These tools allow
+    experimenting with a working assembler before setting out to build one
+    yourself. In addition, the supplied assembler provides a visual
+    line-level translation GUI, and allows code comparisons with the outputs
+    that your assembler will generate. For more information, see the tutorial
+    in the lectures and in the submission page.
     
     Testing:
-    The supplied ("built-in") Hack Assembler is guaranteed to generate correct binary code. This guaranteed performance can be used to test if another assembler, say the one written by you, also generates correct code.
-    Let Prog.asm be some program written in the symbolic Hack assembly language. Suppose we translate this program using the supplied assembler, producing a binary file called Prog.hack. Next, we use another assembler (e.g. the one that you wrote) to translate the same program into another file, say MyProg.hack. Now, if the latter assembler is working correctly, it follows that Prog.hack == MyProg.hack. Thus, one way to test a newly written assembler is as follows: (i) load into the supplied visual assembler Prog.asm as a source program and MyProg.hack as a compare file, (ii) translate the source program, and (iii) compare the resulting binary code with the compare file (see the figure above). If the comparison fails, the assembler that generated MyProg.hack must be buggy; otherwise, it may be OK.    
+    The supplied ("built-in") Hack Assembler is guaranteed to generate
+    correct binary code. This guaranteed performance can be used to test if
+    another assembler, say the one written by you, also generates correct code.
+    Let Prog.asm be some program written in the symbolic Hack assembly
+    language. Suppose we translate this program using the supplied assembler,
+    producing a binary file called Prog.hack. Next, we use another assembler
+    (e.g. the one that you wrote) to translate the same program into another
+    file, say MyProg.hack. Now, if the latter assembler is working correctly,
+    it follows that Prog.hack == MyProg.hack. Thus, one way to test a newly
+    written assembler is as follows: (i) load into the supplied visual
+    assembler Prog.asm as a source program and MyProg.hack as a compare file,
+    (ii) translate the source program, and (iii) compare the resulting binary
+    code with the compare file (see the figure above). If the comparison
+    fails, the assembler that generated MyProg.hack must be buggy; otherwise,
+    it may be OK.
     """
     # Your code goes here!
     pass
