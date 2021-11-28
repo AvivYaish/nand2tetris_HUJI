@@ -31,10 +31,15 @@ class Math {
      *  the Jack expressions x/y and divide(x,y) return the same value.
      */
     function int divide(int x, int y) {
+		// This should be implemented without using multiplication.
+		// Hint: updating the value of 2*q*y in the "if" statement requires
+		// at most a single addition operator at every recursion step.
     }
 
     /** Returns the integer part of the square root of x. */
     function int sqrt(int x) {
+		// This should be implemented without using division, but
+		// multiplication is allowed.
     }
 
     /** Returns the greater number. */

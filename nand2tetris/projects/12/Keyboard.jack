@@ -49,6 +49,8 @@ class Keyboard {
      * and returns its value. Also handles user backspaces.
      */
     function String readLine(String message) {
+		// You can assume input is at most 64 characters long.
+		// Why? Because this is the width of our screen!
     }   
 
     /**								
