@@ -24,4 +24,4 @@ This software suite contains many modifications which are unique to the Hebrew U
 - `^`, `#` are unary operators for left and right shifts (respectively).
 
 This repository is published under the 
-[Creative Common Attribution-NonCommercial-ShareAlike 3.0 Unported License](https://creativecommons.org/licenses/by-nc-sa/3.0/).
+[Creative Common Attribution-NonCommercial-ShareAlike 3.0 Unported License](https://creativecommons.org/licenses/by-nc-sa/3.0/), in compliance with the terms listed on the official [nand2tetris](https://www.nand2tetris.org/) website.
