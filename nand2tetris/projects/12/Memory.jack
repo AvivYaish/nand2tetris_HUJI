@@ -16,6 +16,10 @@ class Memory {
 
     /** Initializes the class. */
     function void init() {
+        // Pseudocode:
+        // 1. freeList = heapBase
+        // 2. freeList.length = heapLength
+        // 3. freeList.next = null
     }
 
     /** Returns the RAM value at the given address. */
@@ -27,16 +31,34 @@ class Memory {
     }
 
     /** Finds an available RAM block of the given size and returns
-     *  a reference to its base address. */
+     *  a reference to its base address. Assume size > 0. */
     function int alloc(int size) {
+        // Pseudocode:
+        // 1. Search freeList using best-fit or first-fit heuristics to obtain
+        //    a segment with segment.length > size.
+        //    If no such segment is found, return -1.
+        // 2. block = needed part of the found segment (or all of it, if the 
+        //            segment remainder is too small).
+        // 3. block[-1] = size + 1 // Remember block size, for de-allocation
+        // 4. Update freeList to reflect the allocation
+        // 5. Return block
+        // The figure MemoryTest/MemoryFreeListExample.png illustrates how
+        // the freeList should look like.
     }
 
     /** De-allocates the given object (cast as an array) by making
      *  it available for future allocations. */
     function void deAlloc(Array o) {
+        // Pseudocode:
+        // 1. segment = o - 1
+        // 2. Insert segment into the freeLis
     }    
 
-    /** Returns the maximal element contained in the given Array/object. */
+    /** Returns the maximal element contained in the given Array/object. 
+     * Assume inputs are initialized and contain at least one element. */
 	function int max(Array o) {
+        // Hint: the algorithm you need to implement in Memory.alloc saves the
+        // size of the allocated block in the memory cell right before the 
+        // start of the block, and this can be used to implement Memory.max.
     }
 }

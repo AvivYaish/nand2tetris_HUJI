@@ -1,0 +1,54 @@
+The OS is implemented as a collection of 8 Jack classes. 
+Each class can be implemented and unit-tested in isolation, and in any desired
+order. We recommend proceeding like so:
+1. Array, 
+2. Sys, 
+3. String, 
+4. Keyboard, 
+5. Output, 
+6. Math (start with easy functions like abs, min, max, and then progress to 
+multiply, sqrt and finally divide), 
+7. Memory, 
+8. Screen
+
+To develop, compile, and test each OSClass.jack class in isolation, follow this
+procedure:
+1. Put the OSClass.jack that you are developing in the same directory that 
+includes the supplied test program designed to test it;
+2. Compile the directory using the supplied Jack compiler. 
+This will result in compiling your OSClass.jack as well as the supplied test 
+class files. In the process, a new OSClass.vm file will be created;
+3. Load the directory into the supplied VM Emulator;
+4. Execute the code and check if the OS services are working properly, 
+according to the guidelines given below.
+     
+Recall that the supplied VM Emulator features a built-in implementation of the
+entire Jack OS. With that in mind, the rationale of the above procedure is as 
+follows. Normally, when the supplied VM Emulator encounters a call to an OS 
+function, it handles the call by invoking a built-in implementation of that 
+function. However, if the compiled directory contains a .vm file that includes
+a VM implementation of the function, this  implementation will be executed, 
+short-cutting the built-in implementation. This practice follows the reverse 
+engineering spirit of GNU Unix and Linux: it allows you to build and test 
+different OS modules in isolation, as if all the other OS modules are 
+implemented properly and operating side-by-side with the currently-developed 
+module. That's important, since the OS class that you are presently developing
+may well include calls to the services of other OS classes.
+
+OS Classes and Test Programs:
+There are eight OS classes: Memory, Array, Math, String, Screen, Keyboard and 
+Sys. For each OS class Xxx we supply a skeletal Xxx.jack class file with all 
+the required subroutine signatures, corresponding test class named Main.jack, 
+and related test scripts.
+Only Memory, Array and Math have tests with test scripts (.tst files). The 
+remaining test programs include no test scripts, and should be compiled and 
+executed on the supplied VM Emulator, and then their outputs should be compared
+to the pictures supplied in each test directory.
+
+After testing successfully each OS class in isolation, test your entire OS 
+implementation using the Pong game, whose source code is available in your 
+projects/11/Pong directory. Put all your OS .jack files in this directory, 
+compile it, and execute the game in the supplied VM Emulator. If the game 
+works, then congratulations: you are the proud owner of an operating system
+written entirely by you. And, by the way, you've just completed the 
+construction of a complete general-purpose computer system. Go celebrate!
