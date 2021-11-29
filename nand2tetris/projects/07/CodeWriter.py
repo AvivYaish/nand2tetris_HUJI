@@ -31,14 +31,16 @@ class CodeWriter:
         # static segment.
         # To avoid problems with Linux/Windows/MacOS differences with regards
         # to filenames and paths, you are advised to parse the filename in
-        # the function "translate_file" in Main.py using code similar to:
+        # the function "translate_file" in Main.py using python's os library,
+        # For example, using code similar to:
         # input_filename, input_extension = os.path.splitext(os.path.basename(input_file.name))
         pass
 
     def write_arithmetic(self, command: str) -> None:
         """Writes assembly code that is the translation of the given 
-        arithmetic command. For the commands eq, lt, gt we define the value
-        "true" to be -1, and "false" to be 0.
+        arithmetic command. For the commands eq, lt, gt, you should correctly
+        compare between all numbers our computer supports, and we define the
+        value "true" to be -1, and "false" to be 0.
 
         Args:
             command (str): an arithmetic command.
