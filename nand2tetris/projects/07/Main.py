@@ -41,7 +41,8 @@ def translate_file(
     push constant 3
     push constant 5 
     add
-    The other arithmetic and logical commands are tested similarly.
+    The other arithmetic and logical commands are tested similarly:
+    add, sub, neg, and, or, not, shiftleft, shiftright, eq, gt, lt
     This stage can be tested using SimpleAdd, which is relatively simple, and
     StackTest, which is slightly more complex.
 
