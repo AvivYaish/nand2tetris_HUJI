@@ -8,7 +8,7 @@ import typing
 
 
 class Parser:
-    """Encapsulates access to the input code. Reads and assembly language 
+    """Encapsulates access to the input code. Reads an assembly language 
     command, parses it, and provides convenient access to the commands 
     components (fields and symbols). In addition, removes all white space and 
     comments.
