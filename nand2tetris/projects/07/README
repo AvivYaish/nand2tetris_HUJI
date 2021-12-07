@@ -13,9 +13,9 @@ Submitted Files
 README - This file.
 VMtranslator - The executable.
 Makefile - A makefile for the project.
-Main.py - 
-Parser.py - 
-CodeWriter.py - 
+Main.py - The project's main .py file.
+Parser.py - Handles the parsing of a single .vm file.
+CodeWriter.py - Translates VM commands into Hack assembly code.
 Include other files required by your project, if there are any.
 
 Remarks
