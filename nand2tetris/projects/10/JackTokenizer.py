@@ -81,6 +81,10 @@ class JackTokenizer:
     op: '+' | '-' | '*' | '/' | '&' | '|' | '<' | '>' | '='
     unaryOp: '-' | '~' | '^' | '#'
     keywordConstant: 'true' | 'false' | 'null' | 'this'
+    
+    If you are wondering whether some Jack program is valid or not, you should
+    use the built-in JackCompiler to compiler it. If the compilation fails, it
+    is invalid. Otherwise, it is valid.
     """
 
     def __init__(self, input_stream: typing.TextIO) -> None:
