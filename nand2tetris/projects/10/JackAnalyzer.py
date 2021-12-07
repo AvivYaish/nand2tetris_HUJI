@@ -82,7 +82,7 @@ def analyze_file(
     meaning, something that the syntax analyzer does not care about.
 	
     Testing tools:
-	### TextComparer
+    ### TextComparer
     Compares two given files ignoring white space, and reports success or 
     failure. For example, suppose you run the hardware simulator with some 
     test script and get a comparison failure. If you want, you can then use 
