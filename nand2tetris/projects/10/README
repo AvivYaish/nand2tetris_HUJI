@@ -16,7 +16,7 @@ Makefile - A makefile for the project.
 JackAnalyzer.py - The main .py file for the project.
 JackTokenizer.py - Tokenizes an input .jack file according to Jack's grammar.
 CompilationEngine.py - Gets input from a JackTokenizer and emits its parsed 
-  structure into an output stream
+  structure into an output stream.
 Include other files required by your project, if there are any.
 
 Remarks
