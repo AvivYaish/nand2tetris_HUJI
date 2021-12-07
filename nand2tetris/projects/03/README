@@ -6,28 +6,43 @@ Lisa Simpson, ID 022222222, lisa@mail.huji.ac.il
 
                            Project 3 - Sequential Logic
                            ----------------------------
-  
 
-Submitted Files
----------------
-README - This file.
-a/Bit.hdl - 
-a/PC.hdl - 
-a/RAM8.hdl - 
-a/RAM64.hdl - 
-a/Register.hdl - 
-b/RAM4K.hdl - 
-b/RAM16K.hdl - 
-b/RAM512.hdl -  
-Include other files required by your project, if there are any.
+## Submitted Files
+- README: This file.
+- a/Bit.hdl: 
+- a/PC.hdl: 
+- a/RAM8.hdl: 
+- a/RAM64.hdl: 
+- a/Register.hdl: 
+- b/RAM4K.hdl: 
+- b/RAM16K.hdl: 
+- b/RAM512.hdl:  
 
-Remarks
--------
-* The README file must contain the following:
-- In the first line: login(s) of the author(s), 
-separated by commas and nothing else! 
-If you work alone, do not include a comma. 
-Logins should be identical to the names of your home folders and are 
-case-sensitive.
-- Name(s), email(s) and ID(s) of the project's author(s).
-- Any remarks you have about your submission.
+## Remarks
+- You should submit a tar file containing two directories named 'a' and 'b',
+and a README in the root directory (not in 'a' or 'b').
+- Directory 'a' should include Bit.hdl, PC.hdl, RAM8.hdl, RAM64.hdl and
+Register.hdl, while directory 'b' should include RAM4K.hdl, RAM16K.hdl and
+RAM512.hdl.
+- If a chip from directory 'a' uses an external chip (say X.hdl), the external
+chip should be placed in directory 'a' too. The same goes for directory 'b'.
+In case chips from both directories use X.hdl, it should be placed in both
+directories.
+- External chips are chips that you weren't requested to build in the current
+or previous projects, and that are not built-in.
+- Include other files required by your project, if there are any.
+- The README file must contain the following:
+	- In the first line: login(s) of the author(s), 
+	separated by commas and nothing else! 
+	If you work alone, do not include a comma. 
+	Logins should be identical to the names of your home folders and are 
+	case-sensitive.
+	- Name(s), email(s) and ID(s) of the project's author(s).
+	- Any remarks you have about your submission.
+
+This file is part of nand2tetris, as taught in The Hebrew University,
+and was written by Aviv Yaish, and is published under the Creative 
+Common Attribution-NonCommercial-ShareAlike 3.0 Unported License 
+https://creativecommons.org/licenses/by-nc-sa/3.0/
+It is an extension to the specifications given in https://www.nand2tetris.org (Shimon Schocken and Noam Nisan, 2017)
+as allowed by the Creative Common Attribution-NonCommercial-ShareAlike 3.0 

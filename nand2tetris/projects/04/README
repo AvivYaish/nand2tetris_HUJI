@@ -6,23 +6,30 @@ Lisa Simpson, ID 022222222, lisa@mail.huji.ac.il
 
                            Project 4 - Machine Language
                            ----------------------------
-  
 
-Submitted Files
----------------
-README - This file.
-mult/Mult.asm - 
-fill/Fill.asm -   
-sort/Sort.asm -
-Include other files required by your project, if there are any.
+## Submitted Files
+- README: This file.
+- mult/Mult.asm: 
+- fill/Fill.asm:   
+- sort/Sort.asm: 
 
-Remarks
--------
-* The README file must contain the following:
-- In the first line: login(s) of the author(s), 
-separated by commas and nothing else! 
-If you work alone, do not include a comma. 
-Logins should be identical to the names of your home folders and are 
-case-sensitive.
-- Name(s), email(s) and ID(s) of the project's author(s).
-- Any remarks you have about your submission.
+## Remarks
+- You should submit a tar with three asm files, each in a corresponding 
+directory: mult/Mult.asm, fill/Fill.asm, sort/Sort.asm, and a README that is 
+located at the root directory (not in "/mult/", "/fill/" or "/sort/"). 
+- Include other files required by your project, if there are any.
+- The README file must contain the following:
+	- In the first line: login(s) of the author(s), 
+	separated by commas and nothing else! 
+	If you work alone, do not include a comma. 
+	Logins should be identical to the names of your home folders and are 
+	case-sensitive.
+	- Name(s), email(s) and ID(s) of the project's author(s).
+	- Any remarks you have about your submission.
+
+This file is part of nand2tetris, as taught in The Hebrew University,
+and was written by Aviv Yaish, and is published under the Creative 
+Common Attribution-NonCommercial-ShareAlike 3.0 Unported License 
+https://creativecommons.org/licenses/by-nc-sa/3.0/
+It is an extension to the specifications given in https://www.nand2tetris.org (Shimon Schocken and Noam Nisan, 2017)
+as allowed by the Creative Common Attribution-NonCommercial-ShareAlike 3.0 

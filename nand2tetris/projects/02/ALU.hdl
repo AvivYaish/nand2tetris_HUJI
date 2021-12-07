@@ -1,6 +1,7 @@
-// This file is part of www.nand2tetris.org
-// and the book "The Elements of Computing Systems"
-// by Nisan and Schocken, MIT Press.
+// This file is part of nand2tetris, as taught in The Hebrew University,
+// and was written by Aviv Yaish, and is published under the Creative 
+// Common Attribution-NonCommercial-ShareAlike 3.0 Unported License 
+// https://creativecommons.org/licenses/by-nc-sa/3.0/
 // File name: projects/02/ALU.hdl
 
 /**
@@ -42,5 +43,10 @@ CHIP ALU {
         ng; // 1 if (out < 0),  0 otherwise
 
     PARTS:
+   // You're advised to work on the ALU chip in two steps:
+   // - First, without handling status outputs (ALU-nostat)
+   // - Then, adding the missing functionality for the "full" chip (ALU). 
+   // You only need to submit the "full" ALU, no need to submit the partial
+   // implementation (ALU-nostat).
    // Put you code here:
 }
