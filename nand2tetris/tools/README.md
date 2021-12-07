@@ -12,7 +12,7 @@ The supplied software tools are designed to be run from your computer's
 command-line environment (also known as "terminal", or "shell"). Command-line 
 environments vary from one operating system to another, and working in them 
 requires some knowledge of various OS shell commands. For additional 
-information about command-line environments, see: 
+information in Hebrew about command-line environments, see: 
 https://www.youtube.com/playlist?list=PLuHmgt1HXB7Cb2b1LKWad9HpEZ_Rt5MZt
 
 In order to eliminate this overhead, we supply batch files (for Windows) and 
@@ -136,6 +136,12 @@ problem:
 > |0101101110100000|0001111011010010|1|1|0|0|0|0|0001111011010010|0|0| |0101101110100000|0001111011010010|1|1|0|0|0|0|0001111011010010|0|1|
 
 (Note the line number discrepancy between the reports of the two tools).
+
+This tool stops the comparision upon find the first discrepancy. If you would like
+to compare the rest of the files, we recommend using other tools such as [KDiff](http://kdiff3.sourceforge.net/), 
+or even the standard "diff" tool available in most operating systems.
+For more info (in Hebrew) on how to use "diff", see:
+https://www.youtube.com/watch?v=ksm2JMhJsL8
 
 ### Compiler
 Typing "JackCompiler fileName.jack" will compile the supplied Jack file. Typing 
