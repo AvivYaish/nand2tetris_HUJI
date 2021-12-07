@@ -1,0 +1,69 @@
+// This file is part of nand2tetris, as taught in The Hebrew University,
+// and was written by Aviv Yaish according to the specifications given in  
+// https://www.nand2tetris.org (Shimon Schocken and Noam Nisan, 2017)
+// and as allowed by the Creative Common Attribution-NonCommercial-ShareAlike 3.0 
+// Unported License (https://creativecommons.org/licenses/by-nc-sa/3.0/).
+
+/** 
+  * Your submission should compile successfully on the built in JackCompiler and
+  * run successfully on the built in VMEmulator using the built-in OS.
+  * Your game can be an unoriginal idea (Tetris, Snake, etc'), but must be 
+  * original code - you can't use code you found online!
+  * You should make use of all OS classes directly and demonstrate a thorough 
+  * knowledge of the OS API and Jack language features (classes, members, 
+  * methods, loops, types, operators, etc').
+  * Tip: make a list of all features (for example, all OS classes, all Jack 
+  * operators, etc') and make sure you're using each one in a non-trivial way.
+  * So, usage should be meaningful in the context of your program - don't call
+  * functions and throw away their results or define useless variables!
+  * The program should be comparable in scope to Tetris/Snake/Pong, shorter 
+  * projects will be penalized. Tip: although lines of code are not a good 
+  * estimation of the amount of effort put into a project, a project of less 
+  * than 500 "meaningful" lines is definitely too short.
+  * Whitespace, comments, and various fluff (such as the class/function 
+  * definition lines, variable declaration, etc) don't count as "meaningful".
+  * 
+  * ### Developing Jack applications
+  * - Put all the app files in one directory, whose name is the app's name
+  * - Write / edit your Jack class files using a standard text editor. We 
+  *   recommend using [VSCode](https://code.visualstudio.com/) together with 
+  *   the recommended nand2tetris syntax highlighting
+  *   [plugin](https://marketplace.visualstudio.com/items?itemName=loyio.Nand2Tetris-vscode).
+  *   If you prefer Notepad++ or Vim, see the syntax highlighting themes 
+  *   supplied in nand2tetris/syntax_highlighting
+  * - Compile your Jack files / directory using the supplied JackCompiler 
+  *   available in nand2tetris/tools. The same directory contains detailed 
+  *   instructions on how to use the compiler. Note: the compiler is a 
+  *   **command-line** program, and thus will not execute by simply 
+  *   double-clicking on it.
+  * - Execute your app by loading the app's directory (which now contains
+  *   the compiled .vm files) into the supplied VM emulator, and running the 
+  *   code. Note: you should load the app's **directory**, and not one of the 
+  *   app's single files.
+  * 
+  * ### Using the JackCompiler
+  * Typing "JackCompiler fileName.jack" will compile the supplied Jack file. 
+  * Typing "JackCompiler directoryName" will compile all the Jack file that are
+  * found in the specified directory. Wildcards are not supported. Here are 
+  * some examples:
+  * - Compile the current directory:
+  *   > C:\...\projects\09\Reflect>JackCompiler
+  *   > 
+  *   > Compiling "c:\...\projects\09\Reflect"
+  * - Compile a single file:
+  *   > C:\...\projects\09\Reflect>JackCompiler Mirrors.jack 
+  *   > 
+  *   > Compiling "C:\...\projects\09\Reflect\Mirrors.jack"
+  * - Compile the "Reflect" directory (for example):
+  *   > C:\...\projects\09>JackCompiler Reflect
+  *   > 
+  *   > Compiling "C:\...\projects\09\Reflect"
+  */
+
+class Main {
+  function void main() {
+    // Your code goes here!
+    // You can include as many classes and functions as you want.
+    return;
+  }
+}
