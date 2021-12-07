@@ -30,7 +30,10 @@ For best performance, download the latest available version.
 
 ## Mac and Linux users
 Before running the scripts, you must first change their file attributes to 
-include "executable". You can then run the scripts by typing their name, as 
+include "executable", in some environments this can be done like so:
+> chmod +x *.sh
+
+You can then run the scripts by typing their name, as 
 well as the .sh extension, in the terminal environment.
 
 If you want to avoid typing the 'sh' extensions, you can create (once and for 
@@ -40,7 +43,7 @@ say, the HardwareSimulator tool:
 >
 > chmod +x HardwareSimulator
 
-If you use MacOS, see the file "Setup Guide for MacOS (written by Yong Bakos).pdf"
+If you use **MacOS**, see the file "Setup Guide for MacOS (written by Yong Bakos).pdf"
 
 ## Windows users
 For the ".bat" batch files to work from the command line, you must add (once and for 
@@ -59,6 +62,11 @@ right-clicking on them and picking "Send to > Desktop." Edit the shortcuts' prop
 and set "Run" to "minimized."
 
 ## Usage
+Depending on your OS and commandline, you may or may not be required to prefix 
+our scripts with "./" or ".\", for example:
+
+<img width="269" alt="prefixingScriptsOnWindows" src="https://user-images.githubusercontent.com/12000894/145036984-da96e986-f731-405d-b150-42d56aca102b.png">
+
 ### Hardware Simulator
 To invoke the hardware simulator in interactive mode, type "HardwareSimulator" 
 in the command line. For example:
