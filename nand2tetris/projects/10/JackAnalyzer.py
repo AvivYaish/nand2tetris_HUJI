@@ -106,7 +106,7 @@ def analyze_file(
     For more info (in Hebrew) on how to use "diff", see:
     https://www.youtube.com/watch?v=ksm2JMhJsL8
     
-    ### Using the JackCompiler
+    ### Using the built-in JackCompiler
     Typing "JackCompiler fileName.jack" will compile the supplied Jack file. 
     Typing "JackCompiler directoryName" will compile all the Jack file that 
     are found in the specified directory. Wildcards are not supported. Here 
