@@ -13,11 +13,12 @@ Submitted Files
 README - This file.
 JackCompiler - The executable.
 Makefile - A makefile for the project.
-JackCompiler.py - 
-JackTokenizer.py - 
-CompilationEngine.py - 
-VMWriter.py - 
-SymbolTable.py - 
+JackCompiler.py - The main .py file for the project.
+JackTokenizer.py - Tokenizes an input .jack file according to Jack's grammar.
+CompilationEngine.py - Gets input from a JackTokenizer and emits its parsed 
+  structure into an output stream.
+VMWriter.py - Writes VM commands into a file. Encapsulates VM command syntax.
+SymbolTable.py - Associates names with information needed for Jack compilation.
 Include other files required by your project, if there are any.
 
 Remarks
