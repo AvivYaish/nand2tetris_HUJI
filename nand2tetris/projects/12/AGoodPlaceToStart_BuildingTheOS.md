@@ -1,11 +1,12 @@
-// This file is part of nand2tetris, as taught in The Hebrew University,
-// and was written by Aviv Yaish, and is published under the Creative 
-// Common Attribution-NonCommercial-ShareAlike 3.0 Unported License 
-// https://creativecommons.org/licenses/by-nc-sa/3.0/
-// It is an extension to the specifications given in  
-// https://www.nand2tetris.org (Shimon Schocken and Noam Nisan, 2017)
-// as allowed by the Creative Common Attribution-NonCommercial-ShareAlike 3.0 
+This file is part of nand2tetris, as taught in The Hebrew University,
+and was written by Aviv Yaish, and is published under the Creative 
+Common Attribution-NonCommercial-ShareAlike 3.0 Unported License 
+https://creativecommons.org/licenses/by-nc-sa/3.0/
+It is an extension to the specifications given in  
+https://www.nand2tetris.org (Shimon Schocken and Noam Nisan, 2017)
+as allowed by the Creative Common Attribution-NonCommercial-ShareAlike 3.0 
 
+## Overview
 The OS is implemented as a collection of 8 Jack classes. 
 Each class can be implemented and unit-tested in isolation, and in any desired
 order. We recommend proceeding like so:
@@ -19,16 +20,17 @@ multiply, sqrt and finally divide),
 7. Memory (start with easy functions like init, peek, poke and then alloc and dealloc), 
 8. Screen (start with easy functions like init, clearScreen, setColor, drawPixel, drawRectangle, and then progress to drawCircle, drawLine)
 
+## How to Work on Each Class
 To develop, compile, and test each OSClass.jack class in isolation, follow this
 procedure:
 1. Put the OSClass.jack that you are developing in the same directory that 
-includes the supplied test program designed to test it;
+   includes the supplied test program designed to test it;
 2. Compile the directory using the supplied Jack compiler. 
-This will result in compiling your OSClass.jack as well as the supplied test 
-class files. In the process, a new OSClass.vm file will be created;
+   This will result in compiling your OSClass.jack as well as the supplied test 
+   class files. In the process, a new OSClass.vm file will be created;
 3. Load the directory into the supplied VM Emulator;
 4. Execute the code and check if the OS services are working properly, 
-according to the guidelines given below.
+   according to the guidelines given below.
      
 Recall that the supplied VM Emulator features a built-in implementation of the
 entire Jack OS. With that in mind, the rationale of the above procedure is as 
@@ -43,7 +45,40 @@ implemented properly and operating side-by-side with the currently-developed
 module. That's important, since the OS class that you are presently developing
 may well include calls to the services of other OS classes.
 
-OS Classes and Test Programs:
+### Writing Jack Code
+- Write / edit your Jack class files using a standard text editor. We recommend
+  using [VSCode](https://code.visualstudio.com/) together with the recommended 
+  nand2tetris syntax highlighting
+  [plugin](https://marketplace.visualstudio.com/items?itemName=loyio.Nand2Tetris-vscode).
+  If you prefer Notepad++ or Vim, see the syntax highlighting themes supplied in
+  nand2tetris/syntax_highlighting.
+- Compile your Jack files / directory using the supplied JackCompiler available
+  in nand2tetris/tools. The same directory contains detailed instructions on how
+  to use the compiler. Note: the compiler is a **command-line** program, and thus
+  will not execute by simply double-clicking on it.
+- Execute your app by loading the app's directory (which now contains
+  the compiled .vm files) into the supplied VM emulator, and running the code.
+
+### Using the JackCompiler
+Typing "JackCompiler fileName.jack" will compile the supplied Jack file. Typing 
+"JackCompiler directoryName" will compile all the Jack file that are found in the 
+specified directory. Wildcards are not supported. Here are some examples:
+
+- Compile the current directory:
+  > C:\...\projects\09\Reflect>JackCompiler
+  > 
+  > Compiling "c:\...\projects\09\Reflect"
+- Compile a single file:
+  > C:\...\projects\09\Reflect>JackCompiler Mirrors.jack 
+  > 
+  > Compiling "C:\...\projects\09\Reflect\Mirrors.jack"
+- Compile the "Reflect" directory (for example):
+  > C:\...\projects\09>JackCompiler Reflect
+  > 
+  > Compiling "C:\...\projects\09\Reflect"
+
+
+## OS Classes and Test Programs
 There are eight OS classes: Memory, Array, Math, String, Screen, Keyboard and 
 Sys. For each OS class Xxx we supply a skeletal Xxx.jack class file with all 
 the required subroutine signatures, corresponding test class named Main.jack, 
@@ -53,6 +88,7 @@ remaining test programs include no test scripts, and should be compiled and
 executed on the supplied VM Emulator, and then their outputs should be compared
 to the pictures supplied in each test directory.
 
+## The End
 After testing successfully each OS class in isolation, test your entire OS 
 implementation using the Pong game, whose source code is available in your 
 projects/11/Pong directory. Put all your OS .jack files in this directory, 
