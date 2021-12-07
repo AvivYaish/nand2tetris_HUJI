@@ -8,7 +8,7 @@ Unported License (https://creativecommons.org/licenses/by-nc-sa/3.0/).
 
 class Code:
     """Translates Hack assembly language mnemonics into binary codes."""
-
+    
     @staticmethod
     def dest(mnemonic: str) -> str:
         """
