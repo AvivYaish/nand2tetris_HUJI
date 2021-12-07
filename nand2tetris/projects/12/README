@@ -43,8 +43,10 @@ order. We recommend proceeding like so:
 5. Output, 
 6. Math (start with easy functions like abs, min, max, and then progress to 
 multiply, sqrt and finally divide), 
-7. Memory (start with easy functions like init, peek, poke and then alloc and dealloc), 
-8. Screen (start with easy functions like init, clearScreen, setColor, drawPixel, drawRectangle, and then progress to drawCircle, drawLine)
+7. Memory (start with easy functions like init, peek, poke and then alloc and
+dealloc), 
+8. Screen (start with easy functions like init, clearScreen, setColor,
+drawPixel, drawRectangle, and then progress to drawCircle, drawLine)
 
 ## How to Work on Each Class
 To develop, compile, and test each OSClass.jack class in isolation, follow this
