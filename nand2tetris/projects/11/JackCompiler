@@ -1,4 +1,5 @@
 #!/bin/sh
+# This file only works on Unix-like operating systems, so it won't work on Windows.
 
 # **** Why do we need this file? ****
 # The purpose of this file is to run your project.
@@ -12,6 +13,6 @@
 
 # **** What should I change in this file to make it work with my project? ****
 # IMPORTANT: This file assumes that the main is contained in "JackCompiler.py".
-#			 If your main is contained elsewhere, you will need to change this.
+#	If your main is contained elsewhere, you will need to change this.
 
 python3 JackCompiler.py $*
