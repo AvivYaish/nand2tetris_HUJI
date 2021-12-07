@@ -137,7 +137,7 @@ problem:
 
 (Note the line number discrepancy between the reports of the two tools).
 
-This tool stops the comparision upon find the first discrepancy. If you would like
+This tool stops the comparison upon find the first discrepancy. If you would like
 to compare the rest of the files, we recommend using other tools such as [KDiff](http://kdiff3.sourceforge.net/), 
 or even the standard "diff" tool available in most operating systems.
 For more info (in Hebrew) on how to use "diff", see:
