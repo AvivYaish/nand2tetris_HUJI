@@ -13,10 +13,12 @@ Submitted Files
 README - This file.
 Assembler - The executable.
 Makefile - A makefile for the project.
-Main.py - 
-Parser.py - 
-Code.py - 
-SymbolTable.py - 
+Main.py - The project's main .py file.
+Parser.py - Reads an assembly language command, parses it, and provides 
+  additional relevant functionality.
+Code.py - Translates Hack assembly language mnemonics into binary codes.
+SymbolTable.py - Keeps a correspondence between symbolic labels and 
+  numeric addresses.
 Include other files required by your project, if there are any.
 
 Remarks
