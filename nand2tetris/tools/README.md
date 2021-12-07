@@ -147,9 +147,9 @@ specified directory. Wildcards are not supported. Here are some examples:
   > 
   > Compiling "c:\...\projects\09\Reflect"
 - Compile a single file:
-> C:\...\projects\09\Reflect>JackCompiler Mirrors.jack 
-> 
-> Compiling "C:\...\projects\09\Reflect\Mirrors.jack"
+  > C:\...\projects\09\Reflect>JackCompiler Mirrors.jack 
+  > 
+  > Compiling "C:\...\projects\09\Reflect\Mirrors.jack"
 - Compile the "Reflect" directory (for example):
   > C:\...\projects\09>JackCompiler Reflect
   > 
