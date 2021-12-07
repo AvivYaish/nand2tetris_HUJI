@@ -1,4 +1,4 @@
-![Moodle](https://raw.githubusercontent.com/AvivYaish/nand2tetris_HUJI/master/moodle.jpg)
+![moodle](https://user-images.githubusercontent.com/12000894/145035709-14de1143-0033-4176-9739-d95c95cc76d4.jpg)
 
 # nand2tetris_HUJI
 HUJI's version of nand2tetris / nand2tet / From Nand to Tetris / etc.
