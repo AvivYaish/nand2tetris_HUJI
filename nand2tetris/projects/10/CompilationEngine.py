@@ -33,7 +33,11 @@ class CompilationEngine:
         pass
 
     def compile_subroutine(self) -> None:
-        """Compiles a complete method, function, or constructor."""
+        """
+        Compiles a complete method, function, or constructor.
+        You can assume that classes with constructors have at least one field,
+        you will understand why this is necessary in project 11.
+        """
         # Your code goes here!
         pass
 
