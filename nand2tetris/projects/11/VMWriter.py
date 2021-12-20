@@ -44,7 +44,7 @@ class VMWriter:
 
         Args:
             command (str): the command to write, can be "ADD", "SUB", "NEG", 
-            "EQ", "GT", "LT", "AND", "OR", "NOT".
+            "EQ", "GT", "LT", "AND", "OR", "NOT", "SHIFTLEFT", "SHIFTRIGHT".
         """
         # Your code goes here!
         pass
