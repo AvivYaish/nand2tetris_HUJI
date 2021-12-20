@@ -73,7 +73,8 @@ class JackTokenizer:
     ** Expressions **
     expression: term (op term)*
     term: integerConstant | stringConstant | keywordConstant | varName | 
-    varName '['expression']' | subroutineCall | '(' expression ')' | unaryOp term
+        varName '['expression']' | subroutineCall | '(' expression ')' | 
+        unaryOp term
     subroutineCall: subroutineName '(' expressionList ')' | (className | 
         varName) '.' subroutineName '(' expressionList ')'
     expressionList: (expression (',' expression)* )?
