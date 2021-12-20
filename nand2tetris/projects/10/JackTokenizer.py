@@ -29,15 +29,15 @@ class JackTokenizer:
     ** Lexical elements **
     The Jack language includes five types of terminal elements (tokens).
     1. keyword: 'class' | 'constructor' | 'function' | 'method' | 'field' | 
-    'static' | 'var' | 'int' | 'char' | 'boolean' | 'void' | 'true' | 'false' 
-    | 'null' | 'this' | 'let' | 'do' | 'if' | 'else' | 'while' | 'return'
+        'static' | 'var' | 'int' | 'char' | 'boolean' | 'void' | 'true' | 'false'
+        | 'null' | 'this' | 'let' | 'do' | 'if' | 'else' | 'while' | 'return'
     2. symbol:  '{' | '}' | '(' | ')' | '[' | ']' | '.' | ',' | ';' | '+' | 
-    '-' | '*' | '/' | '&' | '|' | '<' | '>' | '=' | '~' | '^' | '#'
+        '-' | '*' | '/' | '&' | '|' | '<' | '>' | '=' | '~' | '^' | '#'
     3. integerConstant: A decimal number in the range 0-32767.
     4. StringConstant: '"' A sequence of Unicode characters not including 
-    double quote or newline '"'
+        double quote or newline '"'
     5. identifier: A sequence of letters, digits, and underscore ('_') not 
-    starting with a digit.
+        starting with a digit.
 
 
     ** Program structure **
@@ -61,10 +61,10 @@ class JackTokenizer:
     ** Statements **
     statements: statement*
     statement: letStatement | ifStatement | whileStatement | doStatement | 
-    returnStatement
+        returnStatement
     letStatement: 'let' varName ('[' expression ']')? '=' expression ';'
     ifStatement: 'if' '(' expression ')' '{' statements '}' ('else' '{' 
-    statements '}')?
+        statements '}')?
     whileStatement: 'while' '(' 'expression' ')' '{' statements '}'
     doStatement: 'do' subroutineCall ';'
     returnStatement: 'return' expression? ';'
@@ -73,10 +73,9 @@ class JackTokenizer:
     ** Expressions **
     expression: term (op term)*
     term: integerConstant | stringConstant | keywordConstant | varName | 
-    varName '['expression']' | subroutineCall | '(' expression ')' | unaryOp 
-    term
+    varName '['expression']' | subroutineCall | '(' expression ')' | unaryOp term
     subroutineCall: subroutineName '(' expressionList ')' | (className | 
-    varName) '.' subroutineName '(' expressionList ')'
+        varName) '.' subroutineName '(' expressionList ')'
     expressionList: (expression (',' expression)* )?
     op: '+' | '-' | '*' | '/' | '&' | '|' | '<' | '>' | '='
     unaryOp: '-' | '~' | '^' | '#'
