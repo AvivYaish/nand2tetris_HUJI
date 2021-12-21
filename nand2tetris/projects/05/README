@@ -4,13 +4,12 @@ Bart Simpson, ID 011111111, bart@mail.huji.ac.il
 Lisa Simpson, ID 022222222, lisa@mail.huji.ac.il
 ===============================================================================
 
-                           Project 5 - Computer Architecture
-                           ---------------------------------
+# Project 5 - Computer Architecture
 
 ## Submitted Files
 - README: This file.
 - ExtendAlu.hdl: 
-- CpuMul.hdl -
+- CpuMul.hdl:
 - CPU.hdl: 
 - Memory.hdl: 
 - Computer.hdl: 
