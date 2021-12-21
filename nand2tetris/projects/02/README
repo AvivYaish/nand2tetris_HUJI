@@ -4,13 +4,12 @@ Bart Simpson, ID 011111111, bart@mail.huji.ac.il
 Lisa Simpson, ID 022222222, lisa@mail.huji.ac.il
 ===============================================================================
 
-                           Project 2 - Boolean Arithmetic
-                           ------------------------------
+# Project 2 - Boolean Arithmetic
 
 ## Submitted Files
 - README: This file.
-- ShiftLeft.hdl -
-- ShiftRight.hdl -
+- ShiftLeft.hdl: 
+- ShiftRight.hdl: 
 - HalfAdder.hdl: 
 - FullAdder.hdl: 
 - Add16.hdl: 
