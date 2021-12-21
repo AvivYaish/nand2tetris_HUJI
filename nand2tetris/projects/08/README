@@ -4,8 +4,7 @@ Bart Simpson, ID 011111111, bart@mail.huji.ac.il
 Lisa Simpson, ID 022222222, lisa@mail.huji.ac.il
 ===============================================================================
 
-                           Project 8 - Virtual Machine (Control)
-                           -------------------------------------
+# Project 8 - Virtual Machine (Control)
 
 ## Submitted Files
 - README: This file.
@@ -15,8 +14,7 @@ Lisa Simpson, ID 022222222, lisa@mail.huji.ac.il
 - Parser.py: Handles the parsing of a single .vm file.
 - CodeWriter.py: Translates VM commands into Hack assembly code.
 
-Remarks
--------
+## Remarks
 - Your tar should only include a run-script named 'VMtranslator', a Makefile 
 called "Makefile", a README, and the source code for your implementation.
 - You can change the template however you want, or even not use it at all. But,
