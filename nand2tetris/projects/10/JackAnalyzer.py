@@ -116,7 +116,7 @@ def analyze_file(
     - Compile the current directory:
       > C:\...\projects\09\Reflect>JackCompiler
       > 
-      > Compiling "c:\...\projects\09\Reflect"
+      > Compiling "C:\...\projects\09\Reflect"
     - Compile a single file:
       > C:\...\projects\09\Reflect>JackCompiler Mirrors.jack 
       > 
