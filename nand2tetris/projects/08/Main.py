@@ -22,7 +22,6 @@ def translate_file(
         bootstrap (bool): if this is True, the current file is the 
             first file we are translating.
     """
-    # Your code goes here!
     """
     In this project, we will extend the basic translator developed in project
     7 to a full-scale VM-to-Hack translator which will conform to the VM
@@ -34,8 +33,9 @@ def translate_file(
     CodeWriter: write_label, write_goto, write_if, write_function,
     write_call, write_return.
     
-    We recommend completing the implementation of the VM translator in two
-    stages. 
+    # Implementation Order
+    We recommend completing the implementation of the VM translator in the
+    following order:
     1. First, implement and test the translation of the VM language's
     branching commands. This stage can be tested using the basic test
     BasicLoop and the slightly more advanced FibonacciSeries.
@@ -70,14 +70,13 @@ def translate_file(
     supplied CPU emulator. If there are any problems, debug and fix your VM
     translator.
 
-    Implementation order:
     The supplied test programs were carefully planned to test the incremental
     features introduced by each stage in your VM implementation. Therefore,
     it's important to implement your VM translator in the proposed order, and
     to test it using the supplied test programs at each stage. Implementing a
     later stage before an early one may cause the test programs to fail.
 
-    Initialization:
+    # Initialization
     In order for the translated VM code to execute on the host computer
     platform, the translated code stream (written in the machine language of
     the host platform) must include some bootstrap code that maps the stack
@@ -98,7 +97,7 @@ def translate_file(
     by your VM translator should deliver the results mandated by the test
     scripts and compare files supplied.
 
-    Tools:
+    # Tools
     Before setting out to extend your basic VM translator, we recommend
     playing with the supplied .vm test programs. This will allow you to
     experiment with branching and function call-and-return commands, using
@@ -106,6 +105,7 @@ def translate_file(
     For more information, see the VM emulator tutorial in the lectures and in
     the submission page.
     """
+    # Your code goes here!
     pass
 
 
