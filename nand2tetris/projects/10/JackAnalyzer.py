@@ -24,7 +24,7 @@ def analyze_file(
     the JackTokenizer module. Next, write and test the CompilationEngine
     module, which implements the parser described in the chapter.
 
-    Stage I: JackTokenizer 
+    # Stage I: JackTokenizer
     Tokenizing, a basic service of any syntax analyzer, is the act of
     breaking a given textual input into a stream of tokens. And while it is
     at it, the tokenizer can also classify the tokens into lexical
@@ -33,7 +33,7 @@ def analyze_file(
     Tokenizer implementation, and (ii) a test program that goes through a
     given input file (.jack file).
     
-    Tokenizer Testing:
+    ## Tokenizer Testing
     Test your tokenizer on the Square Dance and the TestArray programs.
     - Apply your tokenizer test to each Xxx.jack source file of the relevant
     test.
@@ -49,7 +49,7 @@ def analyze_file(
     same names and extensions as those of the supplied compare files, we
     suggest putting them in separate directories.
     
-    Stage II: Parser (CompilationEngine) 
+    # Stage II: Parser (CompilationEngine)
     In the context of this project, parsing is defined narrowly as the act of
     going over the tokenized input and rendering its grammatical structure
     using some agreed-upon format. The specific parser that we implement here
@@ -63,7 +63,7 @@ def analyze_file(
     compilation engine to handle expressions as well. The test programs
     supplied are designed to support this staged testing strategy.
     
-    Parser Testing:
+    ## Parser Testing
     - Apply your syntax analyzer to the supplied test programs, then use the
     supplied TextComparer utility to compare the generated output to the
     supplied .xml compare files.
@@ -72,17 +72,9 @@ def analyze_file(
     suggest putting them in separate directories.
     - Note that the indentation of the XML output is only for readability.
     Web browsers and the supplied TextComparer ignore white space.
-    
-    Experimenting with the test programs: 
-    if you want, you can compile the supplied SquareDance and TestArray
-    programs using the supplied ("built-in") JackCompiler, then use the
-    supplied VM emulator to run the compiled code. This activity is
-    irrelevant to the current project. However, it serves to show that the
-    test programs are not just plain text; they also have semantics, or
-    meaning, something that the syntax analyzer does not care about.
 	
-    Testing tools:
-    ### TextComparer
+    # Testing tools
+    ## TextComparer
     Compares two given files ignoring white space, and reports success or 
     failure. For example, suppose you run the hardware simulator with some 
     test script and get a comparison failure. If you want, you can then use 
@@ -106,7 +98,14 @@ def analyze_file(
     For more info (in Hebrew) on how to use "diff", see:
     https://www.youtube.com/watch?v=ksm2JMhJsL8
     
-    ### Using the built-in JackCompiler
+    ## Using the built-in JackCompiler
+    If you want, you can compile the supplied SquareDance and TestArray
+    programs using the supplied ("built-in") JackCompiler, then use the
+    supplied VM emulator to run the compiled code. This activity is
+    irrelevant to the current project. However, it serves to show that the
+    test programs are not just plain text; they also have semantics, or
+    meaning, something that the syntax analyzer does not care about.
+    
     Typing "JackCompiler fileName.jack" will compile the supplied Jack file. 
     Typing "JackCompiler directoryName" will compile all the Jack file that 
     are found in the specified directory. Wildcards are not supported. Here 
