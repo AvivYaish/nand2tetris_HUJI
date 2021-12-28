@@ -13,11 +13,11 @@ And, a message from Aviv:
 
 If you enjoyed this course, here are some recommendations:
 
-- [**`Stanford's compilers course`**](https://www.edx.org/course/compilers) 
+- [**`Stanford's Compilers course`**](https://www.edx.org/course/compilers) 
 dives deeper into compilers, and guides you in building a modern compiler from 
 scratch! Although our compiler works, it is quite simplistic in comparison.
 
-- [**`Stanford's operating systems`**](https://cs140e.sergio.bz/about/) course
+- [**`Stanford's Operating Systems course`**](https://cs140e.sergio.bz/about/)
 covers building an operating system for the Raspberry Pi computer.
 
 - [**`Web Browser Engineering`**](https://browser.engineering/) is a course 
@@ -34,5 +34,5 @@ Artificial Intelligence. HUJI offers an equivalent course called
 is a great course that shows how some of the principals taught in nand2tet
 affect the security of modern computers.
 
-- [**`HUJI's Computer Architecture (67200)`**](https://moodle2.cs.huji.ac.il/nu20/course/view.php?id=67200)
+- [**`HUJI's Computer Architecture course (67200)`**](https://moodle2.cs.huji.ac.il/nu20/course/view.php?id=67200)
 delves deeper into the fascinating world of processor design.
