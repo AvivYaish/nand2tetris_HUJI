@@ -13,6 +13,13 @@ And, a message from Aviv:
 
 If you enjoyed this course, here are some recommendations:
 
+- [**`HUJI's Introduction to Cryptography and Software Security (67932)`**](https://moodle2.cs.huji.ac.il/nu20/course/view.php?id=67392) 
+is a great course that shows how some of the principals taught in nand2tet
+affect the security of modern computers.
+
+- [**`HUJI's Computer Architecture course (67200)`**](https://moodle2.cs.huji.ac.il/nu20/course/view.php?id=67200)
+delves deeper into the fascinating world of processor design.
+
 - [**`Stanford's Compilers course`**](https://www.edx.org/course/compilers) 
 dives deeper into compilers, and guides you in building a modern compiler from 
 scratch! Although our compiler works, it is quite simplistic in comparison.
@@ -29,10 +36,3 @@ is a perfect fit for those of you who liked the tetris part of our course.
 This course uses very hands-on and visual projects to teach you the basics of
 Artificial Intelligence. HUJI offers an equivalent course called 
 [Introduction to Artificial Intelligence (67842)](https://moodle2.cs.huji.ac.il/nu20/course/view.php?name=ai).
-
-- [**`HUJI's Introduction to Cryptography and Software Security (67932)`**](https://moodle2.cs.huji.ac.il/nu20/course/view.php?id=67392) 
-is a great course that shows how some of the principals taught in nand2tet
-affect the security of modern computers.
-
-- [**`HUJI's Computer Architecture course (67200)`**](https://moodle2.cs.huji.ac.il/nu20/course/view.php?id=67200)
-delves deeper into the fascinating world of processor design.
