@@ -28,7 +28,7 @@ def compile_file(
     generate XML output with software modules that generate VM code. This can
     be done in two main development stages, as follows.
 
-    Stage I: Symbol Table
+    # Stage I: Symbol Table
     We suggest to start by building the compiler's symbol table module and
     using it to extend the syntax analyzer built in project 10. Presently,
     whenever an identifier is encountered in the source code, say foo, the
@@ -53,7 +53,7 @@ def compile_file(
     gradually morphing the code of the extended syntax analyzer into a
     full-scale compiler. 
 
-    Stage II: Code Generation 
+    # Stage II: Code Generation 
     Since we gave many translation examples in chapter 11, we don't provide
     specific guidelines on how to develop the code generation features of the
     compiler. Rather, we provide a set of six application programs, designed
@@ -63,7 +63,7 @@ def compile_file(
     the compiler's code generation capabilities in stages, according to the
     unfolding demands of each test program.
 
-    Testing Method: 
+    # Testing Method
     Normally, when one compiles a program and runs into some problems, one
     concludes that the program is at fault. In this project though, the
     setting is exactly the opposite: all the Jack programs that we supply for
