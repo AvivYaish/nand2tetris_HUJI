@@ -19,7 +19,6 @@ def translate_file(
         input_file (typing.TextIO): the file to translate.
         output_file (typing.TextIO): writes all output to this file.
     """
-    # Your code goes here!
     """
     We propose implementing the basic VM translator in two stages. This will
     allow you to unit-test your implementation incrementally, using the test
@@ -104,6 +103,7 @@ def translate_file(
     For more information, see the VM emulator tutorial in the lectures and in
     the submission page.
     """
+    # Your code goes here!
     pass
 
 
