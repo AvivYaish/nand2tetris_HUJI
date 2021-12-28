@@ -27,7 +27,7 @@ def translate_file(
     should translate the given VM command into a sequence of assembly
     commands that accomplish the same task".
     
-    Stage I: Handling stack arithmetic commands: 
+    # Stage I: Handling stack arithmetic commands
     The first version of your basic VM translator should implement the nine
     arithmetic / logical commands of the VM language as well as the VM
     command push constant x.
@@ -45,7 +45,7 @@ def translate_file(
     This stage can be tested using SimpleAdd, which is relatively simple, and
     StackTest, which is slightly more complex.
 
-    Stage II: Handling memory access commands: 
+    # Stage II: Handling memory access commands
     The next version of your basic VM translator should include a full
     implementation of the VM language's push and pop commands, handling the
     eight memory segments described in chapter 7. We suggest breaking this
@@ -58,7 +58,7 @@ def translate_file(
     tested using PointerTest.
     - Finally, handle the static segment. This can be tested using StaticTest.
 
-    Testing:
+    # Testing
     We supply VM programs designed to unit-test the staged implementation
     proposed above. For each program Xxx we supply four files. The Xxx.vm
     file contains the program's VM code. The XxxVME.tst script allows running
@@ -79,7 +79,7 @@ def translate_file(
     Xxx.tst and Xxx.cmp files to run the Xxx.asm program on the supplied CPU
     emulator. If there are any problems, debug and fix your VM translator.
     
-    Implementation Order: 
+    # Implementation Order
     The supplied test programs were carefully planned to test the incremental
     features introduced by each development stage of your basic VM
     translator. Therefore, it's important to implement your translator in the
@@ -87,13 +87,13 @@ def translate_file(
     each stage. Implementing a later stage before an early one may cause the
     test programs to fail.
 
-    Tools:
+    # Tools
     Before setting out to develop your VM translator, we recommend getting
     acquainted with the virtual machine architecture model and language. As
     mentioned above, this can be done by running, and experimenting with, the
     supplied .vm test programs using the supplied VM emulator.
     
-    The VM emulator: 
+    # The VM Emulator
     This program, located in your nand2tetris/tools directory, is designed to
     execute VM programs in a direct and visual way, without having to first
     translate them into machine language. For example, you can use the
