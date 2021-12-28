@@ -24,7 +24,7 @@ def assemble_file(
     You should use the two-pass implementation suggested in the book:
     
     *Initialization*
-    Initialize the symbol table with all the predefined symbols and their
+    Initialize the symbol table with all predefined symbols and their
     pre-allocated RAM addresses, according to section 6.2.3 of the book.
     
     *First Pass*
