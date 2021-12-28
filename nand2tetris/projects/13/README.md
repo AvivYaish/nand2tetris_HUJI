@@ -27,4 +27,12 @@ the major task people use computers for, so this is quite important.
 - [**`Berkeley's Intro2AI course`**](http://ai.berkeley.edu/project_overview.html)
 is a perfect fit for those of you who liked the tetris part of our course. 
 This course uses very hands-on and visual projects to teach you the basics of
-Artificial Intelligence.
+Artificial Intelligence. HUJI offers an equivalent course called 
+[Introduction to Artificial Intelligence (67842)](https://moodle2.cs.huji.ac.il/nu20/course/view.php?name=ai).
+
+- [**`HUJI's Introduction to Cryptography and Software Security (67932)`**](https://moodle2.cs.huji.ac.il/nu20/course/view.php?id=67392) 
+is a great course that shows how some of the principals taught in nand2tet
+affect the security of modern computers.
+
+- [**`HUJI's Computer Architecture (67200)`**](https://moodle2.cs.huji.ac.il/nu20/course/view.php?id=67200)
+delves deeper into the fascinating world of processor design.
