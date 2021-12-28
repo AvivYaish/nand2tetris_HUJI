@@ -23,11 +23,11 @@ def assemble_file(
     """
     You should use the two-pass implementation suggested in the book:
     
-    *Initialization*
+    # Initialization
     Initialize the symbol table with all predefined symbols and their
     pre-allocated RAM addresses, according to section 6.2.3 of the book.
     
-    *First Pass*
+    # First Pass
     Go through the entire assembly program, line by line, and build the symbol
     table without generating any code. As you march through the program lines,
     keep a running number recording the ROM address into which the current
@@ -42,7 +42,7 @@ def assemble_file(
     ROM addresses into the symbol table.
     The program’s variables are handled in the second pass.
     
-    *Second Pass*
+    # Second Pass
     Now go again through the entire program, and parse each line.
     Each time a symbolic A-instruction is encountered, namely, @Xxx where Xxx
     is a symbol and not a number, look up Xxx in the symbol table.
@@ -55,7 +55,7 @@ def assemble_file(
     16 (just after the addresses allocated to the predefined symbols).
     After the command is translated, write the translation to the output file.
     
-    Tools:
+    # Tools
     Two useful tools are the supplied Assembler and the supplied CPU
     Emulator, both available in your tools directory. These tools allow
     experimenting with a working assembler before setting out to build one
@@ -64,7 +64,7 @@ def assemble_file(
     that your assembler will generate. For more information, see the tutorial
     in the lectures and in the submission page.
     
-    Testing:
+    # Testing
     The supplied ("built-in") Hack Assembler is guaranteed to generate
     correct binary code. This guaranteed performance can be used to test if
     another assembler, say the one written by you, also generates correct code.
