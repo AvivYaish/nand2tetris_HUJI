@@ -99,10 +99,13 @@ def analyze_file(
     https://www.youtube.com/watch?v=ksm2JMhJsL8
     
     ## Using the built-in JackCompiler
+    If you are wondering whether some Jack program is valid or not, you should
+    use the built-in JackCompiler to compile it; if compilation fails, it is
+    invalid. Otherwise, it is valid.
+    
     If you want, you can compile the supplied SquareDance and TestArray
     programs using the supplied ("built-in") JackCompiler, then use the
-    supplied VM emulator to run the compiled code. This activity is
-    irrelevant to the current project. However, it serves to show that the
+    supplied VM emulator to run the compiled code. This shows that the
     test programs are not just plain text; they also have semantics, or
     meaning, something that the syntax analyzer does not care about.
     
