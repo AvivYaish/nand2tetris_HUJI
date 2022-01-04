@@ -110,7 +110,7 @@ def analyze_file(
     meaning, something that the syntax analyzer does not care about.
     
     Typing "JackCompiler fileName.jack" will compile the supplied Jack file. 
-    Typing "JackCompiler directoryName" will compile all the Jack file that 
+    Typing "JackCompiler directoryName" will compile all Jack files that 
     are found in the specified directory. Wildcards are not supported. Here 
     are some examples:
     - Compile the current directory:

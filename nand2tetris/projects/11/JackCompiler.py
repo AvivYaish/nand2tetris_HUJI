@@ -66,7 +66,7 @@ def compile_file(
     # Testing Method
     Normally, when one compiles a program and runs into some problems, one
     concludes that the program is at fault. In this project though, the
-    setting is exactly the opposite: all the Jack programs that we supply for
+    setting is exactly the opposite: all Jack programs that we supply for
     testing purposes are error-free. Therefore, if their compilation yields
     any errors, it's the compiler that you have to fix, not the test programs. 
     For each test program, go through the following routine:

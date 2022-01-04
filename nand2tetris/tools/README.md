@@ -196,7 +196,7 @@ https://www.youtube.com/watch?v=ksm2JMhJsL8
 
 ### Compiler
 Typing "JackCompiler fileName.jack" will compile the supplied Jack file. Typing 
-"JackCompiler directoryName" will compile all the Jack file that are found in the 
+"JackCompiler directoryName" will compile all Jack files that are found in the 
 specified directory. Wildcards are not supported. Here are some examples:
 
 - Compile the current directory:
