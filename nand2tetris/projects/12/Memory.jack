@@ -51,7 +51,7 @@ class Memory {
     function void deAlloc(Array o) {
         // Pseudocode:
         // 1. segment = o - 1
-        // 2. Insert segment into the freeLis
+        // 2. Insert segment into the freeList
     }    
 
     /** Returns the maximal element contained in the given Array/object. 
