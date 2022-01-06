@@ -50,7 +50,8 @@ class Keyboard {
     /**								
      * Displays the message on the screen, reads from the keyboard the entered
      * text until a newline character is detected, echoes the text to the screen,
-     * and returns its value. Also handles user backspaces.
+     * and returns its value. Also handles user backspaces if the current value
+     * is longer than a single character.
      */
     function String readLine(String message) {
 		// You can assume input is at most 64 characters long.
