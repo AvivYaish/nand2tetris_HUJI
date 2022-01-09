@@ -15,10 +15,10 @@ Lisa Simpson, ID 022222222, lisa@mail.huji.ac.il
 - Computer.hdl: 
 
 ## Remarks
-- You should submit a tar file with a README and the following files:
+- You should submit a zip file with a README and the following files:
 Computer.hdl, Memory.hdl, CPU.hdl, ExtendAlu.hdl, CpuMul.hdl. 
-- The tar should not contain any folder. 
 - Include other files required by your project, if there are any.
+- The submission should not contain any folder. 
 - The README file must contain the following:
 	- In the first line: login(s) of the author(s), 
 	separated by commas and nothing else! 

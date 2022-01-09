@@ -18,7 +18,7 @@ Lisa Simpson, ID 022222222, lisa@mail.huji.ac.il
 - b/RAM512.hdl:  
 
 ## Remarks
-- You should submit a tar file containing two directories named 'a' and 'b',
+- You should submit a zip file containing two directories named 'a' and 'b',
 and a README in the root directory (not in 'a' or 'b').
 - Directory 'a' should include Bit.hdl, PC.hdl, RAM8.hdl, RAM64.hdl and
 Register.hdl, while directory 'b' should include RAM4K.hdl, RAM16K.hdl and

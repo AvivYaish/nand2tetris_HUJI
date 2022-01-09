@@ -25,13 +25,13 @@ Lisa Simpson, ID 022222222, lisa@mail.huji.ac.il
 - DMux8Way.hdl: 
 
 ## Remarks
-- You should submit a tar file with a README and the following files:
+- You should submit a zip file with a README and the following files:
   Not.hdl, And.hdl, Or.hdl, Xor.hdl, Mux.hdl, DMux.hdl, Not16.hdl, And16.hdl, 
   Or16.hdl, Mux16.hdl, Or8Way.hdl, Mux4Way16.hdl, Mux8Way16.hdl, DMux4Way.hdl, 
   DMux8Way.hdl
-- You can create & use your own chips, but you should include them in the tar.
+- You can create & use your own chips, but should include them in the submission.
 - Include other files required by your project, if there are any.
-- The tar should not contain any folder. 
+- The submission should not contain any folder. 
 - The README file must contain the following:
 	- In the first line: login(s) of the author(s), 
 	separated by commas and nothing else! 

@@ -11,7 +11,7 @@ Lisa Simpson, ID 022222222, lisa@mail.huji.ac.il
 - Main.jack: The game's main file.
 
 ## Remarks
-- You should submit a tar file with README and all your .jack files (not inside
+- You should submit a zip file with README and all your .jack files (not inside
 a directory), without any OS implementation. 
 - Include other files required by your project, if there are any.
 - The README file must contain the following:

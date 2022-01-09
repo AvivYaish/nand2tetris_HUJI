@@ -17,7 +17,7 @@ Lisa Simpson, ID 022222222, lisa@mail.huji.ac.il
 - ALU.hdl: 
 
 ## Remarks
-- You should submit a tar file with a README and the following files:
+- You should submit a zip file with a README and the following files:
 ShiftLeft.hdl, ShiftRight.hdl, HalfAdder.hdl, FullAdder.hdl, Add16.hdl,
 Inc16.hdl, ALU.hdl.
 - If you use chips that you were required to build in the previous exercise
@@ -25,9 +25,9 @@ Inc16.hdl, ALU.hdl.
 current submission.
 - On the other hand, if you have created original chips for the previous
 exercise and would like to use them again, you should include them. 
-- You can create & use your own chips, but you should include them in the tar.
+- You can create & use your own chips, but should include them in the submission.
 - Include other files required by your project, if there are any.
-- The tar should not contain any folder. 
+- The submission should not contain any folder. 
 - The README file must contain the following:
 	- In the first line: login(s) of the author(s), 
 	separated by commas and nothing else! 

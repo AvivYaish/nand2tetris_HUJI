@@ -18,8 +18,9 @@ Lisa Simpson, ID 022222222, lisa@mail.huji.ac.il
 - Sys.jack: 
 
 ## Remarks
-- Your .tar should include a README, Array.jack, Keyboard.jack, Math.jack,
-Memory.jack, Output.jack, Screen.jack, String.jack, Sys.jack, and nothing else.
+- Your zip file should include a README, Array.jack, Keyboard.jack, Math.jack,
+Memory.jack, Output.jack, Screen.jack, String.jack, Sys.jack.
+- Include other *.jack files required by your project, if there are any.
 - Your submission should compile successfully on the built in JackCompiler and
 run successfully on the built in VMEmulator. 
 - The README file must contain the following:

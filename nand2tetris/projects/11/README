@@ -18,7 +18,7 @@ Lisa Simpson, ID 022222222, lisa@mail.huji.ac.il
 - SymbolTable.py: Associates names with information needed for Jack compilation.
 
 ## Remarks
-- Your tar should only include a run-script named 'JackCompiler', a Makefile 
+- Your zip should only include a run-script named 'JackCompiler', a Makefile 
 called "Makefile", a README, and the source code for your implementation.
 - You can change the template however you want, or even not use it at all. But,
   your project should use the same standard installation and running procedures,

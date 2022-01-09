@@ -13,10 +13,9 @@ Lisa Simpson, ID 022222222, lisa@mail.huji.ac.il
 - sort/Sort.asm: 
 
 ## Remarks
-- You should submit a tar with three asm files, each in a corresponding 
+- You should submit a zip with three asm files, each in a corresponding 
 directory: mult/Mult.asm, fill/Fill.asm, sort/Sort.asm, and a README that is 
 located at the root directory (not in "/mult/", "/fill/" or "/sort/"). 
-- Include other files required by your project, if there are any.
 - The README file must contain the following:
 	- In the first line: login(s) of the author(s), 
 	separated by commas and nothing else! 
