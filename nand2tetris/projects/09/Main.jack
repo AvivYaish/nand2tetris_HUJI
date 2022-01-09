@@ -20,7 +20,7 @@
   *
   * You should make use of all OS classes directly and demonstrate a thorough 
   * knowledge of the OS API and Jack language features (classes, members, 
-  * methods, loops, types, operators, etc'). Make a list of all suchh features 
+  * methods, loops, types, operators, etc'). Make a list of all such features 
   * and make sure you're using each one in a non-trivial way.
   * Usage should be meaningful in the context of your program - don't call
   * functions and throw away their results or define useless variables!
