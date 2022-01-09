@@ -78,7 +78,8 @@ def compile_file(
     - Test the translated VM program by loading the program directory into
     the supplied VM emulator and executing it using the "no animation" mode.
     Each one of the six test programs contains specific execution guidelines,
-    as listed below; test the program according to these guidelines;
+    as listed in the submission page; test the program according to these 
+    guidelines;
     - If the test program behaves unexpectedly or some error message is
     displayed by the VM emulator, fix your compiler and go to to step 1.
     - Don't forget: we supply you with a "built-in" JackCompiler, you can use
