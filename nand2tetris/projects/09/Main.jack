@@ -7,21 +7,22 @@
 /** 
   * Your submission should compile successfully on the built in JackCompiler and
   * run successfully on the built in VMEmulator using the built-in OS.
+  *
   * Your game can be an unoriginal idea (Tetris, Snake, etc'), but must be 
   * original code - you can't use code you found online!
-  * You should make use of all OS classes directly and demonstrate a thorough 
-  * knowledge of the OS API and Jack language features (classes, members, 
-  * methods, loops, types, operators, etc').
-  * Tip: make a list of all features (for example, all OS classes, all Jack 
-  * operators, etc') and make sure you're using each one in a non-trivial way.
-  * So, usage should be meaningful in the context of your program - don't call
-  * functions and throw away their results or define useless variables!
   * The program should be comparable in scope to Tetris/Snake/Pong, shorter 
   * projects will be penalized. Tip: although lines of code are not a good 
   * estimation of the amount of effort put into a project, a project of less 
-  * than 500 "meaningful" lines is definitely too short.
+  * than 600 "meaningful" lines is definitely too short.
   * Whitespace, comments, and various fluff (such as the class/function 
   * definition lines, variable declaration, etc) don't count as "meaningful".
+  *
+  * You should make use of all OS classes directly and demonstrate a thorough 
+  * knowledge of the OS API and Jack language features (classes, members, 
+  * methods, loops, types, operators, etc'). Make a list of all suchh features 
+  * and make sure you're using each one in a non-trivial way.
+  * Usage should be meaningful in the context of your program - don't call
+  * functions and throw away their results or define useless variables!
   * 
   * ### Developing Jack applications
   * - Put all the app files in one directory, whose name is the app's name
