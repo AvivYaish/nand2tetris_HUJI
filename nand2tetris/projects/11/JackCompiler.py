@@ -23,7 +23,7 @@ def compile_file(
     """
     """
     The proposed implementation is based on morphing the syntax analyzer
-    built in the previous project into a the full-scale compiler. In
+    built in the previous project into a full-scale compiler. In
     particular, we propose to gradually replace the software modules that
     generate XML output with software modules that generate VM code. This can
     be done in two main development stages, as follows.
