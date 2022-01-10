@@ -3,6 +3,12 @@
 // by Nisan and Schocken, MIT Press.
 // File name: projects/04/fill/FillAutomatic
 
+// Aviv's comment: fixed typos
+// This file is part of nand2tetris, as taught in The Hebrew University,
+// and was written by Aviv Yaish, and is published under the Creative 
+// Common Attribution-NonCommercial-ShareAlike 3.0 Unported License 
+// https://creativecommons.org/licenses/by-nc-sa/3.0/
+
 // This script can be used to test the Fill program automatically, 
 // rather than interactively. Specifically, the script sets the keyboard
 // memory map (RAM[24576]) to 0, 1, and then again to 0. This simulates the 
@@ -29,7 +35,7 @@ repeat 1000000 {
 }
 output;              // test that the screen is black
 
-set RAM[24576] 0,    // they keyboard in untouched
+set RAM[24576] 0,    // the keyboard is untouched
 repeat 1000000 {
   ticktock;
 }
