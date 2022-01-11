@@ -1,10 +1,10 @@
 bartsimp, lisasimp
-===============================================================================
-Bart Simpson, ID 011111111, bart@mail.huji.ac.il
-Lisa Simpson, ID 022222222, lisa@mail.huji.ac.il
-===============================================================================
 
 # Project 5 - Computer Architecture
+
+## Submitter details
+- Bart Simpson, ID 011111111, bart@mail.huji.ac.il
+- Lisa Simpson, ID 022222222, lisa@mail.huji.ac.il
 
 ## Submitted Files
 - README: This file.
@@ -28,9 +28,8 @@ Computer.hdl, Memory.hdl, CPU.hdl, ExtendAlu.hdl, CpuMul.hdl.
 	- Name(s), email(s) and ID(s) of the project's author(s).
 	- Any remarks you have about your submission.
 
-This file is part of nand2tetris, as taught in The Hebrew University,
-and was written by Aviv Yaish, and is published under the Creative 
-Common Attribution-NonCommercial-ShareAlike 3.0 Unported License 
-https://creativecommons.org/licenses/by-nc-sa/3.0/
-It is an extension to the specifications given in https://www.nand2tetris.org (Shimon Schocken and Noam Nisan, 2017)
-as allowed by the Creative Common Attribution-NonCommercial-ShareAlike 3.0 
+This file is part of nand2tetris, as taught in The Hebrew University, and 
+was written by Aviv Yaish. It is an extension to the specifications given
+in https://www.nand2tetris.org (Shimon Schocken and Noam Nisan, 2017),
+as allowed by the Creative Common Attribution-NonCommercial-ShareAlike 3.0
+Unported License: https://creativecommons.org/licenses/by-nc-sa/3.0/
