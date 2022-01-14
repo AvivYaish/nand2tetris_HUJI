@@ -73,7 +73,23 @@ implemented properly and operating side-by-side with the currently-developed
 module. That's important, since the OS class that you are presently developing
 may well include calls to the services of other OS classes.
 
-### Writing Jack Code
+## OS Classes and Test Programs
+There are eight OS classes: Memory, Array, Math, String, Screen, Keyboard and 
+Sys. For each OS class Xxx we supply a skeletal Xxx.jack class file with all 
+the required subroutine signatures, corresponding test class named Main.jack, 
+and related test scripts.
+Only Memory, Array and Math have tests with test scripts (.tst files). The 
+remaining test programs include no test scripts, and should be compiled and 
+executed on the supplied VM Emulator, and then their outputs should be compared
+to the pictures supplied in each test directory.
+
+## Corner cases
+Anything not mentioned here or within the .jack template files supplied to you
+should be implemented to match the built-in OS, so if you're wondering how to 
+support various input/output characters or anything else, you should write a 
+short .jack file that tests this and run it using the built-in OS.
+
+## Writing Jack Code
 - Write / edit your Jack class files using a standard text editor. We recommend
   using [VSCode](https://code.visualstudio.com/) together with the recommended 
   nand2tetris syntax highlighting
@@ -87,7 +103,7 @@ may well include calls to the services of other OS classes.
 - Execute your app by loading the app's directory (which now contains
   the compiled .vm files) into the supplied VM emulator, and running the code.
 
-### Using the JackCompiler
+## Using the JackCompiler
 Typing "JackCompiler fileName.jack" will compile the supplied Jack file. Typing 
 "JackCompiler directoryName" will compile all Jack files that are found in the 
 specified directory. Wildcards are not supported. Here are some examples:
@@ -104,17 +120,6 @@ specified directory. Wildcards are not supported. Here are some examples:
   > C:\...\projects\09>JackCompiler Reflect
   > 
   > Compiling "C:\...\projects\09\Reflect"
-
-
-## OS Classes and Test Programs
-There are eight OS classes: Memory, Array, Math, String, Screen, Keyboard and 
-Sys. For each OS class Xxx we supply a skeletal Xxx.jack class file with all 
-the required subroutine signatures, corresponding test class named Main.jack, 
-and related test scripts.
-Only Memory, Array and Math have tests with test scripts (.tst files). The 
-remaining test programs include no test scripts, and should be compiled and 
-executed on the supplied VM Emulator, and then their outputs should be compared
-to the pictures supplied in each test directory.
 
 ## The End
 After testing successfully each OS class in isolation, test your entire OS 
