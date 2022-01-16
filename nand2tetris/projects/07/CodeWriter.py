@@ -114,6 +114,10 @@ class CodeWriter:
         """
         # This is irrelevant for project 7,
         # you will implement this in project 8!
+        # The pseudo-code of "function function_name n_vars" is:
+        # (function_name)       // injects a function entry label into the code
+        # repeat n_vars times:  // n_vars = number of local variables
+        #   push constant 0     // initializes the local variables to 0
         pass
     
     def write_call(self, function_name: str, n_args: int) -> None:
@@ -134,10 +138,30 @@ class CodeWriter:
         """
         # This is irrelevant for project 7,
         # you will implement this in project 8!
+        # The pseudo-code of "call function_name n_args" is:
+        # push return_address   // generates a label and pushes it to the stack
+        # push LCL              // saves LCL of the caller
+        # push ARG              // saves ARG of the caller
+        # push THIS             // saves THIS of the caller
+        # push THAT             // saves THAT of the caller
+        # ARG = SP-5-n_args     // repositions ARG
+        # LCL = SP              // repositions LCL
+        # goto function_name    // transfers control to the callee
+        # (return_address)      // injects the return address label into the code
         pass
     
     def write_return(self) -> None:
         """Writes assembly code that affects the return command."""
         # This is irrelevant for project 7,
         # you will implement this in project 8!
+        # The pseudo-code of "return" is:
+        # frame = LCL                   // frame is a temporary variable
+        # return_address = *(frame-5)   // puts the return address in a temp var
+        # *ARG = pop()          // repositions the return value for the caller
+        # SP = ARG + 1          // repositions SP for the caller
+        # THAT = *(frame-1)     // restores THAT for the caller
+        # THIS = *(frame-2)     // restores THIS for the caller
+        # ARG = *(frame-3)      // restores ARG for the caller
+        # LCL = *(frame-4)      // restores LCL for the caller
+        # goto return_address   // go to the return address
         pass
