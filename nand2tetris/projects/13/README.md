@@ -6,9 +6,7 @@ And, if you develop something cool, please let us know about it.
 
 We hope that you enjoyed the course!
 
--- Noam and Shimon
-
-www.nand2tetris.org
+-- Noam and Shimon, [nand2tetris](https://www.nand2tetris.org)
 
 ## A message from Aviv
 
