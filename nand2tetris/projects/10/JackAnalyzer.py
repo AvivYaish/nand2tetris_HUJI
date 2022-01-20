@@ -81,13 +81,10 @@ def analyze_file(
     test script and get a comparison failure. If you want, you can then use 
     the TextComparer to investigate the problem:
     > C:\...\projects\02>HardwareSimulator ALU.tst
-    > 
     > Comparison failure at line 24
     > 
     > C:\...\projects\02>TextComparer ALU.cmp ALU.out
-    > 
     > Comparison failure in line 23:
-    > 
     > |0101101110100000|0001111011010010|1|1|0|0|0|0|0001111011010010|0|0| |0101101110100000|0001111011010010|1|1|0|0|0|0|0001111011010010|0|1|
     
     (Note the line number discrepancy between the reports of the two tools).
@@ -116,15 +113,12 @@ def analyze_file(
     are some examples:
     - Compile the current directory:
       > C:\...\projects\09\Reflect>JackCompiler
-      > 
       > Compiling "C:\...\projects\09\Reflect"
     - Compile a single file:
       > C:\...\projects\09\Reflect>JackCompiler Mirrors.jack 
-      > 
       > Compiling "C:\...\projects\09\Reflect\Mirrors.jack"
     - Compile the "Reflect" directory (for example):
       > C:\...\projects\09>JackCompiler Reflect
-      > 
       > Compiling "C:\...\projects\09\Reflect"
     """
     # Your code goes here!
