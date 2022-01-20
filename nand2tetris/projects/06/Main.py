@@ -75,12 +75,13 @@ def assemble_file(
     (e.g. the one that you wrote) to translate the same program into another
     file, say MyProg.hack. Now, if the latter assembler is working correctly,
     it follows that Prog.hack == MyProg.hack. Thus, one way to test a newly
-    written assembler is as follows: (i) load into the supplied visual
-    assembler Prog.asm as a source program and MyProg.hack as a compare file,
-    (ii) translate the source program, and (iii) compare the resulting binary
-    code with the compare file (see the figure above). If the comparison
-    fails, the assembler that generated MyProg.hack must be buggy; otherwise,
-    it may be OK.
+    written assembler is as follows: 
+    (i) Load into the supplied visual assembler Prog.asm as a source program 
+    and MyProg.hack as a compare file,
+    (ii) Translate the source program, and 
+    (iii) Compare the resulting binary code with the compare file. If the 
+    comparison fails, the assembler that generated MyProg.hack must be buggy; 
+    otherwise, it may be OK.
     """
     # Your code goes here!
     pass
