@@ -119,17 +119,25 @@ Typing "JackCompiler fileName.jack" will compile the supplied Jack file. Typing
 specified directory. Wildcards are not supported. Here are some examples:
 
 - Compile the current directory:
-  > C:\...\projects\09\Reflect>JackCompiler
-  >
-  > Compiling "c:\...\projects\09\Reflect"
+
+  ```console
+  C:\...\projects\09\Reflect>JackCompiler
+  Compiling "c:\...\projects\09\Reflect"
+  ```
+
 - Compile a single file:
-  > C:\...\projects\09\Reflect>JackCompiler Mirrors.jack
-  >
-  > Compiling "C:\...\projects\09\Reflect\Mirrors.jack"
+
+  ```console
+  C:\...\projects\09\Reflect>JackCompiler Mirrors.jack
+  Compiling "C:\...\projects\09\Reflect\Mirrors.jack"
+  ```
+
 - Compile the "Reflect" directory (for example):
-  > C:\...\projects\09>JackCompiler Reflect
-  >
-  > Compiling "C:\...\projects\09\Reflect"
+
+  ```console
+  C:\...\projects\09>JackCompiler Reflect
+  Compiling "C:\...\projects\09\Reflect"
+  ```
 
 ## The End
 
