@@ -16,10 +16,10 @@ class JackTokenizer:
 
     A Jack file is a stream of characters. If the file represents a
     valid program, it can be tokenized into a stream of valid tokens. The
-    tokens may be separated by an arbitrary number of space characters, 
-    newline characters, and comments, which are ignored. There are three 
-    possible comment formats: /* comment until closing */ , /** API comment 
-    until closing */ , and // comment until the line’s end.
+    tokens may be separated by an arbitrary number of whitespace characters, 
+    and comments, which are ignored. There are three possible comment formats: 
+    /* comment until closing */ , /** API comment until closing */ , and 
+    // comment until the line’s end.
 
     - ‘xxx’: quotes are used for tokens that appear verbatim (‘terminals’).
     - xxx: regular typeface is used for names of language constructs 
