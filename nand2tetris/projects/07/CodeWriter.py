@@ -157,11 +157,11 @@ class CodeWriter:
         # The pseudo-code of "return" is:
         # frame = LCL                   // frame is a temporary variable
         # return_address = *(frame-5)   // puts the return address in a temp var
-        # *ARG = pop()          // repositions the return value for the caller
-        # SP = ARG + 1          // repositions SP for the caller
-        # THAT = *(frame-1)     // restores THAT for the caller
-        # THIS = *(frame-2)     // restores THIS for the caller
-        # ARG = *(frame-3)      // restores ARG for the caller
-        # LCL = *(frame-4)      // restores LCL for the caller
-        # goto return_address   // go to the return address
+        # *ARG = pop()                  // repositions the return value for the caller
+        # SP = ARG + 1                  // repositions SP for the caller
+        # THAT = *(frame-1)             // restores THAT for the caller
+        # THIS = *(frame-2)             // restores THIS for the caller
+        # ARG = *(frame-3)              // restores ARG for the caller
+        # LCL = *(frame-4)              // restores LCL for the caller
+        # goto return_address           // go to the return address
         pass

@@ -14,6 +14,32 @@ class Parser:
     input code. It reads VM commands, parses them, and provides convenient 
     access to their components. 
     In addition, it removes all white space and comments.
+
+    ## VM Language Specification
+
+    A .vm file is a stream of characters. If the file represents a
+    valid program, it can be translated into a stream of valid assembly 
+    commands. The tokens may be separated by an arbitrary number of space
+    characters, newline characters, and comments, which are ignored. Comments
+    begin with "//" and last until the line’s end.
+
+    - Arithmetic commands:
+      - add, sub, and, or, eq, gt, lt
+      - neg, not, shiftleft, shiftright
+    - Memory segment manipulation:
+      - push <segment> <number>
+      - pop <segment that is not constant> <number>
+      - <segment> can be any of: argument, local, static, constant, this, that, 
+                                 pointer, temp
+    - Branching (only relevant for project 8):
+      - label <label-name>
+      - if-goto <label-name>
+      - goto <label-name>
+      - <label-name> can be any combination of non-whitespace characters.
+    - Functions (only relevant for project 8):
+      - call <function-name> <n-args>
+      - function <function-name> <n-vars>
+      - return
     """
 
     def __init__(self, input_file: typing.TextIO) -> None:

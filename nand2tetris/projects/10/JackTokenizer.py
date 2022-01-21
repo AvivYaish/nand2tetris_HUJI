@@ -13,6 +13,7 @@ class JackTokenizer:
     into Jack language tokens, as specified by the Jack grammar.
     
     # Jack Language Grammar
+
     A Jack file is a stream of characters. If the file represents a
     valid program, it can be tokenized into a stream of valid tokens. The
     tokens may be separated by an arbitrary number of space characters, 
@@ -20,66 +21,72 @@ class JackTokenizer:
     possible comment formats: /* comment until closing */ , /** API comment 
     until closing */ , and // comment until the line’s end.
 
-    ‘xxx’: quotes are used for tokens that appear verbatim (‘terminals’);
-    xxx: regular typeface is used for names of language constructs 
-    (‘non-terminals’);
-    (): parentheses are used for grouping of language constructs;
-    x | y: indicates that either x or y can appear;
-    x?: indicates that x appears 0 or 1 times;
-    x*: indicates that x appears 0 or more times.
+    - ‘xxx’: quotes are used for tokens that appear verbatim (‘terminals’).
+    - xxx: regular typeface is used for names of language constructs 
+           (‘non-terminals’).
+    - (): parentheses are used for grouping of language constructs.
+    - x | y: indicates that either x or y can appear.
+    - x?: indicates that x appears 0 or 1 times.
+    - x*: indicates that x appears 0 or more times.
 
     ## Lexical Elements
+
     The Jack language includes five types of terminal elements (tokens).
-    1. keyword: 'class' | 'constructor' | 'function' | 'method' | 'field' | 
-        'static' | 'var' | 'int' | 'char' | 'boolean' | 'void' | 'true' | 'false'
-        | 'null' | 'this' | 'let' | 'do' | 'if' | 'else' | 'while' | 'return'
-    2. symbol:  '{' | '}' | '(' | ')' | '[' | ']' | '.' | ',' | ';' | '+' | 
-        '-' | '*' | '/' | '&' | '|' | '<' | '>' | '=' | '~' | '^' | '#'
-    3. integerConstant: A decimal number in the range 0-32767.
-    4. StringConstant: '"' A sequence of Unicode characters not including 
-        double quote or newline '"'
-    5. identifier: A sequence of letters, digits, and underscore ('_') not 
-        starting with a digit.
+
+    - keyword: 'class' | 'constructor' | 'function' | 'method' | 'field' | 
+               'static' | 'var' | 'int' | 'char' | 'boolean' | 'void' | 'true' |
+               'false' | 'null' | 'this' | 'let' | 'do' | 'if' | 'else' | 
+               'while' | 'return'
+    - symbol: '{' | '}' | '(' | ')' | '[' | ']' | '.' | ',' | ';' | '+' | 
+              '-' | '*' | '/' | '&' | '|' | '<' | '>' | '=' | '~' | '^' | '#'
+    - integerConstant: A decimal number in the range 0-32767.
+    - StringConstant: '"' A sequence of Unicode characters not including 
+                      double quote or newline '"'
+    - identifier: A sequence of letters, digits, and underscore ('_') not 
+                  starting with a digit.
 
     ## Program Structure
+
     A Jack program is a collection of classes, each appearing in a separate 
-    file. The compilation unit is a class. A class is a sequence of tokens 
+    file. A compilation unit is a single class. A class is a sequence of tokens 
     structured according to the following context free syntax:
     
-    class: 'class' className '{' classVarDec* subroutineDec* '}'
-    classVarDec: ('static' | 'field') type varName (',' varName)* ';'
-    type: 'int' | 'char' | 'boolean' | className
-    subroutineDec: ('constructor' | 'function' | 'method') ('void' | type) 
-    subroutineName '(' parameterList ')' subroutineBody
-    parameterList: ((type varName) (',' type varName)*)?
-    subroutineBody: '{' varDec* statements '}'
-    varDec: 'var' type varName (',' varName)* ';'
-    className: identifier
-    subroutineName: identifier
-    varName: identifier
+    - class: 'class' className '{' classVarDec* subroutineDec* '}'
+    - classVarDec: ('static' | 'field') type varName (',' varName)* ';'
+    - type: 'int' | 'char' | 'boolean' | className
+    - subroutineDec: ('constructor' | 'function' | 'method') ('void' | type) 
+    - subroutineName '(' parameterList ')' subroutineBody
+    - parameterList: ((type varName) (',' type varName)*)?
+    - subroutineBody: '{' varDec* statements '}'
+    - varDec: 'var' type varName (',' varName)* ';'
+    - className: identifier
+    - subroutineName: identifier
+    - varName: identifier
 
     ## Statements
-    statements: statement*
-    statement: letStatement | ifStatement | whileStatement | doStatement | 
-        returnStatement
-    letStatement: 'let' varName ('[' expression ']')? '=' expression ';'
-    ifStatement: 'if' '(' expression ')' '{' statements '}' ('else' '{' 
-        statements '}')?
-    whileStatement: 'while' '(' 'expression' ')' '{' statements '}'
-    doStatement: 'do' subroutineCall ';'
-    returnStatement: 'return' expression? ';'
+
+    - statements: statement*
+    - statement: letStatement | ifStatement | whileStatement | doStatement | 
+                 returnStatement
+    - letStatement: 'let' varName ('[' expression ']')? '=' expression ';'
+    - ifStatement: 'if' '(' expression ')' '{' statements '}' ('else' '{' 
+                   statements '}')?
+    - whileStatement: 'while' '(' 'expression' ')' '{' statements '}'
+    - doStatement: 'do' subroutineCall ';'
+    - returnStatement: 'return' expression? ';'
 
     ## Expressions
-    expression: term (op term)*
-    term: integerConstant | stringConstant | keywordConstant | varName | 
-        varName '['expression']' | subroutineCall | '(' expression ')' | 
-        unaryOp term
-    subroutineCall: subroutineName '(' expressionList ')' | (className | 
-        varName) '.' subroutineName '(' expressionList ')'
-    expressionList: (expression (',' expression)* )?
-    op: '+' | '-' | '*' | '/' | '&' | '|' | '<' | '>' | '='
-    unaryOp: '-' | '~' | '^' | '#'
-    keywordConstant: 'true' | 'false' | 'null' | 'this'
+    
+    - expression: term (op term)*
+    - term: integerConstant | stringConstant | keywordConstant | varName | 
+            varName '['expression']' | subroutineCall | '(' expression ')' | 
+            unaryOp term
+    - subroutineCall: subroutineName '(' expressionList ')' | (className | 
+                      varName) '.' subroutineName '(' expressionList ')'
+    - expressionList: (expression (',' expression)* )?
+    - op: '+' | '-' | '*' | '/' | '&' | '|' | '<' | '>' | '='
+    - unaryOp: '-' | '~' | '^' | '#'
+    - keywordConstant: 'true' | 'false' | 'null' | 'this'
     """
 
     def __init__(self, input_stream: typing.TextIO) -> None:

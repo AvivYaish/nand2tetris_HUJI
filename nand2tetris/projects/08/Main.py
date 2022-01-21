@@ -34,9 +34,11 @@ def translate_file(
     CodeWriter: write_label, write_goto, write_if, write_function,
     write_call, write_return.
     
-    # Implementation Order
+    ## Implementation Order
+
     We recommend completing the implementation of the VM translator in the
     following order:
+
     1. First, implement and test the translation of the VM language's
     branching commands. This stage can be tested using the basic test
     BasicLoop and the slightly more advanced FibonacciSeries.
@@ -52,10 +54,11 @@ def translate_file(
     test, which includes a relatively simple recursive function, and the
     StaticsTest test, which includes multiple classes that utilize static
     variables.
+    
     This will allow you to unit-test your implementation incrementally, using
     the test programs we supplied you with.
-    
     For each one of the five test programs, follow these steps:
+
     - To get acquainted with the intended behavior of the supplied test
     program Xxx.vm, run it on the supplied VM emulator using the supplied
     XxxVME.tst script (if the program consists of one ore more files residing
@@ -77,7 +80,8 @@ def translate_file(
     to test it using the supplied test programs at each stage. Implementing a
     later stage before an early one may cause the test programs to fail.
 
-    # Initialization
+    ## Initialization
+
     In order for the translated VM code to execute on the host computer
     platform, the translated code stream (written in the machine language of
     the host platform) must include some bootstrap code that maps the stack
@@ -98,7 +102,8 @@ def translate_file(
     by your VM translator should deliver the results mandated by the test
     scripts and compare files supplied.
 
-    # Tools
+    ## Tools
+    
     Before setting out to extend your basic VM translator, we recommend
     playing with the supplied .vm test programs. This will allow you to
     experiment with branching and function call-and-return commands, using
