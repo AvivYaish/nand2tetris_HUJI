@@ -92,7 +92,7 @@ class JackTokenizer:
     def __init__(self, input_stream: typing.TextIO) -> None:
         """Opens the input stream and gets ready to tokenize it.
 
-        Args:
+        Arguments:
             input_stream (typing.TextIO): input stream.
         """
         # Your code goes here!

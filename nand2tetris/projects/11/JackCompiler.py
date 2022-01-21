@@ -18,7 +18,7 @@ def compile_file(
         input_file: typing.TextIO, output_file: typing.TextIO) -> None:
     """Compiles a single file.
 
-    Args:
+    Arguments:
         input_file (typing.TextIO): the file to compile.
         output_file (typing.TextIO): writes all output to this file.
     """

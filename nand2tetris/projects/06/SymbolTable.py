@@ -24,7 +24,7 @@ class SymbolTable:
     def add_entry(self, symbol: str, address: int) -> None:
         """Adds the pair (symbol, address) to the table.
 
-        Args:
+        Arguments:
             symbol (str): the symbol to add.
             address (int): the address corresponding to the symbol.
         """
@@ -34,7 +34,7 @@ class SymbolTable:
     def contains(self, symbol: str) -> bool:
         """Does the symbol table contain the given symbol?
 
-        Args:
+        Arguments:
             symbol (str): a symbol.
 
         Returns:
@@ -46,7 +46,7 @@ class SymbolTable:
     def get_address(self, symbol: str) -> int:
         """Returns the address associated with the symbol.
 
-        Args:
+        Arguments:
             symbol (str): a symbol.
 
         Returns:

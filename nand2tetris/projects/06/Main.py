@@ -17,7 +17,7 @@ def assemble_file(
         input_file: typing.TextIO, output_file: typing.TextIO) -> None:
     """Assembles a single file.
 
-    Args:
+    Arguments:
         input_file (typing.TextIO): the file to assemble.
         output_file (typing.TextIO): writes all output to this file.
     """

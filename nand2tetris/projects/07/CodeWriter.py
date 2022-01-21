@@ -14,7 +14,7 @@ class CodeWriter:
     def __init__(self, output_stream: typing.TextIO) -> None:
         """Initializes the CodeWriter.
 
-        Args:
+        Arguments:
             output_stream (typing.TextIO): output stream.
         """
         # Your code goes here!
@@ -24,7 +24,7 @@ class CodeWriter:
         """Informs the code writer that the translation of a new VM file is 
         started.
 
-        Args:
+        Arguments:
             filename (str): The name of the VM file.
         """
         # Your code goes here!
@@ -43,7 +43,7 @@ class CodeWriter:
         compare between all numbers our computer supports, and we define the
         value "true" to be -1, and "false" to be 0.
 
-        Args:
+        Arguments:
             command (str): an arithmetic command.
         """
         # Your code goes here!
@@ -53,7 +53,7 @@ class CodeWriter:
         """Writes assembly code that is the translation of the given 
         command, where command is either C_PUSH or C_POP.
 
-        Args:
+        Arguments:
             command (str): "C_PUSH" or "C_POP".
             segment (str): the memory segment to operate on.
             index (int): the index in the memory segment.
@@ -73,7 +73,7 @@ class CodeWriter:
         When translating "goto bar" and "if-goto bar" commands within "foo",
         the label "Xxx.foo$bar" must be used instead of "bar".
 
-        Args:
+        Arguments:
             label (str): the label to write.
         """
         # This is irrelevant for project 7,
@@ -83,7 +83,7 @@ class CodeWriter:
     def write_goto(self, label: str) -> None:
         """Writes assembly code that affects the goto command.
 
-        Args:
+        Arguments:
             label (str): the label to go to.
         """
         # This is irrelevant for project 7,
@@ -93,7 +93,7 @@ class CodeWriter:
     def write_if(self, label: str) -> None:
         """Writes assembly code that affects the if-goto command. 
 
-        Args:
+        Arguments:
             label (str): the label to go to.
         """
         # This is irrelevant for project 7,
@@ -108,7 +108,7 @@ class CodeWriter:
         In the subsequent assembly process, the assembler translates this 
         symbol into the physical address where the function code starts.
 
-        Args:
+        Arguments:
             function_name (str): the name of the function.
             n_vars (int): the number of local variables of the function.
         """
@@ -120,7 +120,7 @@ class CodeWriter:
         #   push constant 0     // initializes the local variables to 0
         pass
     
-    def write_call(self, function_name: str, n_args: int) -> None:
+    def write_call(self, function_name: str, n_Arguments: int) -> None:
         """Writes assembly code that affects the call command. 
         Let "foo" be a function within the file Xxx.vm.
         The handling of each "call" command within foo's code generates and
@@ -132,7 +132,7 @@ class CodeWriter:
         symbol into the physical memory address of the command immediately
         following the "call" command.
 
-        Args:
+        Arguments:
             function_name (str): the name of the function to call.
             n_args (int): the number of arguments of the function.
         """

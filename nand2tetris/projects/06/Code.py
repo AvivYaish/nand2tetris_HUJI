@@ -13,7 +13,7 @@ class Code:
     @staticmethod
     def dest(mnemonic: str) -> str:
         """
-        Args:
+        Arguments:
             mnemonic (str): a dest mnemonic string.
 
         Returns:
@@ -25,7 +25,7 @@ class Code:
     @staticmethod
     def comp(mnemonic: str) -> str:
         """
-        Args:
+        Arguments:
             mnemonic (str): a comp mnemonic string.
 
         Returns:
@@ -37,7 +37,7 @@ class Code:
     @staticmethod
     def jump(mnemonic: str) -> str:
         """
-        Args:
+        Arguments:
             mnemonic (str): a jump mnemonic string.
 
         Returns:
