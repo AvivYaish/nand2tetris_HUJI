@@ -230,10 +230,12 @@ Screen size is 256 rows by 512 columns.
   address.
 - function void poke(int address, int value): sets the contents of the main
   memory at this address to value.
-- function Array anoo(int size): finds and allocates from the heap a memory
+- function Array alloc(int size): finds and allocates from the heap a memory
   block of the specified size and returns a reference to its base address.
 - function void deAlloc(Array o): De-allocates the given object and frees its
   memory space.
+- function int max(Array o): returns the maximal element contained in the given
+  Array/object. Assume inputs are initialized and contain at least one element.
 
 ### Sys
 

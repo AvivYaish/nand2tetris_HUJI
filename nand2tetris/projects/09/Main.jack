@@ -152,7 +152,7 @@
   *   address.
   * - function void poke(int address, int value): sets the contents of the main
   *   memory at this address to value.
-  * - function Array anoo(int size): finds and allocates from the heap a memory
+  * - function Array alloc(int size): finds and allocates from the heap a memory
   *   block of the specified size and returns a reference to its base address.
   * - function void deAlloc(Array o): De-allocates the given object and frees its
   *   memory space.
