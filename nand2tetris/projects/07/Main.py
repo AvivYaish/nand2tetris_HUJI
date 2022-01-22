@@ -16,7 +16,7 @@ def translate_file(
         input_file: typing.TextIO, output_file: typing.TextIO) -> None:
     """Translates a single file.
 
-    Arguments:
+    Args:
         input_file (typing.TextIO): the file to translate.
         output_file (typing.TextIO): writes all output to this file.
     """

@@ -47,7 +47,7 @@ class Parser:
     def __init__(self, input_file: typing.TextIO) -> None:
         """Gets ready to parse the input file.
 
-        Arguments:
+        Args:
             input_file (typing.TextIO): input file.
         """
         # Your code goes here!

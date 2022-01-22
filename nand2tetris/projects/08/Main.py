@@ -17,7 +17,7 @@ def translate_file(
         bootstrap: bool) -> None:
     """Translates a single file.
 
-    Arguments:
+    Args:
         input_file (typing.TextIO): the file to translate.
         output_file (typing.TextIO): writes all output to this file.
         bootstrap (bool): if this is True, the current file is the 

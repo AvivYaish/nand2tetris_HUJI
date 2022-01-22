@@ -16,7 +16,7 @@ def analyze_file(
         input_file: typing.TextIO, output_file: typing.TextIO) -> None:
     """Analyzes a single file.
 
-    Arguments:
+    Args:
         input_file (typing.TextIO): the file to analyze.
         output_file (typing.TextIO): writes all output to this file.
     """

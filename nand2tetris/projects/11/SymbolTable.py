@@ -31,7 +31,7 @@ class SymbolTable:
         it a running index. "STATIC" and "FIELD" identifiers have a class scope, 
         while "ARG" and "VAR" identifiers have a subroutine scope.
 
-        Arguments:
+        Args:
             name (str): the name of the new identifier.
             type (str): the type of the new identifier.
             kind (str): the kind of the new identifier, can be:
@@ -42,7 +42,7 @@ class SymbolTable:
 
     def var_count(self, kind: str) -> int:
         """
-        Arguments:
+        Args:
             kind (str): can be "STATIC", "FIELD", "ARG", "VAR".
 
         Returns:
@@ -54,7 +54,7 @@ class SymbolTable:
 
     def kind_of(self, name: str) -> str:
         """
-        Arguments:
+        Args:
             name (str): name of an identifier.
 
         Returns:
@@ -66,7 +66,7 @@ class SymbolTable:
 
     def type_of(self, name: str) -> str:
         """
-        Arguments:
+        Args:
             name (str):  name of an identifier.
 
         Returns:
@@ -77,7 +77,7 @@ class SymbolTable:
 
     def index_of(self, name: str) -> int:
         """
-        Arguments:
+        Args:
             name (str):  name of an identifier.
 
         Returns:
