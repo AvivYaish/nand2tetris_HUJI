@@ -77,7 +77,7 @@ class VMWriter:
         # Your code goes here!
         pass
 
-    def write_call(self, name: str, n_Args: int) -> None:
+    def write_call(self, name: str, n_args: int) -> None:
         """Writes a VM call command.
 
         Args:

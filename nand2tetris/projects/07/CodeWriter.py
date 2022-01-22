@@ -120,7 +120,7 @@ class CodeWriter:
         #   push constant 0     // initializes the local variables to 0
         pass
     
-    def write_call(self, function_name: str, n_Args: int) -> None:
+    def write_call(self, function_name: str, n_args: int) -> None:
         """Writes assembly code that affects the call command. 
         Let "foo" be a function within the file Xxx.vm.
         The handling of each "call" command within foo's code generates and
