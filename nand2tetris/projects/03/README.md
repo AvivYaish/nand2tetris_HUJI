@@ -21,16 +21,15 @@ partner1_username, partner2_username
 
 ## Remarks
 
-- You should submit a zip file containing two directories named 'a' and 'b',
-  and a README.md file in the root directory (not in 'a' or 'b').
-- Directory 'a' should include Bit.hdl, PC.hdl, RAM8.hdl, RAM64.hdl and
-  Register.hdl, while directory 'b' should include RAM4K.hdl, RAM16K.hdl and
-  RAM512.hdl.
-- If a chip from directory 'a' uses an external chip (say X.hdl), the external
-  chip should be placed in directory 'a' too. The same goes for directory 'b'.
-  In case chips from both directories use X.hdl, it should be placed in both
-  directories.
-- External chips are chips that you weren't requested to build in the current
+- You should submit a zip file with the following files:
+  two directories named 'a' and 'b', and a README.md file in the root directory
+  (not in 'a' or 'b').
+  Folder 'a' should contain: Bit.hdl, PC.hdl, RAM8.hdl, RAM64.hdl, Register.hdl.
+  Folder 'b' should contain: RAM4K.hdl, RAM16K.hdl and RAM512.hdl.
+- If a chip from directory 'a' uses external chips, say X.hdl, these chips
+  should be placed in 'a', too. The same goes for directory 'b'. If chips from
+  both directories use X.hdl, it should be placed in both.
+- External chips are chips that you were not requested to build in the current
   or previous projects, and that are not built-in.
 - Include other files required by your project, if there are any.
 - The README.md file must contain the following:

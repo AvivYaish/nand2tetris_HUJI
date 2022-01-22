@@ -14,9 +14,11 @@ partner1_username, partner2_username
 
 ## Remarks
 
-- You should submit a zip file with a README.md file and all your .jack files
-  (not inside a directory), without any OS implementation.
-- Include other files required by your project, if there are any.
+- I hope your game is fun!
+- You should submit a zip file with the following files:
+  README.md and all your .jack files.
+- The submission should not contain any folder.
+- The submission should not contain any OS implementation.
 - The README.md file must contain the following:
   - In the first line: login(s) of the author(s), separated by commas and
     nothing else! If you work alone, do not include a comma.
@@ -24,7 +26,6 @@ partner1_username, partner2_username
     case-sensitive.
   - Name(s), email(s) and ID(s) of the project's author(s).
   - Any remarks you have about your submission.
-- I hope your game is fun!
 
 This file is part of nand2tetris, as taught in The Hebrew University, and
 was written by Aviv Yaish. It is an extension to the specifications given

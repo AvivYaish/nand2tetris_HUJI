@@ -16,9 +16,10 @@ partner1_username, partner2_username
 
 ## Remarks
 
-- You should submit a zip with three asm files, each in a corresponding
-  directory: mult/Mult.asm, fill/Fill.asm, swap/Swap.asm, and a README.md file
-  that is located at the root directory (not in "/mult/", "/fill/" or "/swap/").
+- You should submit a zip file with the following files:
+  mult/Mult.asm, fill/Fill.asm, swap/Swap.asm, note each is placed in a
+  directory. Additionally, your submission should include a README.md file
+  that is located at the root directory (not in any directory).
 - The README.md file must contain the following:
   - In the first line: login(s) of the author(s), separated by commas and
     nothing else! If you work alone, do not include a comma.

@@ -21,11 +21,13 @@ partner1_username, partner2_username
 
 ## Remarks
 
-- Your zip file should include: README.md, Array.jack, Keyboard.jack, Math.jack,
-  Memory.jack, Output.jack, Screen.jack, String.jack, Sys.jack.
-- Include other *.jack files required by your project, if there are any.
 - Your submission should compile successfully on the built in JackCompiler and
   run successfully on the built in VMEmulator.
+- You should submit a zip file with the following files:
+  README.md, Array.jack, Keyboard.jack, Math.jack, Memory.jack, Output.jack,
+  Screen.jack, String.jack, Sys.jack.
+- Include other files required by your project, if there are any.
+- The submission should not contain any folder.
 - The README.md file must contain the following:
   - In the first line: login(s) of the author(s), separated by commas and
     nothing else! If you work alone, do not include a comma.

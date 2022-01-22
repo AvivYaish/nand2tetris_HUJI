@@ -28,7 +28,7 @@ partner1_username, partner2_username
   current submission.
 - On the other hand, if you have created original chips for the previous
   exercise and would like to use them again, you should include them.
-- You can create & use your own chips, but should include them in the submission.
+- You can create & use new chips, but should include them in the submission.
 - Include other files required by your project, if there are any.
 - The submission should not contain any folder.
 - The README.md file must contain the following:

@@ -28,7 +28,7 @@ partner1_username, partner2_username
 
 ## Remarks
 
-- You should submit a zip file with a README and the following files:
+- You should submit a zip file with the following files:
   README.md, Not.hdl, And.hdl, Or.hdl, Xor.hdl, Mux.hdl, DMux.hdl, Not16.hdl,
   And16.hdl, Or16.hdl, Mux16.hdl, Or8Way.hdl, Mux4Way16.hdl, Mux8Way16.hdl,
   DMux4Way.hdl, DMux8Way.hdl

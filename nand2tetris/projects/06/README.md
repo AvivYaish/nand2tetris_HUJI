@@ -23,9 +23,13 @@ partner1_username, partner2_username
 
 ## Remarks
 
-- Your zip should only include a run-file named 'Assembler', a Makefile called
-  "Makefile", a README.md file, and the source code for your implementation.
-- Include other files required by your project, if there are any.
+- You can change the template however you want, or even not use it at all.
+  But, your project should use the same standard installation and running
+  procedures, and standard inputs that the template uses.
+- You should submit a zip file with the following files:
+  A run-file named 'Assembler', a Makefile called "Makefile", a README.md file,
+  and the source code for your implementation.
+- The submission should not contain any folder.
 - The README.md file must contain the following:
   - In the first line: login(s) of the author(s), separated by commas and
     nothing else! If you work alone, do not include a comma.
@@ -33,9 +37,6 @@ partner1_username, partner2_username
     case-sensitive.
   - Name(s), email(s) and ID(s) of the project's author(s).
   - Any remarks you have about your submission.
-- You can change the template however you want, or even not use it at all.
-  But, your project should use the same standard installation and running
-  procedures, and standard inputs that the template uses.
 
 This file is part of nand2tetris, as taught in The Hebrew University, and
 was written by Aviv Yaish. It is an extension to the specifications given
