@@ -95,8 +95,6 @@ remaining test programs include no test scripts, and should be compiled and
 executed on the supplied VM Emulator, and then their outputs should be compared
 to the pictures supplied in each test directory.
 
-![Memory example](./MemoryTest/MemoryFreeListExample.jpg)
-
 ![Keyboard test](./KeyboardTest/KeyboardTestOutput.gif)
 
 ![Output test](./OutputTest/OutputTestOutput.gif)
@@ -104,6 +102,12 @@ to the pictures supplied in each test directory.
 ![Screen test](./ScreenTest/ScreenTestOutput.gif)
 
 ![String test](./StringTest/StringTestOutput.gif)
+
+Additionally, the Memory class has an image that doesn't correspond to any test.
+Instead, the image shows how allocating and deallocating memory affects the
+freeList data-structure.
+
+![Memory example](./MemoryTest/MemoryFreeListExample.jpg)
 
 ## Corner cases
 
