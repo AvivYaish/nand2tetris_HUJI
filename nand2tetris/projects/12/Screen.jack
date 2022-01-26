@@ -46,14 +46,14 @@ class Screen {
             // The case where x1 != x2 and y1 != y2 should be implemented without
             // multiplication or division.
             // Pseudocode:
-            // Set: x = x1, y = y1, a = 0, b = 0, diff = 0
-            // Compute: dx and dy.
-            // while ((a <= dx) and (b <= dy))
-            //    drawPixel(x+a, y+b)
-            //    if (diff < 0) { a=a+1, diff=diff+dy }
-            //    else          { b=b+1, diff=diff-dx }
+            // 1. let x = x1, y = y1, a = 0, b = 0, diff = 0
+            // 2. Compute dx and dy
+            // 3. while ((a <= dx) and (b <= dy))
+            // 4.   drawPixel(x+a, y+b)
+            // 5.   if (diff < 0) { let a=a+1, diff=diff+dy }
+            // 6.   else          { let b=b+1, diff=diff-dx }
             //
-            // Also, the case where y1 == y2 can be implemented efficiently by
+            // The case where y1 == y2 can be implemented efficiently by
             // trying to draw as many pixels as possible in a single assignment,
             // similarly to Fill in project 4.
         }
@@ -66,8 +66,8 @@ class Screen {
         /** Draws a filled circle of radius r<=181 around (x,y), using the current color. */
         function void drawCircle(int x, int y, int r) {
             // Pseudocode:
-            // for (dy = -r ... r) do
-            //    let halfWidth = sqrt(r*r - dy*dy)
-            //    drawLine(x-halfWidth, y+dy, x+halfWidth, y+dy)
+            // 1. for (dy = -r ... r) do
+            // 2.   let halfWidth = sqrt(r*r - dy*dy)
+            // 3.   drawLine(x-halfWidth, y+dy, x+halfWidth, y+dy)
         }
 }
