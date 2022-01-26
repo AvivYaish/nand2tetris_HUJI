@@ -11,44 +11,63 @@
  * the screen is indexed (0,0).
  */
 class Screen {
+        /** Initializes the Screen. */
+        function void init() {
+        }
 
-    /** Initializes the Screen. */
-    function void init() {
-    }
+        /** Erases the entire screen. */
+        function void clearScreen() {
+        }
 
-    /** Erases the entire screen. */
-    function void clearScreen() {
-    }
+        /** Sets the current color, to be used for all subsequent drawXXX commands.
+         *    Black is represented by true, white by false. */
+        function void setColor(boolean b) {
+        }
 
-    /** Sets the current color, to be used for all subsequent drawXXX commands.
-     *  Black is represented by true, white by false. */
-    function void setColor(boolean b) {
-    }
+        /** Draws the (x,y) pixel, using the current color. */
+        function void drawPixel(int x, int y) {
+            // For this function, you will need to calculate the value x%16.
+            // It should be calculated quickly without using multiplication or
+            // division, using exactly one basic math/logical operation.
+            // In addition, calculating 16384 + y * 32 + x/16 should not use
+            // division or multiplication.
+            // Pseudocode:
+            // Using x and y, compute the RAM address where the pixel is
+            // represented: 16384 + (32*y) + (x/16).
+            // Using Memory.peek, get the 16-bit value of this address/
+            // Using some bitwise operation, set (only) the bit that corresponds
+            // to the pixel to the current color.
+            // Using Memory.poke, write the modified 16-bit value to the RAM
+            // address.
+        }
 
-    /** Draws the (x,y) pixel, using the current color. */
-    function void drawPixel(int x, int y) {
-		// For this function, you will need to calculate the value x%16.
-		// It should be calculated quickly without using multiplication or
-		// division, using exactly one basic math/logical operation.
-		// In addition, calculating 16384 + y * 32 + x/16 should not use
-		// division or multiplication.
-    }
+        /** Draws a line from pixel (x1,y1) to pixel (x2,y2), using the current color. */
+        function void drawLine(int x1, int y1, int x2, int y2) {
+            // The case where x1 != x2 and y1 != y2 should be implemented without
+            // multiplication or division.
+            // Pseudocode:
+            // Set: x = x1, y = y1, a = 0, b = 0, diff = 0
+            // Compute: dx and dy.
+            // while ((a <= dx) and (b <= dy))
+            //    drawPixel(x+a, y+b)
+            //    if (diff < 0) { a=a+1, diff=diff+dy }
+            //    else          { b=b+1, diff=diff-dx }
+            //
+            // Also, the case where y1 == y2 can be implemented efficiently by
+            // trying to draw as many pixels as possible in a single assignment,
+            // similarly to Fill in project 4.
+        }
 
-    /** Draws a line from pixel (x1,y1) to pixel (x2,y2), using the current color. */
-    function void drawLine(int x1, int y1, int x2, int y2) {
-		// The case where x1 != x2 and y1 != y2 should be implemented without
-		// multiplication or division.
-		// Also, the case where y1 == y2 can be implemented efficiently by
-		// trying to draw as many pixels as possible in a single assignment,
-		// similarly to Fill in project 4.
-    }
+        /** Draws a filled rectangle whose top left corner is (x1, y1)
+         * and bottom right corner is (x2,y2), using the current color. */
+        function void drawRectangle(int x1, int y1, int x2, int y2) {
+        }
 
-    /** Draws a filled rectangle whose top left corner is (x1, y1)
-     * and bottom right corner is (x2,y2), using the current color. */
-    function void drawRectangle(int x1, int y1, int x2, int y2) {
-    }
-
-    /** Draws a filled circle of radius r<=181 around (x,y), using the current color. */
-    function void drawCircle(int x, int y, int r) {
-    }
+        /** Draws a filled circle of radius r<=181 around (x,y), using the current color. */
+        function void drawCircle(int x, int y, int r) {
+            // Pseudocode:
+            // for (dy = -r ... r) do
+            //    let halfWidth = sqrt(r*r - dy*dy)
+            //    drawLine(x-halfWidth, y+dy, x+halfWidth, y+dy)
+        }
 }

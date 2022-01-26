@@ -3,52 +3,70 @@
 // [here](https://www.nand2tetris.org) (Shimon Schocken and Noam Nisan, 2017),
 // as allowed by the Creative Common Attribution-NonCommercial-ShareAlike 3.0
 // Unported [License](https://creativecommons.org/licenses/by-nc-sa/3.0/).
-// File name: projects/12/Math.jack
 
 /**
  * A library of commonly used mathematical functions.
  * Note: Jack compilers implement multiplication and division using OS method calls.
  */
 class Math {
+        /** Initializes the library. */
+        function void init() {
+        }
 
-    /** Initializes the library. */
-    function void init() {
-    }
+        /** Returns the absolute value of x. */
+        function int abs(int x) {
+        }
 
-    /** Returns the absolute value of x. */
-    function int abs(int x) {
-    }
+        /** Returns the product of x and y. 
+         *    When a Jack compiler detects the multiplication operator '*' in the 
+         *    program's code, it handles it by invoking this method. In other words,
+         *    the Jack expressions x*y and multiply(x,y) return the same value.
+         */
+        function int multiply(int x, int y) {
+            // Pseudocode:
+            // sum = 0
+            // shiftedx = x
+            // for i = 0 ... n-1 do
+            //    if ((i-th bit of y) == 1)
+            //       sum = sum + shiftedx
+            //    shiftedx = 2 * shiftedx
+            // return sum
+        }
 
-    /** Returns the product of x and y. 
-     *  When a Jack compiler detects the multiplication operator '*' in the 
-     *  program's code, it handles it by invoking this method. In other words,
-     *  the Jack expressions x*y and multiply(x,y) return the same value.
-     */
-    function int multiply(int x, int y) {
-    }
+        /** Returns the integer part of x/y.
+         *    When a Jack compiler detects the multiplication operator '/' in the 
+         *    program's code, it handles it by invoking this method. In other words,
+         *    the Jack expressions x/y and divide(x,y) return the same value.
+         */
+        function int divide(int x, int y) {
+            // This should be implemented without using multiplication.
+            // Hint: updating the value of 2*q*y in the "if" statement requires
+            // at most a single addition operator at every recursion step.
+            // Pseudocode:
+            // if (y > x) return 0
+            // q = divide(x, 2*y)
+            // if ((x - 2*q*y) < y)
+            //    return 2*q
+            // else
+            //    return 2*q + 1
+        }
 
-    /** Returns the integer part of x/y.
-     *  When a Jack compiler detects the multiplication operator '/' in the 
-     *  program's code, it handles it by invoking this method. In other words,
-     *  the Jack expressions x/y and divide(x,y) return the same value.
-     */
-    function int divide(int x, int y) {
-		// This should be implemented without using multiplication.
-		// Hint: updating the value of 2*q*y in the "if" statement requires
-		// at most a single addition operator at every recursion step.
-    }
+        /** Returns the integer part of the square root of x. */
+        function int sqrt(int x) {
+            // This should be implemented without using division, but
+            // multiplication is allowed.
+            // Pseudocode (where '**' is the mathematical power function):
+            // y = 0
+            // for j = (n/2 - 1) ... 0 do
+            //    if (y + 2**j)**2 <= x then y = y + 2**j
+            // return y
+        }
 
-    /** Returns the integer part of the square root of x. */
-    function int sqrt(int x) {
-		// This should be implemented without using division, but
-		// multiplication is allowed.
-    }
+        /** Returns the greater number. */
+        function int max(int a, int b) {
+        }
 
-    /** Returns the greater number. */
-    function int max(int a, int b) {
-    }
-
-    /** Returns the smaller number. */
-    function int min(int a, int b) {
-    }
+        /** Returns the smaller number. */
+        function int min(int a, int b) {
+        }
 }

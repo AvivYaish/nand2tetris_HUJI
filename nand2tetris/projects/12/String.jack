@@ -1,7 +1,8 @@
-// This file is part of www.nand2tetris.org
-// and the book "The Elements of Computing Systems"
-// by Nisan and Schocken, MIT Press.
-// File name: projects/12/String.jack
+// This file is part of nand2tetris, as taught in The Hebrew University, and
+// was written by Aviv Yaish. It is an extension to the specifications given
+// [here](https://www.nand2tetris.org) (Shimon Schocken and Noam Nisan, 2017),
+// as allowed by the Creative Common Attribution-NonCommercial-ShareAlike 3.0
+// Unported [License](https://creativecommons.org/licenses/by-nc-sa/3.0/).
 
 /**
  * Represents character strings. In addition for constructing and disposing
@@ -11,7 +12,6 @@
  * string-oriented operations.
  */
 class String {
-
     /** constructs a new empty string with a maximum length of maxLength
      *  and initial length of 0. */
     constructor String new(int maxLength) {
@@ -44,10 +44,23 @@ class String {
     /** Returns the integer value of this string, 
      *  until a non-digit character is detected. */
     method int intValue() {
+        // Pseudocode:
+        // val = 0
+        // for (i = 0 .. str.length()) do
+        //    d = integer value of str.charAt(i)
+        //    val = val*10 + d
+        // return val
     }
 
     /** Sets this string to hold a representation of the given value. */
     method void setInt(int val) {
+        // Pseudocode:
+        // lastDigit = val % 10
+        // c = character representing lastDigit
+        // if (val < 10)
+        //    return c (as a string)
+        // else
+        //    return int2String(val / 10).appendChar(c)
     }
 
     /** Returns the new line character. */
