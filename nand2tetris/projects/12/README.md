@@ -89,10 +89,21 @@ There are eight OS classes: Memory, Array, Math, String, Screen, Keyboard and
 Sys. For each OS class Xxx we supply a skeletal Xxx.jack class file with all
 the required subroutine signatures, corresponding test class named Main.jack,
 and related test scripts.
+
 Only Memory, Array and Math have tests with test scripts (.tst files). The
 remaining test programs include no test scripts, and should be compiled and
 executed on the supplied VM Emulator, and then their outputs should be compared
 to the pictures supplied in each test directory.
+
+![Memory example](./MemoryTest/MemoryFreeListExample.jpg)
+
+![Keyboard test](./KeyboardTest/KeyboardTestOutput.gif)
+
+![Output test](./OutputTest/OutputTestOutput.gif)
+
+![Screen test](./ScreenTest/ScreenTestOutput.gif)
+
+![String test](./StringTest/StringTestOutput.gif)
 
 ## Corner cases
 
