@@ -44,13 +44,13 @@ class Keyboard {
         function char readChar() {
             // This should behave exactly like the built-in OS.
             // Pseudocode:
-            // 1. Display the cursor
+            // 1. display the cursor
             // 2. while (keyPressed() = 0): do nothing
             // 3. c = code of the currently pressed key
             // 4. while (~(keyPressed() = 0)): do nothing
-            // 5. Display c at the current cursor location
-            // 6. Advance the cursor
-            // 7. Return c
+            // 5. display c at the current cursor location
+            // 6. advance the cursor
+            // 7. return c
         }
 
         /**								
@@ -67,12 +67,12 @@ class Keyboard {
             // 1. printString(message)
             // 2. let str = ""
             // 3. while true
-            // 4.   c = readChar()
+            // 4.   let c = readChar()
             // 5.   if (c = newLine)
             // 6.      display newLine (if not displayed already by readChar())
             // 7.      return str
             // 8.   else if (c = backSpace)
-            // 9.      remove the last character from str
+            // 9.      remove the last character from str, if possible
             // 10.     move the cursor accordingly
             // 11.  else
             // 12.    str.appendChar(c)
