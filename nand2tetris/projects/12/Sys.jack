@@ -17,7 +17,7 @@ class Sys {
         // 3. do halt()
     }
 
-    /** Halts the program execution. */
+    /** Halts program execution. */
     function void halt() {
     }
 
