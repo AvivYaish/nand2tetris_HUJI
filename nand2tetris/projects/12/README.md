@@ -21,6 +21,8 @@ partner1_username, partner2_username
 
 ## Remarks
 
+- In any case where the expected behavior is unclear, you should match the
+  built-in OS.
 - Your submission should compile successfully on the built in JackCompiler and
   run successfully on the built in VMEmulator.
 - You should submit a zip file with the following files:
