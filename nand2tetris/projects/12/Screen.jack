@@ -32,12 +32,12 @@ class Screen {
             // In addition, calculating 16384 + y * 32 + x/16 should not use
             // division or multiplication.
             // Pseudocode:
-            // Using x and y, compute the RAM address where the pixel is
-            // represented: 16384 + (32*y) + (x/16).
-            // Using Memory.peek, get the 16-bit value of this address/
-            // Using some bitwise operation, set (only) the bit that corresponds
-            // to the pixel to the current color.
-            // Using Memory.poke, write the modified 16-bit value to the RAM
+            // 1. Compute the RAM address where the (x,y) pixel is
+            //    represented: 16384 + (32*y) + (x/16).
+            // 2. Use Memory.peek to get the 16-bit value of this address
+            // 3. Use some bitwise operation to set (only) the bit that corresponds
+            //    to the pixel to the current color.
+            // 4. Use Memory.poke to write the modified 16-bit value to the RAM
             // address.
         }
 
@@ -49,7 +49,7 @@ class Screen {
             // 1. let x = x1, y = y1, a = 0, b = 0, diff = 0
             // 2. Compute dx and dy
             // 3. while ((a <= dx) and (b <= dy))
-            // 4.   drawPixel(x+a, y+b)
+            // 4.   do drawPixel(x+a, y+b)
             // 5.   if (diff < 0) { let a=a+1, diff=diff+dy }
             // 6.   else          { let b=b+1, diff=diff-dx }
             //
@@ -66,8 +66,8 @@ class Screen {
         /** Draws a filled circle of radius r<=181 around (x,y), using the current color. */
         function void drawCircle(int x, int y, int r) {
             // Pseudocode:
-            // 1. for (dy = -r ... r) do
+            // 1. for (dy = -r ... r)
             // 2.   let halfWidth = sqrt(r*r - dy*dy)
-            // 3.   drawLine(x-halfWidth, y+dy, x+halfWidth, y+dy)
+            // 3.   do drawLine(x-halfWidth, y+dy, x+halfWidth, y+dy)
         }
 }
