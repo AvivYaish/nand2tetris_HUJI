@@ -11,9 +11,8 @@ class Sys {
     /** Performs all the initializations required by the OS. */
     function void init() {
         // Pseudocode:
-        // 1. Initializes all necessary OS classes.
-        //    Note that some OS classes depend on each other,
-        //    take this into consideration when initializing them!
+        // 1. for each relevant OS class, do Class.init
+        //    Some OS classes depend on others, so order is important here!
         // 2. do Main.main
         // 3. do halt
     }
