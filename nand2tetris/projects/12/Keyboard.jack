@@ -46,7 +46,7 @@ class Keyboard {
             // Pseudocode:
             // 1. display the cursor
             // 2. while (keyPressed() = 0): do nothing
-            // 3. c = code of the currently pressed key
+            // 3. let c = code of the currently pressed key
             // 4. while (~(keyPressed() = 0)): do nothing
             // 5. display c at the current cursor location
             // 6. advance the cursor
