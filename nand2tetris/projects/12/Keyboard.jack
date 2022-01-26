@@ -61,8 +61,8 @@ class Keyboard {
          */
         function String readLine(String message) {
             // This should behave exactly like the built-in OS.
-		    // You can assume input is at most 64 characters long.
-		    // Why? Because this is the width of our screen!
+            // You can assume input is at most 64 characters long.
+            // Why? Because this is the width of our screen!
             // Pseudocode:
             // Display 'message'
             // str = new empty String
