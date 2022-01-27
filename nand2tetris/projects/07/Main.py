@@ -112,8 +112,10 @@ def translate_file(
     supplied VM emulator to see - literally speaking - how push and pop
     commands effect the stack. And, you can use the simulator to execute any
     one of the supplied .vm test programs.
-    For more information, see the VM emulator tutorial in the lectures and in
-    the submission page.
+
+    For more information about our built-in tools, see the tutorials in the
+    lectures and submission page, and additional information provided in
+    tools/README.md.
     """
     # Your code goes here!
     pass

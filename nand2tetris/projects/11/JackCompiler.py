@@ -83,7 +83,7 @@ def compile_file(
     capabilities in stages, according to the unfolding demands of each test
     program.
 
-    # # Testing Method
+    ## Testing Method
     
     Normally, when one compiles a program and runs into some problems, one
     concludes that the program is at fault. In this project though, the
@@ -107,6 +107,10 @@ def compile_file(
       displayed by the VM emulator, fix your compiler and go to to step 1.
     - Don't forget: we supply you with a "built-in" JackCompiler, you can use
       it and compare your compiler to it.
+    
+    For more information about our built-in tools, see the tutorials in the
+    lectures and submission page, and additional information provided in
+    tools/README.md.
     """
     # Your code goes here!
     pass

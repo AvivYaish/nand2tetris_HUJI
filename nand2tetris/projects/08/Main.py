@@ -29,12 +29,13 @@ def translate_file(
     In this project, we will extend the basic translator developed in project
     7 to a full-scale VM-to-Hack translator which will conform to the VM
     Specification, Part II (book section 8.2) and to the Standard VM-on-Hack
-    Mapping, Part II (book section 8.3.1). To do this, you can use your
-    submission for project 7 as a template. If you implemented everything
-    correctly, the parser from project 7 can be used as-is, without any
-    modifications. But, you will need to add the following functions to your
-    CodeWriter: write_label, write_goto, write_if, write_function,
-    write_call, write_return.
+    Mapping, Part II (book section 8.3.1). 
+    
+    To do this, you can use your submission for project 7 as a template. If you
+    implemented everything correctly, the parser from project 7 can be used
+    as-is, without any modifications. But, you will need to add the following
+    functions to your CodeWriter:
+    write_label, write_goto, write_if, write_function, write_call, write_return.
     
     ## Implementation Order
 
@@ -42,39 +43,39 @@ def translate_file(
     following order:
 
     1. First, implement and test the translation of the VM language's
-    branching commands. This stage can be tested using the basic test
-    BasicLoop and the slightly more advanced FibonacciSeries.
+       branching commands. This stage can be tested using the basic test
+       BasicLoop and the slightly more advanced FibonacciSeries.
     2. Next, implement and test the translation of the function call and
-    return commands. "SimpleFunction" is a basic test for this step, while
-    "NestedCall" is slightly more advanced, and also contains in-depth
-    instructions on how to run the test (in NestedCall.html) and step-by-step
-    visualizations of the stack's state in NestedCallStack.html.
+       return commands. "SimpleFunction" is a basic test for this step, while
+       "NestedCall" is slightly more advanced, and also contains in-depth
+       instructions on how to run the test (in NestedCall.html) and step-by-step
+       visualizations of the stack's state in NestedCallStack.html.
     3. Finally, add the bootstrap code, which initializes the SP to 256, and
-    calls the function "Sys.init". After this step, some previous tests will
-    stop working, specifically BasicLoop, FibonacciSeries and SimpleFunction!
-    In order to test your implementation, you can use the FibonacciElement
-    test, which includes a relatively simple recursive function, and the
-    StaticsTest test, which includes multiple classes that utilize static
-    variables.
+       calls the function "Sys.init". After this step, some previous tests will
+       stop working, specifically BasicLoop, FibonacciSeries and SimpleFunction!
+       In order to test your implementation, you can use the FibonacciElement
+       test, which includes a relatively simple recursive function, and the
+       StaticsTest test, which includes multiple classes that utilize static
+       variables.
     
     This will allow you to unit-test your implementation incrementally, using
     the test programs we supplied you with.
     For each one of the five test programs, follow these steps:
 
     - To get acquainted with the intended behavior of the supplied test
-    program Xxx.vm, run it on the supplied VM emulator using the supplied
-    XxxVME.tst script (if the program consists of one ore more files residing
-    in a directory, load the *entire* directory into the VM emulator and
-    proceed to execute the code).)
+      program Xxx.vm, run it on the supplied VM emulator using the supplied
+      XxxVME.tst script (if the program consists of one ore more files residing
+      in a directory, load the *entire* directory into the VM emulator and
+      proceed to execute the code).)
     - Use your VM translator to translate the supplied Xxx.vm file, or Xxx
-    directory, as needed. The result should be a new text file containing
-    Hack assembly code. The name of this file should be Xxx.asm.
+      directory, as needed. The result should be a new text file containing
+      Hack assembly code. The name of this file should be Xxx.asm.
     - Inspect the translated Xxx.asm program. If there are visible syntax (or
-    any other) errors, debug and fix your VM translator.
+      any other) errors, debug and fix your VM translator.
     - To check if the translated code performs properly, use the supplied
-    Xxx.tst and Xxx.cmp files to run the translated Xxx.asm program on the
-    supplied CPU emulator. If there are any problems, debug and fix your VM
-    translator.
+      Xxx.tst and Xxx.cmp files to run the translated Xxx.asm program on the
+      supplied CPU emulator. If there are any problems, debug and fix your VM
+      translator.
 
     The supplied test programs were carefully planned to test the incremental
     features introduced by each stage in your VM implementation. Therefore,
@@ -87,14 +88,16 @@ def translate_file(
     In order for the translated VM code to execute on the host computer
     platform, the translated code stream (written in the machine language of
     the host platform) must include some bootstrap code that maps the stack
-    on the host RAM and starts executing the code proper. The first three
-    test programs in this project assume that the bootstrap code was not yet
-    implemented, and include test scripts that effect the necessary
-    initializations (as was done in project 7). The last two test programs
-    assume that the bootstrap code is generated by the VM translator. In
-    other words, the assembly code that the final version of your VM
-    translator generates must start with some code that sets the stack
-    pointer and calls the Sys.init function. Sys.init will then call the
+    on the host RAM and starts executing the code proper.
+    
+    The first three test programs for this project assume that the bootstrap
+    code was not yet implemented, and include test scripts that effect the
+    necessary initializations (as was done in project 7).
+    
+    The last two test programs assume that the bootstrap code is generated by
+    the VM translator. In other words, the assembly code that the final version
+    of your VM translator generates must start with some code that sets the
+    stack pointer and calls the Sys.init function. Sys.init will then call the
     Main.main function, and the program will start running (similar to how
     Java's JVM always looks for, and starts executing, a method named main).
     
@@ -110,8 +113,10 @@ def translate_file(
     playing with the supplied .vm test programs. This will allow you to
     experiment with branching and function call-and-return commands, using
     the supplied VM emulator.
-    For more information, see the VM emulator tutorial in the lectures and in
-    the submission page.
+
+    For more information about our built-in tools, see the tutorials in the
+    lectures and submission page, and additional information provided in
+    tools/README.md.
     """
     # Your code goes here!
     pass

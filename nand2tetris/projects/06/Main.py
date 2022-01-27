@@ -73,8 +73,11 @@ def assemble_file(
     experimenting with a working assembler before setting out to build one
     yourself. In addition, the supplied assembler provides a visual
     line-level translation GUI, and allows code comparisons with the outputs
-    that your assembler will generate. For more information, see the tutorial
-    in the lectures and in the submission page.
+    that your assembler will generate. 
+    
+    For more information about our built-in tools, see the tutorials in the
+    lectures and submission page, and additional information provided in
+    tools/README.md.
     
     ## Testing
 

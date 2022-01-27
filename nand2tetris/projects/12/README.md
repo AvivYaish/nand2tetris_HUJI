@@ -72,16 +72,25 @@ procedure:
 
 Recall that the supplied VM Emulator features a built-in implementation of the
 entire Jack OS. With that in mind, the rationale of the above procedure is as
-follows. Normally, when the supplied VM Emulator encounters a call to an OS
+follows.
+
+Normally, when the supplied VM Emulator encounters a call to an OS
 function, it handles the call by invoking a built-in implementation of that
-function. However, if the compiled directory contains a .vm file that includes
-a VM implementation of the function, this  implementation will be executed,
-short-cutting the built-in implementation. This practice follows the reverse
-engineering spirit of GNU Unix and Linux: it allows you to build and test
-different OS modules in isolation, as if all the other OS modules are
-implemented properly and operating side-by-side with the currently-developed
-module. That's important, since the OS class that you are presently developing
-may well include calls to the services of other OS classes.
+function.
+
+However, if the compiled directory contains a .vm file that includes
+a VM implementation of the function, this implementation will be executed,
+short-cutting the built-in implementation.
+
+This practice follows the reverse engineering spirit of GNU Unix and Linux:
+it allows you to build and test different OS modules in isolation, as if all the
+other OS modules are implemented properly and operating side-by-side with the
+currently-developed module. That's important, since the OS class that you are
+presently developing may well include calls to the services of other OS classes.
+
+For more information about our built-in tools, see the tutorials in the
+lectures and submission page, and additional information provided in
+tools/README.md.
 
 ## OS Classes and Test Programs
 
@@ -134,33 +143,6 @@ short .jack file that tests this and run it using the built-in OS.
   the compiled .vm files) into the supplied VM emulator, and running the
   code. Note: you should load the app's **directory**, and not one of the
   app's single files.
-
-### JackCompiler
-
-Typing "JackCompiler fileName.jack" will compile the supplied Jack file. Typing
-"JackCompiler directoryName" will compile all Jack files that are found in the
-specified directory. Wildcards are not supported. Here are some examples:
-
-- Compile the current directory:
-
-  ```console
-  C:\...\projects\09\Reflect>JackCompiler
-  Compiling "c:\...\projects\09\Reflect"
-  ```
-
-- Compile a single file:
-
-  ```console
-  C:\...\projects\09\Reflect>JackCompiler Mirrors.jack
-  Compiling "C:\...\projects\09\Reflect\Mirrors.jack"
-  ```
-
-- Compile the "Reflect" directory (for example):
-
-  ```console
-  C:\...\projects\09>JackCompiler Reflect
-  Compiling "C:\...\projects\09\Reflect"
-  ```
 
 ## OS API
 
