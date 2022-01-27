@@ -44,13 +44,13 @@ class Keyboard {
         function char readChar() {
             // This should behave exactly like the built-in OS.
             // Pseudocode:
-            // Display the cursor
-            // while (keyPressed() = 0): do nothing
-            // c = code of the currently pressed key
-            // while (~(keyPressed() = 0)): do nothing
-            // display c at the current cursor location
-            // advance the cursor
-            // return c
+            // 1. display the cursor
+            // 2. while (keyPressed() = 0): do nothing
+            // 3. let c = code of the currently pressed key
+            // 4. while (~(keyPressed() = 0)): do nothing
+            // 5. display c at the current cursor location
+            // 6. advance the cursor
+            // 7. return c
         }
 
         /**								
@@ -64,18 +64,18 @@ class Keyboard {
             // You can assume input is at most 64 characters long.
             // Why? Because this is the width of our screen!
             // Pseudocode:
-            // Display 'message'
-            // str = new empty String
-            // while true
-            //    c = readChar()
-            //    if (c = newLine)
-            //       display newLine
-            //       return str
-            //    else if (c = backSpace)
-            //        remove the last character from str
-            //        move the cursor accordingly
-            //    else
-            //       str.appendChar(c)
+            // 1. printString(message)
+            // 2. let str = ""
+            // 3. while true
+            // 4.   let c = readChar()
+            // 5.   if (c = newLine)
+            // 6.      display newLine (if not displayed already by readChar())
+            // 7.      return str
+            // 8.   else if (c = backSpace)
+            // 9.      remove the last character from str, if possible
+            // 10.     move the cursor accordingly
+            // 11.  else
+            // 12.    str.appendChar(c)
         }     
 
         /**								

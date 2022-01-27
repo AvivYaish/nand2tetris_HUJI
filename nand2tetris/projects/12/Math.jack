@@ -24,13 +24,13 @@ class Math {
          */
         function int multiply(int x, int y) {
             // Pseudocode:
-            // sum = 0
-            // shiftedx = x
-            // for i = 0 ... n-1 do
-            //    if ((i-th bit of y) == 1)
-            //       sum = sum + shiftedx
-            //    shiftedx = 2 * shiftedx
-            // return sum
+            // 1. let sum = 0
+            // 2. let shiftedx = x
+            // 3. for i = 0 ... n-1 do
+            // 4.   if ((i-th bit of y) == 1)
+            // 5.      let sum = sum + shiftedx
+            // 6.   let shiftedx = 2*shiftedx
+            // 7. return sum
         }
 
         /** Returns the integer part of x/y.
@@ -43,12 +43,12 @@ class Math {
             // Hint: updating the value of 2*q*y in the "if" statement requires
             // at most a single addition operator at every recursion step.
             // Pseudocode:
-            // if (y > x) return 0
-            // q = divide(x, 2*y)
-            // if ((x - 2*q*y) < y)
-            //    return 2*q
-            // else
-            //    return 2*q + 1
+            // 1. if (y > x) return 0
+            // 2. let q = divide(x, 2*y)
+            // 3. if ((x - 2*q*y) < y)
+            // 4.   return 2*q
+            // 5. else
+            // 6.   return 2*q + 1
         }
 
         /** Returns the integer part of the square root of x. */
@@ -56,10 +56,10 @@ class Math {
             // This should be implemented without using division, but
             // multiplication is allowed.
             // Pseudocode (where '**' is the mathematical power function):
-            // y = 0
-            // for j = (n/2 - 1) ... 0 do
-            //    if (y + 2**j)**2 <= x then y = y + 2**j
-            // return y
+            // 1. let y = 0
+            // 2. for j = (n/2 - 1) ... 0 do
+            // 3.   if ((y + 2**j)**2 <= x) then let y = y + 2**j
+            // 4. return y
         }
 
         /** Returns the greater number. */
