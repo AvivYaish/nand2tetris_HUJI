@@ -27,6 +27,42 @@ partner1_username, partner2_username
   - Name(s), email(s) and ID(s) of the project's author(s).
   - Any remarks you have about your submission.
 
+## Implementation Details
+
+Your submission should compile successfully on the built in JackCompiler and
+run successfully on the built in VMEmulator using the built-in OS.
+
+Your game can be an unoriginal idea (Tetris, Snake, etc'), but must be
+original code - you can't use code you found online!
+
+The program should be comparable in scope to Tetris/Snake/Pong, shorter
+projects will be penalized. Although the number of code-lines is not a good
+estimation of the amount of effort put into a project, a project of less
+than 600 "meaningful" lines is definitely too short.
+Whitespace, comments, and various fluff (such as the class/function
+definition lines, variable declaration, code that prints bitmaps, etc)
+don't count as "meaningful".
+
+You should make use of all OS classes directly and demonstrate a thorough
+knowledge of the OS API and Jack language features (classes, members,
+methods, loops, types, operators, etc'). Make a list of all such features
+and make sure you're using each one in a non-trivial way.
+
+Usage should be meaningful in the context of your program - don't call
+functions and throw away their results or define useless variables!
+
+## Tools
+
+For more information about our built-in tools, see the tutorials in the
+lectures and submission page, and additional information provided in
+tools/README.md.
+
+This file includes a general introduction to writing in Jack (see
+"Developing Jack Applications").
+Additionally, project 12's README.md includes the API of the entire OS,
+and a list of OS errorcodes.
+Finally, project 10's JackTokenizer.py includes a list of all Jack features.
+
 This file is part of nand2tetris, as taught in The Hebrew University, and
 was written by Aviv Yaish. It is an extension to the specifications given
 [here](https://www.nand2tetris.org) (Shimon Schocken and Noam Nisan, 2017),
