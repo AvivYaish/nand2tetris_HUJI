@@ -10,6 +10,8 @@ import typing
 
 class Parser:
     """
+    # Parser
+    
     Handles the parsing of a single .vm file, and encapsulates access to the
     input code. It reads VM commands, parses them, and provides convenient 
     access to their components. 

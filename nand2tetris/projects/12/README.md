@@ -101,22 +101,26 @@ should be implemented to match the built-in OS, so if you're wondering how to
 support various input/output characters or anything else, you should write a
 short .jack file that tests this and run it using the built-in OS.
 
-## Writing Jack Code
+### Developing Jack applications
 
-- Write / edit your Jack class files using a standard text editor. We recommend
-  using [VSCode](https://code.visualstudio.com/) together with the recommended
-  nand2tetris syntax highlighting
+- Put all application files in one directory.
+- Write / edit your Jack class files using a standard text editor. We
+  recommend using [VSCode](https://code.visualstudio.com/) together with
+  the recommended nand2tetris syntax highlighting
   [plugin](https://marketplace.visualstudio.com/items?itemName=loyio.Nand2Tetris-vscode).
-  If you prefer Notepad++ or Vim, see the syntax highlighting themes supplied in
-  nand2tetris/syntax_highlighting.
-- Compile your Jack files / directory using the supplied JackCompiler available
-  in nand2tetris/tools. The same directory contains detailed instructions on how
-  to use the compiler. Note: the compiler is a **command-line** program, and thus
-  will not execute by simply double-clicking on it.
+  If you prefer Notepad++ or Vim, see the syntax highlighting themes
+  supplied in nand2tetris/syntax_highlighting
+- Compile your Jack files / directory using the supplied JackCompiler
+  available in nand2tetris/tools. The same directory contains detailed
+  instructions on how to use the compiler. Note: the compiler is a
+  **command-line** program, and thus will not execute by simply
+  double-clicking on it.
 - Execute your app by loading the app's directory (which now contains
-  the compiled .vm files) into the supplied VM emulator, and running the code.
+  the compiled .vm files) into the supplied VM emulator, and running the
+  code. Note: you should load the app's **directory**, and not one of the
+  app's single files.
 
-## Using the JackCompiler
+### JackCompiler
 
 Typing "JackCompiler fileName.jack" will compile the supplied Jack file. Typing
 "JackCompiler directoryName" will compile all Jack files that are found in the

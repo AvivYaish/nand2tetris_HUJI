@@ -24,6 +24,8 @@ def translate_file(
             first file we are translating.
     """
     """
+    # Project 8
+
     In this project, we will extend the basic translator developed in project
     7 to a full-scale VM-to-Hack translator which will conform to the VM
     Specification, Part II (book section 8.2) and to the Standard VM-on-Hack

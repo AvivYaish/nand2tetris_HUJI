@@ -21,21 +21,27 @@ def analyze_file(
         output_file (typing.TextIO): writes all output to this file.
     """
     """
+    # Project 10
+
     We propose implementing the project in two stages. First, write and test
     the JackTokenizer module. Next, write and test the CompilationEngine
     module, which implements the parser described in the chapter.
 
-    # Stage I: JackTokenizer
+    ## Stage I: JackTokenizer
+
     Tokenizing, a basic service of any syntax analyzer, is the act of
     breaking a given textual input into a stream of tokens. And while it is
     at it, the tokenizer can also classify the tokens into lexical
     categories. With that in mind, your first task it to implement, and test,
-    the JackTokenizer module. Specifically, you have to develop (i) a
-    Tokenizer implementation, and (ii) a test program that goes through a
-    given input file (.jack file).
+    the JackTokenizer module. Specifically, you have to develop:
+
+    1. A Tokenizer implementation, and 
+    2. a test program that goes through a given .jack input file.
     
     ## Tokenizer Testing
+
     Test your tokenizer on the Square Dance and the TestArray programs.
+    
     - Apply your tokenizer test to each Xxx.jack source file of the relevant
     test.
     - Given an Xxx.jack source file, have your tokenizer give the output file
@@ -50,21 +56,27 @@ def analyze_file(
     same names and extensions as those of the supplied compare files, we
     suggest putting them in separate directories.
     
-    # Stage II: Parser (CompilationEngine)
+    ## Stage II: Parser (CompilationEngine)
+
     In the context of this project, parsing is defined narrowly as the act of
     going over the tokenized input and rendering its grammatical structure
     using some agreed-upon format. The specific parser that we implement here
     is based on the Jack grammar, and is designed to emit XML output. Both
     the grammar and the agreed-upon XML tags are described in chapter 10. 
+    
     The Jack parser is implemented by the CompilationEngine module. Your task
     is to implement this API: write each one of the specified methods, and
     make sure that it emits the correct XML output. For the benefit of
-    unit-testing, we recommend to begin by first writing a compilation engine
-    that handles any given Jack code except for expressions; next, extend the
-    compilation engine to handle expressions as well. The test programs
-    supplied are designed to support this staged testing strategy.
+    unit-testing, we recommend to begin by:
+    
+    1. First, write a compilation engine that handles any given Jack code except
+       for expressions;
+    2. Next, extend the compilation engine to handle expressions as well. 
+    
+    The test programs supplied are designed to support this staged strategy.
     
     ## Parser Testing
+
     - Apply your syntax analyzer to the supplied test programs, then use the
     supplied TextComparer utility to compare the generated output to the
     supplied .xml compare files.
@@ -74,8 +86,20 @@ def analyze_file(
     - Note that the indentation of the XML output is only for readability.
     Web browsers and the supplied TextComparer ignore white space.
 	
-    # Testing tools
-    ## TextComparer
+    ## Testing tools
+
+    If you are wondering whether some Jack program is valid or not, you should
+    use the built-in JackCompiler to compile it; if compilation fails, it is
+    invalid. Otherwise, it is valid.
+    
+    If you want, you can compile the supplied SquareDance and TestArray
+    programs using the supplied ("built-in") JackCompiler, then use the
+    supplied VM emulator to run the compiled code. This shows that the
+    test programs are not just plain text; they also have semantics, or
+    meaning, something that the syntax analyzer does not care about.
+
+    ### TextComparer
+
     Compares two given files ignoring white space, and reports success or 
     failure. For example, suppose you run the hardware simulator with some 
     test script and get a comparison failure. If you want, you can then use 
@@ -96,30 +120,32 @@ def analyze_file(
     For more info (in Hebrew) on how to use "diff", see:
     https://www.youtube.com/watch?v=ksm2JMhJsL8
     
-    ## Using the built-in JackCompiler
-    If you are wondering whether some Jack program is valid or not, you should
-    use the built-in JackCompiler to compile it; if compilation fails, it is
-    invalid. Otherwise, it is valid.
-    
-    If you want, you can compile the supplied SquareDance and TestArray
-    programs using the supplied ("built-in") JackCompiler, then use the
-    supplied VM emulator to run the compiled code. This shows that the
-    test programs are not just plain text; they also have semantics, or
-    meaning, something that the syntax analyzer does not care about.
-    
-    Typing "JackCompiler fileName.jack" will compile the supplied Jack file. 
-    Typing "JackCompiler directoryName" will compile all Jack files that 
-    are found in the specified directory. Wildcards are not supported. Here 
-    are some examples:
+    ### JackCompiler
+
+    Typing "JackCompiler fileName.jack" will compile the supplied Jack file. Typing
+    "JackCompiler directoryName" will compile all Jack files that are found in the
+    specified directory. Wildcards are not supported. Here are some examples:
+
     - Compile the current directory:
-      > C:\...\projects\09\Reflect>JackCompiler
-      > Compiling "C:\...\projects\09\Reflect"
+
+    ```console
+    C:\...\projects\09\Reflect>JackCompiler
+    Compiling "c:\...\projects\09\Reflect"
+    ```
+
     - Compile a single file:
-      > C:\...\projects\09\Reflect>JackCompiler Mirrors.jack 
-      > Compiling "C:\...\projects\09\Reflect\Mirrors.jack"
+
+    ```console
+    C:\...\projects\09\Reflect>JackCompiler Mirrors.jack
+    Compiling "C:\...\projects\09\Reflect\Mirrors.jack"
+    ```
+
     - Compile the "Reflect" directory (for example):
-      > C:\...\projects\09>JackCompiler Reflect
-      > Compiling "C:\...\projects\09\Reflect"
+
+    ```console
+    C:\...\projects\09>JackCompiler Reflect
+    Compiling "C:\...\projects\09\Reflect"
+    ```
     """
     # Your code goes here!
     pass

@@ -21,6 +21,8 @@ def translate_file(
         output_file (typing.TextIO): writes all output to this file.
     """
     """
+    # Project 7
+
     We propose implementing the basic VM translator in two stages. This will
     allow you to unit-test your implementation incrementally, using the test
     programs we supplied you. In what follows, when we say "your VM
@@ -71,6 +73,7 @@ def translate_file(
     intended operation. After translating the program using your VM
     translator, the supplied Xxx.tst script and Xxx.cmp compare file allow
     testing the translated assembly code on the supplied CPU emulator.
+    
     For each one of the five test programs supplied above, follow these steps:
 
     - To get acquainted with the intended behavior of the supplied test
