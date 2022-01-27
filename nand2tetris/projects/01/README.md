@@ -43,7 +43,7 @@ partner1_username, partner2_username
   - Name(s), email(s) and ID(s) of the project's author(s).
   - Any remarks you have about your submission.
 
-## Background
+## Implementation Details
 
 A typical computer architecture is based on a set of elementary logic gates
 like And, Or, Mux, etc., as well as their bit-wise versions And16, Or16,
@@ -52,13 +52,13 @@ construction of a typical set of basic logic gates. These gates form the
 elementary building blocks from which more complex chips will be later
 constructed.
 
-## Objective
+### Objective
 
 Build all the logic gates given in this folder, yielding a basic chip-set.
 The only building blocks that you can use in this project are primitive Nand
 gates and the composite gates that you will gradually build on top of them.
 
-## Project
+### Project
 
 For each chip, we supply a skeletal .hdl file with a place holder for a missing
 implementation part. In addition, for each chip we supply a .tst script that
@@ -81,10 +81,13 @@ to almost all of these chips.
 
 If you've downloaded the Nand2Tetris Software Suite, you will find the supplied
 hardware simulator and all the necessary project files in the nand2tetris/tools
-folder and in the nand2tetris/projects/01 folder, respectively. To get
-acquainted with the hardware simulator, see the Hardware Simulator Tutorial.
+folder and in the nand2tetris/projects/01 folder, respectively.
 
-## Built-in chips
+For more information about our built-in tools, see the tutorials in the
+lectures and submission page, and additional information provided in
+tools/README.md.
+
+### Built-in chips
 
 The Nand gate is considered primitive and thus there is no need to implement it:
 whenever a Nand chip-part is encountered in your HDL code, the simulator
@@ -98,15 +101,19 @@ versions.
 For example, consider the supplied skeletal Mux.hdl program. Suppose that for
 one reason or another you did not complete the implementation of Mux, but you
 still want to use Mux chips as internal parts in other chip designs. You can
-easily do so, thanks to the following convention. If the simulator fails to
-find a Mux.hdl file in the current directory, it automatically invokes the
-built-in Mux implementation, which is part of the supplied simulator's
-environment. This built-in Mux implementation has the same interface and
-functionality as those of the Mux chip described in the book. Thus, if you want
-the simulator to ignore one or more of your chip implementations, rename the
-corresponding chiPname.hdl file, or remove it from the directory. When you are
-ready to develop this chip in HDL, put the file chipName.hdl back in the
-directory, and proceed to edit it with your HDL code.
+easily do so, thanks to the following convention.
+
+If the simulator fails to find a Mux.hdl file in the current directory, it
+automatically invokes the built-in Mux implementation, which is part of the
+supplied simulator's environment.
+
+This built-in Mux implementation has the same interface and functionality as
+those of the Mux chip described in the book. Thus, if you want the simulator to
+ignore one or more of your chip implementations, rename the corresponding
+chipName.hdl file, or remove it from the directory.
+
+When you are ready to develop this chip in HDL, put the file chipName.hdl back
+in the directory, and proceed to edit it with your HDL code.
 
 This file is part of nand2tetris, as taught in The Hebrew University, and
 was written by Aviv Yaish. It is an extension to the specifications given
