@@ -91,11 +91,14 @@ presently developing may well include calls to the services of other OS classes.
 For more information about our built-in tools, see the tutorials in the
 lectures and submission page, and additional information provided in
 tools/README.md.
+This file also includes a general introduction to writing in Jack (see
+"Developing Jack Applications").
 
 ## OS Classes and Test Programs
 
-There are eight OS classes: Memory, Array, Math, String, Screen, Keyboard and
-Sys. For each OS class Xxx we supply a skeletal Xxx.jack class file with all
+There are eight OS classes:
+Memory, Array, Math, String, Screen, Keyboard and Sys.
+For each OS class Xxx we supply a skeletal Xxx.jack class file with all
 the required subroutine signatures, corresponding test class named Main.jack,
 and related test scripts.
 
@@ -124,25 +127,6 @@ Anything not mentioned here or within the .jack template files supplied to you
 should be implemented to match the built-in OS, so if you're wondering how to
 support various input/output characters or anything else, you should write a
 short .jack file that tests this and run it using the built-in OS.
-
-### Developing Jack applications
-
-- Put all application files in one directory.
-- Write / edit your Jack class files using a standard text editor. We
-  recommend using [VSCode](https://code.visualstudio.com/) together with
-  the recommended nand2tetris syntax highlighting
-  [plugin](https://marketplace.visualstudio.com/items?itemName=loyio.Nand2Tetris-vscode).
-  If you prefer Notepad++ or Vim, see the syntax highlighting themes
-  supplied in nand2tetris/syntax_highlighting
-- Compile your Jack files / directory using the supplied JackCompiler
-  available in nand2tetris/tools. The same directory contains detailed
-  instructions on how to use the compiler. Note: the compiler is a
-  **command-line** program, and thus will not execute by simply
-  double-clicking on it.
-- Execute your app by loading the app's directory (which now contains
-  the compiled .vm files) into the supplied VM emulator, and running the
-  code. Note: you should load the app's **directory**, and not one of the
-  app's single files.
 
 ## OS API
 
