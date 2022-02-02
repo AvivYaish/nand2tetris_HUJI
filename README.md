@@ -4,6 +4,9 @@ HUJI's version of nand2tetris / nand2tet / From Nand to Tetris / etc.
 
 ![moodle](https://user-images.githubusercontent.com/12000894/145035709-14de1143-0033-4176-9739-d95c95cc76d4.jpg)
 
+[**`Nand2Tetris IDE`**](https://marketplace.visualstudio.com/items?itemName=AvivYaish.nand-ide)
+is recommended for writing code in our various languages.
+
 See [**`NAND2TET-1-Dark`**](https://github.com/AvivYaish/NAND2TET-1-Dark) for
 nice dark themes for the editor of your choice.
 
