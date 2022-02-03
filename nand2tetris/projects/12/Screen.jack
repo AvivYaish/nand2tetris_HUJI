@@ -65,6 +65,7 @@ class Screen {
 
         /** Draws a filled circle of radius r<=181 around (x,y), using the current color. */
         function void drawCircle(int x, int y, int r) {
+            // This can be implemented efficiently by drawing multiple lines at each iteration.
             // Pseudocode:
             // 1. for (dy = -r ... r)
             // 2.   let halfWidth = sqrt(r*r - dy*dy)
