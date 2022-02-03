@@ -6,16 +6,18 @@
 
 // This chip is an extension of the regular CPU that uses the extended ALU.
 // If instruction[15]==0 or (instruction[14]==1 and instruction[13]==1),
-// the CpuMul behaves exactly the same as the regular CPU.
+// then CpuMul behaves exactly the same as the regular CPU.
 // If instruction[15]==1 and instruction[14]==0 the chip will behave as follows:
-//  Instruction  | 12 | 11 | 10 |
-// ______________________________
-// dest=D<<;jump | 0  | 1  | 1  |
-// dest=A<<;jump | 0  | 1  | 0  |
-// dest=M<<;jump | 1  | 1  | 0  |
-// dest=D>>;jump | 0  | 0  | 1  |
-// dest=A>>;jump | 0  | 0  | 0  |
-// dest=M>>;jump | 1  | 0  | 0  |
+// | Instruction           | 15 | 14 | 13 | a | c1 | c2 | c3 | c4 | c5 | c6 |
+// |-----------------------|:--:|:--:|:--:|:-:|:--:|:--:|:--:|:--:|:--:|:--:|
+// | Regular a-instruction |  0 |  * |  * | * |  * |  * |  * |  * |  * |  * |
+// | Regular c-instruction |  1 |  1 |  1 | * |  * |  * |  * |  * |  * |  * |
+// | dest=A<<;jump         |  1 |  0 |  1 | 0 |  1 |  0 |  0 |  0 |  0 |  0 |
+// | dest=D<<;jump         |  1 |  0 |  1 | 0 |  1 |  1 |  0 |  0 |  0 |  0 |
+// | dest=M<<;jump         |  1 |  0 |  1 | 1 |  1 |  0 |  0 |  0 |  0 |  0 |
+// | dest=A>>;jump         |  1 |  0 |  1 | 0 |  0 |  0 |  0 |  0 |  0 |  0 |
+// | dest=D>>;jump         |  1 |  0 |  1 | 0 |  0 |  1 |  0 |  0 |  0 |  0 |
+// | dest=M>>;jump         |  1 |  0 |  1 | 1 |  0 |  0 |  0 |  0 |  0 |  0 |
 
 CHIP CpuMul {
     IN  inM[16],         // M value input  (M = contents of RAM[A])
