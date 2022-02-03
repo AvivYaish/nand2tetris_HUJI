@@ -111,11 +111,11 @@ it follows that Prog.hack == MyProg.hack.
 Thus, one way to test a newly written assembler is as follows:
 
 1. Load into the supplied visual assembler Prog.asm as a source program
-    and MyProg.hack as a compare file,
+   and MyProg.hack as a compare file,
 2. Translate the source program, and
 3. Compare the resulting binary code with the compare file. If the
-    comparison fails, the assembler that generated MyProg.hack must be buggy;
-    otherwise, it may be OK.
+   comparison fails, the assembler that generated MyProg.hack must be buggy;
+   otherwise, it may be OK.
 
 ### Standard C Command Specification
 
