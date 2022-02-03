@@ -53,8 +53,7 @@ class Math {
 
         /** Returns the integer part of the square root of x. */
         function int sqrt(int x) {
-            // This should be implemented without using division, but
-            // multiplication is allowed.
+            // This should be implemented without using multiplication or division.
             // Pseudocode (where '**' is the mathematical power function):
             // 1. let y = 0
             // 2. for j = (n/2 - 1) ... 0 do
