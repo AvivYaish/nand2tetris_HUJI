@@ -4,22 +4,23 @@ HUJI's version of nand2tetris / nand2tet / From Nand to Tetris / etc.
 
 ![moodle](https://user-images.githubusercontent.com/12000894/145035709-14de1143-0033-4176-9739-d95c95cc76d4.jpg)
 
-[**`Nand2Tetris IDE`**](https://marketplace.visualstudio.com/items?itemName=AvivYaish.nand-ide)
-is recommended for writing code in our various languages.
-
-See [**`NAND2TET-1-Dark`**](https://github.com/AvivYaish/NAND2TET-1-Dark) for
-nice dark themes for the editor of your choice.
-
 This software suite contains many modifications which are unique to the Hebrew
 University, for example:
 
+- All programming projects have python template code with types, documentation,
+  and additional guidance.
 - All tools (Assembler, CPUEmulator, VMEmulator, JackCompiler) support shifts.
 - ShiftLeft.hdl, ShiftRight.hdl: chips that perform shifts.
 - ExtendAlu.hdl, CpuMul.hdl: ALU & CPU that support shifts.
 - Memory.jack: has an additional method to make sure students follow the correct
   specification for alloc.
-- All programming projects have python template code with types, documentation,
-  and additional guidance.
+
+Additionally, we provide the following:
+
+- [**`Nand2Tetris IDE`**](https://marketplace.visualstudio.com/items?itemName=AvivYaish.nand-ide)
+  is recommended for writing code in our various languages.
+- [**`NAND2TET-1-Dark`**](https://github.com/AvivYaish/NAND2TET-1-Dark) has
+  nice dark themes for the editor of your choice.
 
 ## Assembler, CPUEmulator
 
