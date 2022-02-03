@@ -120,7 +120,7 @@ Thus, one way to test a newly written assembler is as follows:
 ### Standard C Command Specification
 
 A standard c-command ``dest = comp; jump`` is translated into the following
-HACK command ``111 - a - c1 c2 c3 c4 c5 c6 - d1 d2 d3 - j1 j2 j3``, where
+HACK command ``1 1 1 a c1 c2 c3 c4 c5 c6 d1 d2 d3 j1 j2 j3``, where
 each bit is defined like so:
 
 - Three left-most bits: ``111``
