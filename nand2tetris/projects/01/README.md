@@ -4,8 +4,8 @@ partner1_username, partner2_username
 
 ## Submitter details
 
-- Partner1FirstName Partner1LastName, ID 011111111, partner1_email@mail.huji.ac.il
-- Partner2FirstName Partner2LastName, ID 022222222, partner2_email@mail.huji.ac.il
+- Partner1FirstName Partner1LastName, ID 011111111, Partner1Mail@mail.huji.ac.il
+- Partner2FirstName Partner2LastName, ID 022222222, Partner2Mail@mail.huji.ac.il
 
 ## Submitted Files
 
@@ -127,11 +127,14 @@ including those from future projects.
 - ARegister(in= ,load= ,out= ). Address register (built-in).
 - Bit(in= ,load= ,out= ). 1-bit register.
 - CPU(inM= ,instruction= ,reset= ,outM= ,writeM= ,addressM= ,pc= ). Hack CPU.
-- CpuMul(inM= ,instruction= ,reset= ,outM= ,writeM= ,addressM= ,pc= ). Extended CPU.
+- CpuMul(inM= ,instruction= ,reset= ,outM= ,writeM= ,addressM= ,pc= ). Extended
+  CPU.
 - DFF(in= ,out= ). Data flip-flop gate (built-in).
 - DMux(in= ,sel= ,a= ,b= ). Channels the input to one out of two outputs.
-- DMux4Way(in= ,sel= ,a= ,b= ,c= ,d= ). Channels the input to one out of four outputs.
-- DMux8Way(in= ,sel= ,a= ,b= ,c= ,d= ,e= ,f= ,g= ,h= ). Channels the input to one out of eight outputs.
+- DMux4Way(in= ,sel= ,a= ,b= ,c= ,d= ). Channels the input to one out of four
+  outputs.
+- DMux8Way(in= ,sel= ,a= ,b= ,c= ,d= ,e= ,f= ,g= ,h= ). Channels the input to
+  one out of eight outputs.
 - DRegister(in= ,load= ,out= ). Data register (built-in).
 - ExtendAlu(x= ,y= ,instruction= ,out= ,zr= ,ng= ). Extended ALU.
 - HalfAdder(a= ,b= ,sum= , carry= ). Adds up 2 bits.
@@ -142,7 +145,8 @@ including those from future projects.
 - Mux(a= ,b= ,sel= ,out= ). Selects between two inputs.
 - Mux16(a= ,b= ,sel= ,out= ). Selects between two 16-bit inputs.
 - Mux4Way16(a= ,b= ,c= ,d= ,sel= ,out= ). Selects between four 16-bit inputs.
-- Mux8Way16(a= ,b= ,c= ,d= ,e= ,f= ,g= ,h= ,sel= ,out= ). Selects between eight 16-bit inputs.
+- Mux8Way16(a= ,b= ,c= ,d= ,e= ,f= ,g= ,h= ,sel= ,out= ). Selects between eight
+  16-bit inputs.
 - Nand(a= ,b= ,out= ). Nand gate (built-in).
 - Not16(in= ,out= ). 16-bit Not.
 - Not(in= ,out= ). Not gate.
@@ -156,7 +160,8 @@ including those from future projects.
 - RAM4K(in= ,load= ,address= ,out= ). 4K RAM.
 - RAM16K(in= ,load= ,address= ,out= ). 16K RAM.
 - Register(in= ,load= ,out= ). 16-bit register.
-- ROM32K(address= ,out= ). Instruction memory of the Hack platform (ROM, built-in).
+- ROM32K(address= ,out= ). Instruction memory of the Hack platform (ROM,
+  built-in).
 - Screen(in= ,load= ,address= ,out= ). Screen memory map (built-in).
 - ShiftLeft(in= ,out= ). Shift the input one bit to the left.
 - ShiftRight(in= ,out= ). Shift the input one bit to the right.

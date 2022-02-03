@@ -4,8 +4,8 @@ partner1_username, partner2_username
 
 ## Submitter details
 
-- Partner1FirstName Partner1LastName, ID 011111111, partner1_email@mail.huji.ac.il
-- Partner2FirstName Partner2LastName, ID 022222222, partner2_email@mail.huji.ac.il
+- Partner1FirstName Partner1LastName, ID 011111111, Partner1Mail@mail.huji.ac.il
+- Partner2FirstName Partner2LastName, ID 022222222, Partner2Mail@mail.huji.ac.il
 
 ## Submitted Files
 
