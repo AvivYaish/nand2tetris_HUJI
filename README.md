@@ -24,8 +24,8 @@ Additionally, we provide the following:
 
 ## Assembler, CPUEmulator
 
-- `dest=D<<;jump  // left-shift`
-- `dest=D>>;jump  // right-shift`
+- `dest=D<<;jump // left-shift`
+- `dest=D>>;jump // right-shift`
 - Both also work with A, M.
 
 ## VMEmulator

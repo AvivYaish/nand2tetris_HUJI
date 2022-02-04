@@ -76,7 +76,7 @@ For each one of the five test programs, follow these steps:
 - To get acquainted with the intended behavior of the supplied test
   program Xxx.vm, run it on the supplied VM emulator using the supplied
   XxxVME.tst script (if the program consists of one ore more files residing
-  in a directory, load the *entire* directory into the VM emulator and
+  in a directory, load the _entire_ directory into the VM emulator and
   proceed to execute the code).)
 - Use your VM translator to translate the supplied Xxx.vm file, or Xxx
   directory, as needed. The result should be a new text file containing

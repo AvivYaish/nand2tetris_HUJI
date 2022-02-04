@@ -70,7 +70,7 @@ The program’s variables are handled in the second pass.
 Now, we go again through the entire program, and parse each line like so:
 
 - Each time a symbolic A-instruction is encountered, namely, "@Xxx" where Xxx
-is a symbol and not a number, look up Xxx in the symbol table.
+  is a symbol and not a number, look up Xxx in the symbol table.
   - If the symbol is found in the table, replace it with its numeric
     meaning and complete the command’s translation.
   - If the symbol is not found in the table, then it must represent a new
@@ -119,79 +119,79 @@ Thus, one way to test a newly written assembler is as follows:
 
 ### Standard C Command Specification
 
-A standard c-command ``dest = comp; jump`` is translated into the following
-HACK command ``1 1 1 a c1 c2 c3 c4 c5 c6 d1 d2 d3 j1 j2 j3``, where
+A standard c-command `dest = comp; jump` is translated into the following
+HACK command `1 1 1 a c1 c2 c3 c4 c5 c6 d1 d2 d3 j1 j2 j3`, where
 each bit is defined like so:
 
-- Three left-most bits: ``111``
-- Then, the ``a`` bit, which chooses whether to pass the Aregister's output
-  (``a = 0``) or the ``inM`` input (``a = 1``) to the ``y`` input of
+- Three left-most bits: `111`
+- Then, the `a` bit, which chooses whether to pass the Aregister's output
+  (`a = 0`) or the `inM` input (`a = 1`) to the `y` input of
   the ALU.
-- Then, bits ``c1 c2 c3 c4 c5 c6`` which correspond to the
-  ``zx nx zy ny f no`` input bits of the ALU.
+- Then, bits `c1 c2 c3 c4 c5 c6` which correspond to the
+  `zx nx zy ny f no` input bits of the ALU.
 - Then, the destination of the calculation is defined by bits
-  ``d1 d2 d3``, where ``d1`` corresponds to the Aregister,
-  ``d2`` to the Dregister, and ``d3`` to Memory.
-- Finally, the CPU will jump according to ``j1 j2 j3``,
-  where ``j1`` corresponds to jumping if ``comp < 0``,
-  similarly ``j2`` corresponds to jumping if ``comp = 0``,
-  and ``j3`` corresponds to jumping if ``comp > 0``.
+  `d1 d2 d3`, where `d1` corresponds to the Aregister,
+  `d2` to the Dregister, and `d3` to Memory.
+- Finally, the CPU will jump according to `j1 j2 j3`,
+  where `j1` corresponds to jumping if `comp < 0`,
+  similarly `j2` corresponds to jumping if `comp = 0`,
+  and `j3` corresponds to jumping if `comp > 0`.
 
 Or, in tabular form:
 
-| comp (when a=0) | c1 | c2 | c3 | c4 | c5 | c6 | comp (when a=1) |
-|----------------:|:--:|:--:|:--:|:--:|:--:|:--:|:----------------|
-|           ``0`` |  1 |  0 |  1 |  0 |  1 |  0 |                 |
-|           ``1`` |  1 |  1 |  1 |  1 |  1 |  1 |                 |
-|          ``-1`` |  1 |  1 |  1 |  0 |  1 |  0 |                 |
-|           ``D`` |  0 |  0 |  1 |  1 |  0 |  0 |                 |
-|           ``A`` |  1 |  1 |  0 |  0 |  0 |  0 | ``M``           |
-|          ``!D`` |  0 |  0 |  1 |  1 |  0 |  1 |                 |
-|          ``!A`` |  1 |  1 |  0 |  0 |  0 |  1 | ``!M``          |
-|          ``-D`` |  0 |  0 |  1 |  1 |  1 |  1 |                 |
-|          ``-A`` |  1 |  1 |  0 |  0 |  1 |  1 | ``-M``          |
-|         ``D+1`` |  0 |  1 |  1 |  1 |  1 |  1 |                 |
-|         ``A+1`` |  1 |  1 |  0 |  1 |  1 |  1 | ``M+1``         |
-|         ``D-1`` |  0 |  0 |  1 |  1 |  1 |  0 |                 |
-|         ``A-1`` |  1 |  1 |  0 |  0 |  1 |  0 | ``M-1``         |
-|         ``D+A`` |  0 |  0 |  0 |  0 |  1 |  0 | ``D+M``         |
-|         ``D-A`` |  0 |  1 |  0 |  0 |  1 |  1 | ``D-M``         |
-|         ``A-D`` |  0 |  0 |  0 |  1 |  1 |  1 | ``M-D``         |
-|         ``D&A`` |  0 |  0 |  0 |  0 |  0 |  0 | ``D&M``         |
-|         ``D|A`` |  0 |  1 |  0 |  1 |  0 |  1 | ``D|M``         |
+| comp (when a=0) | c1  | c2  | c3  | c4  | c5  | c6  | comp (when a=1) |
+| --------------: | :-: | :-: | :-: | :-: | :-: | :-: | :-------------- |
+|             `0` |  1  |  0  |  1  |  0  |  1  |  0  |                 |
+|             `1` |  1  |  1  |  1  |  1  |  1  |  1  |                 |
+|            `-1` |  1  |  1  |  1  |  0  |  1  |  0  |                 |
+|             `D` |  0  |  0  |  1  |  1  |  0  |  0  |                 |
+|             `A` |  1  |  1  |  0  |  0  |  0  |  0  | `M`             |
+|            `!D` |  0  |  0  |  1  |  1  |  0  |  1  |                 |
+|            `!A` |  1  |  1  |  0  |  0  |  0  |  1  | `!M`            |
+|            `-D` |  0  |  0  |  1  |  1  |  1  |  1  |                 |
+|            `-A` |  1  |  1  |  0  |  0  |  1  |  1  | `-M`            |
+|           `D+1` |  0  |  1  |  1  |  1  |  1  |  1  |                 |
+|           `A+1` |  1  |  1  |  0  |  1  |  1  |  1  | `M+1`           |
+|           `D-1` |  0  |  0  |  1  |  1  |  1  |  0  |                 |
+|           `A-1` |  1  |  1  |  0  |  0  |  1  |  0  | `M-1`           |
+|           `D+A` |  0  |  0  |  0  |  0  |  1  |  0  | `D+M`           |
+|           `D-A` |  0  |  1  |  0  |  0  |  1  |  1  | `D-M`           |
+|           `A-D` |  0  |  0  |  0  |  1  |  1  |  1  | `M-D`           |
+|           `D&A` |  0  |  0  |  0  |  0  |  0  |  0  | `D&M`           |
+|        `D \| A` |  0  |  1  |  0  |  1  |  0  |  1  | `D \| M`        |
 
 | d1d2d3 | Mnemonic | Destination (where to store the computed value) |
-|:------:|:---------|:------------------------------------------------|
-|   000  | null     | The value is not stored anywhere                |
-|   001  | M        | Memory[A] (memory register addressed by A)      |
-|   010  | D        | D register                                      |
-|   011  | MD       | Memory[A] and D register                        |
-|   100  | A        | A register                                      |
-|   101  | AM       | A register and Memory[A]                        |
-|   110  | AD       | A register and D register                       |
-|   111  | AMD      | A register, Memory[A], and D register           |
+| :----: | :------- | :---------------------------------------------- |
+|  000   | null     | The value is not stored anywhere                |
+|  001   | M        | Memory[A] (memory register addressed by A)      |
+|  010   | D        | D register                                      |
+|  011   | MD       | Memory[A] and D register                        |
+|  100   | A        | A register                                      |
+|  101   | AM       | A register and Memory[A]                        |
+|  110   | AD       | A register and D register                       |
+|  111   | AMD      | A register, Memory[A], and D register           |
 
-| j1j2j3 | Mnemonic | Effect                  |
-|:------:|:---------|:------------------------|
-|   000  | null     | No jump                 |
-|   001  | JGT      | If ``out >  0``, jump   |
-|   010  | JEQ      | If ``out  = 0``, jump   |
-|   011  | JGE      | If ``out >= 0``, jump   |
-|   100  | JLT      | If ``out <  0``, jump   |
-|   101  | JNE      | If ``out != 0``, jump   |
-|   110  | JLE      | If ``out <= 0``, jump   |
-|   111  | JMP      | Jump                    |
+| j1j2j3 | Mnemonic | Effect              |
+| :----: | :------- | :------------------ |
+|  000   | null     | No jump             |
+|  001   | JGT      | If `out > 0`, jump  |
+|  010   | JEQ      | If `out = 0`, jump  |
+|  011   | JGE      | If `out >= 0`, jump |
+|  100   | JLT      | If `out < 0`, jump  |
+|  101   | JNE      | If `out != 0`, jump |
+|  110   | JLE      | If `out <= 0`, jump |
+|  111   | JMP      | Jump                |
 
 ### Extended C Command Specification
 
-| Instruction           | 15 | 14 | 13 | a | c1 | c2 | c3 | c4 | c5 | c6 |
-|-----------------------|:--:|:--:|:--:|:-:|:--:|:--:|:--:|:--:|:--:|:--:|
-| dest=A<<;jump         |  1 |  0 |  1 | 0 |  1 |  0 |  0 |  0 |  0 |  0 |
-| dest=D<<;jump         |  1 |  0 |  1 | 0 |  1 |  1 |  0 |  0 |  0 |  0 |
-| dest=M<<;jump         |  1 |  0 |  1 | 1 |  1 |  0 |  0 |  0 |  0 |  0 |
-| dest=A>>;jump         |  1 |  0 |  1 | 0 |  0 |  0 |  0 |  0 |  0 |  0 |
-| dest=D>>;jump         |  1 |  0 |  1 | 0 |  0 |  1 |  0 |  0 |  0 |  0 |
-| dest=M>>;jump         |  1 |  0 |  1 | 1 |  0 |  0 |  0 |  0 |  0 |  0 |
+| Instruction   | 15  | 14  | 13  |  a  | c1  | c2  | c3  | c4  | c5  | c6  |
+| ------------- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| dest=A<<;jump |  1  |  0  |  1  |  0  |  1  |  0  |  0  |  0  |  0  |  0  |
+| dest=D<<;jump |  1  |  0  |  1  |  0  |  1  |  1  |  0  |  0  |  0  |  0  |
+| dest=M<<;jump |  1  |  0  |  1  |  1  |  1  |  0  |  0  |  0  |  0  |  0  |
+| dest=A>>;jump |  1  |  0  |  1  |  0  |  0  |  0  |  0  |  0  |  0  |  0  |
+| dest=D>>;jump |  1  |  0  |  1  |  0  |  0  |  1  |  0  |  0  |  0  |  0  |
+| dest=M>>;jump |  1  |  0  |  1  |  1  |  0  |  0  |  0  |  0  |  0  |  0  |
 
 This file is part of nand2tetris, as taught in The Hebrew University, and
 was written by Aviv Yaish. It is an extension to the specifications given

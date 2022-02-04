@@ -202,7 +202,7 @@ Some examples of executions and their resulting outputs:
   ```
 
 To compare the resulting .hack code file to some expected .hack file, use the
-supplied  TextComparer tool, described below.
+supplied TextComparer tool, described below.
 
 ### TextComparer
 
