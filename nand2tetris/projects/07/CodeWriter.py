@@ -59,7 +59,7 @@ class CodeWriter:
             index (int): the index in the memory segment.
         """
         # Your code goes here!
-        # Note: each reference to static i appearing in the file Xxx.vm should
+        # Note: each reference to "static i" appearing in the file Xxx.vm should
         # be translated to the assembly symbol "Xxx.i". In the subsequent
         # assembly process, the Hack assembler will allocate these symbolic
         # variables to the RAM, starting at address 16.
