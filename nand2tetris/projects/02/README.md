@@ -25,8 +25,8 @@ You should implement each gate using the Hardware Description Language (HDL).
 For each gate, your implementation should exactly match the logic given in
 the gate's .hdl file.
 
-The only building blocks that you can use are the chips described in chapter 1
-and the chips that you will gradually build in this project.
+The only building blocks that you can use are the Nand chip, the chips described
+in chapter 1 and the chips that you will gradually build in this project.
 
 ## What To Submit
 

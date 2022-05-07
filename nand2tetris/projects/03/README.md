@@ -1,5 +1,34 @@
 # Project 3: Sequential Logic
 
+The computer's main memory, also called Random Access Memory, or RAM, is an
+addressable sequence of n-bit registers, each designed to hold an n-bit value.
+In this project you will gradually build a RAM unit.
+This involves two main issues:
+
+- How to use gate logic to store bits persistently, over time
+- How to use gate logic to locate ("address") the memory register on which we
+  wish to operate
+
+## Objective
+
+Build all the chips described in this folder, leading up to a RAM16K (RAM) unit.
+
+## Resources
+
+- Projects 1 and 2
+- Unit 3 of the lectures and book
+
+## Contract
+
+You should implement each gate using the Hardware Description Language (HDL).
+
+For each gate, your implementation should exactly match the logic given in
+the gate's .hdl file.
+
+The only building blocks that you can use are the Nand and DFF chips, the chips
+described in chapters 1-2, and the chips that you will gradually build in this
+project.
+
 ## What To Submit
 
 - You should submit a zip file with the following files:
@@ -20,6 +49,26 @@
     case-sensitive.
   - Name(s), email(s) and ID(s) of the project's author(s).
   - Any remarks you have about your submission.
+
+## Correctness, Efficiency, and Code-reuse
+
+Please refer to the notes of project 1 regarding grading metrics.
+
+## Tips
+
+When constructing RAM chips from lower-level RAM chip-parts, For example when
+building the RAM512 chip using the RAM64 chip, we recommend using built-in
+versions of the latter.
+
+Otherwise, the simulator will recursively generate numerous memory-resident
+software objects, one for each one of the many chip parts that make up a typical
+RAM unit. This may cause the simulator to run slowly or crash.
+
+To avert this problem, we've partitioned the RAM chips that you have to build in
+this project into two sub-directories, named projects/03/a and projects/03/b.
+This partition is superficial, and is done with one purpose only: when building
+the chips stored in b, the simulator is forced to use built-in implementations
+of the lower-level chip parts whose .hdl programs are stored in a but not in b.
 
 ## License
 
