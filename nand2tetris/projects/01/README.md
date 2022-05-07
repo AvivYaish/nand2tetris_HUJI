@@ -4,36 +4,18 @@ partner1_username, partner2_username
 
 ## Submitter details
 
-- Partner1FirstName Partner1LastName, ID 011111111, Partner1Mail@mail.huji.ac.il
-- Partner2FirstName Partner2LastName, ID 022222222, Partner2Mail@mail.huji.ac.il
-
-## Submitted Files
-
-- README.md: This file.
-- And.hdl:
-- Not.hdl:
-- Or.hdl:
-- Xor.hdl:
-- Mux.hdl:
-- DMux.hdl:
-- Not16.hdl:
-- And16.hdl:
-- Or16.hdl:
-- Mux16.hdl:
-- Or8Way.hdl:
-- Mux4Way16.hdl:
-- Mux8Way16.hdl:
-- DMux4Way.hdl:
-- DMux8Way.hdl:
+- Partner 1: FirstName LastName, email@mail.huji.ac.il, ID
+- Partner 2: FirstName LastName, email@mail.huji.ac.il, ID
 
 ## Remarks
 
+- Before you start this project, please go over the relevant videos and book
+  chapters!
 - You should submit a zip file with the following files:
   README.md, Not.hdl, And.hdl, Or.hdl, Xor.hdl, Mux.hdl, DMux.hdl, Not16.hdl,
   And16.hdl, Or16.hdl, Mux16.hdl, Or8Way.hdl, Mux4Way16.hdl, Mux8Way16.hdl,
   DMux4Way.hdl, DMux8Way.hdl
 - You can create & use new chips, but should include them in the submission.
-- Include other files required by your project, if there are any.
 - The submission should not contain any folder.
 - The README.md file must contain the following:
   - In the first line: login(s) of the author(s), separated by commas and
@@ -45,12 +27,9 @@ partner1_username, partner2_username
 
 ## Implementation Details
 
-A typical computer architecture is based on a set of elementary logic gates
-like And, Or, Mux, etc., as well as their bit-wise versions And16, Or16,
-Mux16, etc. (assuming a 16-bit machine). This project engages you in the
-construction of a typical set of basic logic gates. These gates form the
-elementary building blocks from which more complex chips will be later
-constructed.
+This project engages you in the construction of a typical set of basic logic
+gates. These gates form the elementary building blocks for the computer that we
+will build in this course!
 
 ### Objective
 
@@ -58,9 +37,28 @@ Build all the logic gates given in this folder, yielding a basic chip-set.
 The only building blocks that you can use in this project are primitive Nand
 gates and the composite gates that you will gradually build on top of them.
 
+To build these gates, you will have to use the Hardware Descriptive Language,
+or HDL, in short. To test your implementations, you will have to use the
+supplied Hardware Simulator.
+
+For additional details:
+
+- We go over the Nand gate in Unit 1.3 of the English lectures, and Unit 1.4
+  of the Hebrew lectures.
+- We go over the Hardware Descriptive Language in Unit 1.4 of the English
+  lectures, Unit 1.4 of the Hebrew lectures, and Appendix 2 in the book.
+- The HardwareSimulator is given in the folder nand2tet/tools.
+  If you use Windows, to start it you should simply double-click the file
+  called HardwareSimulator.bat
+  If you use MacOS or Linux, we provide installation details in the file
+  nand2tet/tools/README.md.
+  We show how to use the tool in Unit 1.5 of the English
+  lectures and in Units 1.7 and 1.8 of the Hebrew lectures.
+  ![Hardware Simulator](HardwareSimulatorImage.gif)
+
 ### Project
 
-For each chip, we supply a skeletal .hdl file with a place holder for a missing
+For each chip, we supply a skeletal .hdl file with a placeholder for a missing
 implementation part. In addition, for each chip we supply a .tst script that
 instructs the hardware simulator how to test it, and a .cmp ("compare file")
 containing the correct output that this test should generate. Your job is to
@@ -76,22 +74,15 @@ We recommend implementing all the gates in this project in the order in which
 they appear in Chapter 1:
 Not, And, Or, Xor, Mux, DMux, Not16, And16, Or16, Mux16, Or8Way, Mux4Way16,
 Mux8Way16, DMux4Way, DMux8Way.
-The book and accompanying video lectures contain very heavy hints with regards
-to almost all of these chips.
-
-If you've downloaded the Nand2Tetris Software Suite, you will find the supplied
-hardware simulator and all the necessary project files in the nand2tetris/tools
-folder and in the nand2tetris/projects/01 folder, respectively.
-
-For more information about our built-in tools, see the tutorials in the
-lectures and submission page, and additional information provided in
-tools/README.md.
+The book and accompanying video lectures contain very heavy hints regarding
+almost all of these chips.
 
 ### Built-in chips
 
-The Nand gate is considered primitive and thus there is no need to implement it:
-whenever a Nand chip-part is encountered in your HDL code, the simulator
-automatically invokes the built-in tools/builtInChips/Nand.hdl implementation.
+The Nand gate is considered a “primitive” gate and thus there is no need to
+implement it: whenever a Nand gate is encountered in your HDL code, the
+simulator automatically invokes the built-in tools/builtInChips/Nand.hdl
+implementation.
 
 Note that the supplied hardware simulator features built-in implementations of
 all these chips. Therefore, you can use any one of these chips before
@@ -120,52 +111,47 @@ in the directory, and proceed to edit it with your HDL code.
 The following list provides the API for all chips we will build in the course,
 including those from future projects.
 
-- Add16(a= ,b= ,out= ). Adds up two 16-bit two's complement values.
-- ALU(x= ,y= ,zx= ,nx= ,zy= ,ny= ,f= ,no= ,out= ,zr= ,ng= ). Hack ALU.
-- And(a= ,b= ,out= ). And gate.
-- And16(a= ,b= ,out= ). 16-bit And.
-- ARegister(in= ,load= ,out= ). Address register (built-in).
-- Bit(in= ,load= ,out= ). 1-bit register.
-- CPU(inM= ,instruction= ,reset= ,outM= ,writeM= ,addressM= ,pc= ). Hack CPU.
-- CpuMul(inM= ,instruction= ,reset= ,outM= ,writeM= ,addressM= ,pc= ). Extended
-  CPU.
-- DFF(in= ,out= ). Data flip-flop gate (built-in).
-- DMux(in= ,sel= ,a= ,b= ). Channels the input to one out of two outputs.
-- DMux4Way(in= ,sel= ,a= ,b= ,c= ,d= ). Channels the input to one out of four
-  outputs.
-- DMux8Way(in= ,sel= ,a= ,b= ,c= ,d= ,e= ,f= ,g= ,h= ). Channels the input to
-  one out of eight outputs.
-- DRegister(in= ,load= ,out= ). Data register (built-in).
-- ExtendAlu(x= ,y= ,instruction= ,out= ,zr= ,ng= ). Extended ALU.
-- HalfAdder(a= ,b= ,sum= , carry= ). Adds up 2 bits.
-- FullAdder(a= ,b= ,c= ,sum= ,carry= ). Adds up 3 bits.
-- Inc16(in= ,out= ). Sets out to in + 1.
-- Keyboard(out= ). Keyboard memory map (built-in).
-- Memory(in= ,load= ,address= ,out= ). Data memory of the Hack platform (RAM).
-- Mux(a= ,b= ,sel= ,out= ). Selects between two inputs.
-- Mux16(a= ,b= ,sel= ,out= ). Selects between two 16-bit inputs.
-- Mux4Way16(a= ,b= ,c= ,d= ,sel= ,out= ). Selects between four 16-bit inputs.
-- Mux8Way16(a= ,b= ,c= ,d= ,e= ,f= ,g= ,h= ,sel= ,out= ). Selects between eight
-  16-bit inputs.
-- Nand(a= ,b= ,out= ). Nand gate (built-in).
-- Not16(in= ,out= ). 16-bit Not.
-- Not(in= ,out= ). Not gate.
-- Or(a= ,b= ,out= ). Or gate.
-- Or8Way(in= ,out= ). 8-way Or.
-- Or16(a= ,b= ,out= ). 16-bit Or.
-- PC(in= ,load= ,inc= ,reset= ,out= ). Program Counter.
-- RAM8(in= ,load= ,address= ,out= ). 8-word RAM.
-- RAM64(in= ,load= ,address= ,out= ). 64-word RAM.
-- RAM512(in= ,load= ,address= ,out= ). 512-word RAM.
-- RAM4K(in= ,load= ,address= ,out= ). 4K RAM.
-- RAM16K(in= ,load= ,address= ,out= ). 16K RAM.
-- Register(in= ,load= ,out= ). 16-bit register.
-- ROM32K(address= ,out= ). Instruction memory of the Hack platform (ROM,
-  built-in).
-- Screen(in= ,load= ,address= ,out= ). Screen memory map (built-in).
-- ShiftLeft(in= ,out= ). Shift the input one bit to the left.
-- ShiftRight(in= ,out= ). Shift the input one bit to the right.
-- Xor(a= ,b= ,out= ). Xor gate.
+- Add16(a=,b=,out=). Adds up two 16-bit two's complement values.
+- ALU(x=,y=,zx=,nx=,zy=,ny=,f=,no=,out=,zr=,ng=). Hack ALU.
+- And(a=,b=,out=). And gate.
+- And16(a=,b=,out=). 16-bit And.
+- ARegister(in=,load=,out=). Address register (built-in).
+- Bit(in=,load=,out=). 1-bit register.
+- CPU(inM=,instruction=,reset=,outM=,writeM=,addressM=,pc=). Hack CPU.
+- CpuMul(inM=,instruction=,reset=,outM=,writeM=,addressM=,pc=). Extended CPU.
+- DFF(in=,out=). Data flip-flop gate (built-in).
+- DMux(in=,sel=,a=,b=). Channels the input to one out of two outputs.
+- DMux4Way(in=,sel=,a=,b=,c=,d=). Channels the input to one out of four outputs.
+- DMux8Way(in=,sel=,a=,b=,c=,d=,e=,f=,g=,h=). A DMux with eight outputs.
+- DRegister(in=,load=,out=). Data register (built-in).
+- ExtendAlu(x=,y=,instruction=,out=,zr=,ng=). Extended ALU.
+- HalfAdder(a=,b=,sum=, carry=). Adds up 2 bits.
+- FullAdder(a=,b=,c=,sum=,carry=). Adds up 3 bits.
+- Inc16(in=,out=). Sets out to in + 1.
+- Keyboard(out=). Keyboard memory map (built-in).
+- Memory(in=,load=,address=,out=). Data memory of the Hack platform (RAM).
+- Mux(a=,b=,sel=,out=). Selects between two inputs.
+- Mux16(a=,b=,sel=,out=). Selects between two 16-bit inputs.
+- Mux4Way16(a=,b=,c=,d=,sel=,out=). Selects between four 16-bit inputs.
+- Mux8Way16(a=,b=,c=,d=,e=,f=,g=,h=,sel=,out=). A Mux with 8 inputs.
+- Nand(a=,b=,out=). Nand gate (built-in).
+- Not16(in=,out=). 16-bit Not.
+- Not(in=,out=). Not gate.
+- Or(a=,b=,out=). Or gate.
+- Or8Way(in=,out=). 8-way Or.
+- Or16(a=,b=,out=). 16-bit Or.
+- PC(in=,load=,inc=,reset=,out=). Program Counter.
+- RAM8(in=,load=,address=,out=). 8-word RAM.
+- RAM64(in=,load=,address=,out=). 64-word RAM.
+- RAM512(in=,load=,address=,out=). 512-word RAM.
+- RAM4K(in=,load=,address=,out=). 4K RAM.
+- RAM16K(in=,load=,address=,out=). 16K RAM.
+- Register(in=,load=,out=). 16-bit register.
+- ROM32K(address=,out=). Instruction memory of the Hack platform (built-in).
+- Screen(in=,load=,address=,out=). Screen memory map (built-in).
+- ShiftLeft(in=,out=). Shift the input one bit to the left.
+- ShiftRight(in=,out=). Shift the input one bit to the right.
+- Xor(a=,b=,out=). Xor gate.
 
 This file is part of nand2tetris, as taught in The Hebrew University, and
 was written by Aviv Yaish. It is an extension to the specifications given
