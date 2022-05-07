@@ -1,30 +1,43 @@
 # Project 1: Boolean Logic
 
-This project engages you in the construction of a typical set of basic logic
-gates. These gates form the elementary building blocks for the computer that we
-will build in this course!
+This project engages you in the construction of a set of basic logic gates.
+These gates are the building blocks for the computer that we'll build in this
+course!
 
 ## Objective
 
 Build all the logic gates given in this folder.
 
-The only building blocks that you can use in this project are primitive Nand
-gates and the composite gates that you will gradually build on top of them.
-If you already forgot (we're all human!), we went over the Nand gate in Unit 1.3
-of the English lectures, and Unit 1.4 of the Hebrew lectures.
+## Resources
 
-To build these gates, you will have to use the Hardware Descriptive Language,
-or HDL, in short. We learned about this language in Unit 1.4 of the English
-lectures, Unit 1.4 of the Hebrew lectures, and Appendix 2 in the book.
+- Unit 1 of the lectures and book
+- Appendices 1-4 of the book
 
-To test your implementations, you will have to use the supplied Hardware
-Simulator, which is given in the folder nand2tet/tools.
-We show how to use the tool in Unit 1.5 of the English lectures and
-in Units 1.7 and 1.8 of the Hebrew lectures.
-If you use Windows, to start it you should simply double-click the file called
-HardwareSimulator.bat.
-If you use MacOS or Linux, we provide installation details in the file
-nand2tet/tools/README.md.
+## Contract
+
+You should implement each gate using the Hardware Description Language (HDL).
+
+For each gate, your implementation should exactly match the logic given in
+the gate's .hdl file.
+
+The only building blocks that you can use in this project are Nand gates and the
+composite gates that you will gradually build on top of them.
+
+## What To Submit
+
+- You should submit a zip file with the following files:
+  AUTHORS, Not.hdl, And.hdl, Or.hdl, Xor.hdl, Mux.hdl, DMux.hdl, Not16.hdl,
+  And16.hdl, Or16.hdl, Mux16.hdl, Or8Way.hdl, Mux4Way16.hdl, Mux8Way16.hdl,
+  DMux4Way.hdl, DMux8Way.hdl
+- You can create & use new chips, but should include them in the submission.
+- The submission should not contain any folder.
+- The AUTHORS file must contain the following:
+  - In the first line: login(s) of the author(s), separated by commas and
+    nothing else! If you work alone, do not include a comma.
+    Logins should be identical to the names of your home folders and are
+    case-sensitive.
+  - Name(s), email(s) and ID(s) of the project's author(s).
+  - Any remarks you have about your submission.
 
 ## Proposed Working Method
 
@@ -33,17 +46,17 @@ they appear in Chapter 1:
 Not, And, Or, Xor, Mux, DMux, Not16, And16, Or16, Mux16, Or8Way, Mux4Way16,
 Mux8Way16, DMux4Way, DMux8Way.
 
-For each chip, we supply a skeletal .hdl file with a placeholder for a missing
-implementation part. In addition, for each chip we supply a .tst script that
-instructs the hardware simulator how to test it, and a .cmp ("compare file")
-containing the correct output that this test should generate. Your job is to
-complete and test the supplied skeletal .hdl files.
+For each chip, we supply:
 
-Proceed in the following manner:
+- A skeletal .hdl file with a placeholder for a missing implementation part
+- A .tst script that instructs the hardware simulator how to test it
+- A .cmp file containing the correct output that this test should generate
 
-- Write an implementation for chip Xxx in Xxx.hdl,
-- Test your implementation by loading Xxx.tst into the HardwareSimulator,
-- If you have any errors, fix them and go back to the first step.
+Your job is to:
+
+- Write an implementation for chip Xxx in Xxx.hdl
+- Test your implementation by loading Xxx.tst into the HardwareSimulator
+- If you have any errors, fix them and go back to the first step
 
 ## Correctness, Efficiency & Code Reuse
 
@@ -55,7 +68,7 @@ at all!
 
 Besides making sure our chips work as intended, we also care about their
 efficiency: the lower the number of Nand chips your implementation uses,
-the better!
+whether directly or indirectly, the better!
 
 You will not lose points in this assignment if your implementations contain
 extra Nand gates, but you still need to know how implement chips as
@@ -88,6 +101,24 @@ wise to outsource that logic to a new chip.
 We recommend going over the relevant lectures and book chapters!
 They contain heavy hints for almost every part of this project.
 
+The only building blocks that you can use in this project are primitive Nand
+gates and the composite gates that you will gradually build on top of them.
+If you already forgot (we're all human!), we learned about the Nand gate in
+Unit 1.3 of the English lectures, and Unit 1.4 of the Hebrew lectures.
+
+To build these gates, you will have to use the Hardware Descriptive Language,
+or HDL, in short. We learned about this language in Unit 1.4 of the English
+lectures, Unit 1.6 of the Hebrew lectures, and Appendix 2 in the book.
+
+To test your implementations, you will have to use the supplied Hardware
+Simulator, which is given in the folder nand2tet/tools.
+We show how to use the tool in Unit 1.5 of the English lectures and
+in Units 1.7 and 1.8 of the Hebrew lectures.
+If you use Windows, to start it you should simply double-click the file called
+HardwareSimulator.bat.
+If you use MacOS or Linux, we provide installation details in the file
+nand2tet/tools/README.md.
+
 ### Built-in Chips
 
 The Nand gate is considered a “primitive” gate and thus there is no need to
@@ -116,22 +147,6 @@ chipName.hdl file, or remove it from the directory.
 
 When you are ready to develop this chip in HDL, put the file chipName.hdl back
 in the directory, and proceed to edit it with your HDL code.
-
-## What To Submit
-
-- You should submit a zip file with the following files:
-  AUTHORS, Not.hdl, And.hdl, Or.hdl, Xor.hdl, Mux.hdl, DMux.hdl, Not16.hdl,
-  And16.hdl, Or16.hdl, Mux16.hdl, Or8Way.hdl, Mux4Way16.hdl, Mux8Way16.hdl,
-  DMux4Way.hdl, DMux8Way.hdl
-- You can create & use new chips, but should include them in the submission.
-- The submission should not contain any folder.
-- The AUTHORS file must contain the following:
-  - In the first line: login(s) of the author(s), separated by commas and
-    nothing else! If you work alone, do not include a comma.
-    Logins should be identical to the names of your home folders and are
-    case-sensitive.
-  - Name(s), email(s) and ID(s) of the project's author(s).
-  - Any remarks you have about your submission.
 
 ## License
 
