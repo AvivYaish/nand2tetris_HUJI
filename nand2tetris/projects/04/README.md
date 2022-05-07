@@ -1,32 +1,20 @@
-partner1_username, partner2_username
-
 # Project 4: Machine Language
 
-## Submitter details
-
-- Partner1FirstName Partner1LastName, ID 011111111, Partner1Mail@mail.huji.ac.il
-- Partner2FirstName Partner2LastName, ID 022222222, Partner2Mail@mail.huji.ac.il
-
-## Submitted Files
-
-- README.md: This file.
-- mult/Mult.asm:
-- fill/Fill.asm:
-- swap/Swap.asm:
-
-## Remarks
+## What To Submit
 
 - You should submit a zip file with the following files:
   mult/Mult.asm, fill/Fill.asm, swap/Swap.asm, note each is placed in a
-  directory. Additionally, your submission should include a README.md file
+  directory. Additionally, your submission should include an AUTHORS file
   that is located at the root directory (not in any directory).
-- The README.md file must contain the following:
+- The AUTHORS file must contain the following:
   - In the first line: login(s) of the author(s), separated by commas and
     nothing else! If you work alone, do not include a comma.
     Logins should be identical to the names of your home folders and are
     case-sensitive.
   - Name(s), email(s) and ID(s) of the project's author(s).
   - Any remarks you have about your submission.
+
+## License
 
 This file is part of nand2tetris, as taught in The Hebrew University, and
 was written by Aviv Yaish. It is an extension to the specifications given

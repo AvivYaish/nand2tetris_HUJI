@@ -1,31 +1,4 @@
-partner1_username, partner2_username
-
 # Project 9: High-Level Programming
-
-## Submitter details
-
-- Partner1FirstName Partner1LastName, ID 011111111, Partner1Mail@mail.huji.ac.il
-- Partner2FirstName Partner2LastName, ID 022222222, Partner2Mail@mail.huji.ac.il
-
-## Submitted Files
-
-- README.md: This file.
-- Main.jack: The game's main file.
-
-## Remarks
-
-- I hope your game is fun!
-- You should submit a zip file with the following files:
-  README.md and all your .jack files.
-- The submission should not contain any folder.
-- The submission should not contain any OS implementation.
-- The README.md file must contain the following:
-  - In the first line: login(s) of the author(s), separated by commas and
-    nothing else! If you work alone, do not include a comma.
-    Logins should be identical to the names of your home folders and are
-    case-sensitive.
-  - Name(s), email(s) and ID(s) of the project's author(s).
-  - Any remarks you have about your submission.
 
 ## Implementation Details
 
@@ -62,6 +35,27 @@ This file includes a general introduction to writing in Jack (see
 Additionally, project 12's README.md includes the API of the entire OS,
 and a list of OS errorcodes.
 Finally, project 10's JackTokenizer.py includes a list of all Jack features.
+
+## What To Submit
+
+- You should submit a zip file with the following files:
+  AUTHORS and all your .jack files.
+- The submission should not contain any folder.
+- The submission should not contain any OS implementation.
+- The AUTHORS file must contain the following:
+  - In the first line: login(s) of the author(s), separated by commas and
+    nothing else! If you work alone, do not include a comma.
+    Logins should be identical to the names of your home folders and are
+    case-sensitive.
+  - Name(s), email(s) and ID(s) of the project's author(s).
+  - Any remarks you have about your submission.
+
+## A Message From Aviv
+
+Each semester, course staff is delighted to see the cool ideas you come up with.
+I hope your games are fun, I can't wait to see them all!
+
+## License
 
 This file is part of nand2tetris, as taught in The Hebrew University, and
 was written by Aviv Yaish. It is an extension to the specifications given

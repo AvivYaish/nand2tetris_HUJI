@@ -1,8 +1,3 @@
-partner1_username, partner2_username
-
-- Partner 1: FirstName LastName, email@mail.huji.ac.il, ID
-- Partner 2: FirstName LastName, email@mail.huji.ac.il, ID
-
 # Project 1: Boolean Logic
 
 This project engages you in the construction of a typical set of basic logic
@@ -125,12 +120,12 @@ in the directory, and proceed to edit it with your HDL code.
 ## What To Submit
 
 - You should submit a zip file with the following files:
-  README.md, Not.hdl, And.hdl, Or.hdl, Xor.hdl, Mux.hdl, DMux.hdl, Not16.hdl,
+  AUTHORS, Not.hdl, And.hdl, Or.hdl, Xor.hdl, Mux.hdl, DMux.hdl, Not16.hdl,
   And16.hdl, Or16.hdl, Mux16.hdl, Or8Way.hdl, Mux4Way16.hdl, Mux8Way16.hdl,
   DMux4Way.hdl, DMux8Way.hdl
 - You can create & use new chips, but should include them in the submission.
 - The submission should not contain any folder.
-- The README.md file must contain the following:
+- The AUTHORS file must contain the following:
   - In the first line: login(s) of the author(s), separated by commas and
     nothing else! If you work alone, do not include a comma.
     Logins should be identical to the names of your home folders and are

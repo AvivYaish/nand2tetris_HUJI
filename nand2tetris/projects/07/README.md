@@ -2,47 +2,13 @@ partner1_username, partner2_username
 
 # Project 7: Virtual Machine (Arithmetic)
 
-## Submitter details
-
-- Partner1FirstName Partner1LastName, ID 011111111, Partner1Mail@mail.huji.ac.il
-- Partner2FirstName Partner2LastName, ID 022222222, Partner2Mail@mail.huji.ac.il
-
-## Submitted Files
-
-- README.md: This file.
-- VMtranslator: The executable for the project. This allows our graders to run
-  your project in a standard manner on UNIX-like operating systems.
-- Makefile: A makefile for the project. This allows our graders to prepare your
-  project for execution in a standard manner on UNIX-like operating systems.
-- Main.py: The project's main .py file.
-- Parser.py: Handles the parsing of a single .vm file.
-- CodeWriter.py: Translates VM commands into Hack assembly code.
-
-## Remarks
-
-- You can change the template however you want, or even not use it at all.
-  But, your project should use the same standard installation and running
-  procedures, and standard inputs that the template uses.
-- You should submit a zip file with the following files:
-  A run-file named 'VMtranslator', a Makefile called "Makefile", a README.md file,
-  and the source code for your implementation.
-- The submission should not contain any folder.
-- The README.md file must contain the following:
-  - In the first line: login(s) of the author(s), separated by commas and
-    nothing else! If you work alone, do not include a comma.
-    Logins should be identical to the names of your home folders and are
-    case-sensitive.
-  - Name(s), email(s) and ID(s) of the project's author(s).
-  - Any remarks you have about your submission.
-
 ## Implementation Details
 
-We propose implementing the basic VM translator in two stages. This will
-allow you to unit-test your implementation incrementally, using the test
-programs we supplied you. In what follows, when we say "your VM
-translator should implement some VM command" we mean "your VM translator
-should translate the given VM command into a sequence of assembly
-commands that accomplish the same task".
+We propose implementing the basic VM translator in two stages. This allows
+unit-testing your implementation incrementally, using the test programs we
+supplied you. In what follows, when we say “your VM translator should implement
+some VM command" we mean “your VM translator should translate the given VM
+command into a sequence of assembly commands that accomplish the same task".
 
 ### Stage I: Handling stack arithmetic commands
 
@@ -50,14 +16,18 @@ The first version of your basic VM translator should implement the nine
 arithmetic / logical commands of the VM language as well as the VM
 command push constant x.
 The latter command is the generic push command for which the first
-argument is constant and the second argument is some non-negative integer
+argument is constant, and the second argument is some non-negative integer
 x. This command comes handy at this early stage, since it helps provide
 values for testing the implementation of the arithmetic / logical VM
 commands. For example, in order to test how your VM translator handles
 the VM add command, we can test how it handles the VM code:
+
+```
 push constant 3
 push constant 5
 add
+```
+
 The other arithmetic and logical commands are tested similarly:
 add, sub, neg, and, or, not, shiftleft, shiftright, eq, gt, lt
 This stage can be tested using SimpleAdd, which is relatively simple, and
@@ -106,7 +76,9 @@ For each one of the five test programs supplied above, follow these steps:
 
 The supplied test programs were carefully planned to test the incremental
 features introduced by each development stage of your basic VM
-translator. Therefore, it's important to implement your translator in the
+translator.
+
+Therefore, it's important to implement your translator in the
 proposed order, and to test it using the appropriate test programs at
 each stage. Implementing a later stage before an early one may cause the
 test programs to fail.
@@ -130,6 +102,35 @@ one of the supplied .vm test programs.
 For more information about our built-in tools, see the tutorials in the
 lectures and submission page, and additional information provided in
 tools/README.md.
+
+## Suggested Implementation
+
+- VMtranslator: The executable for the project. This allows our graders to run
+  your project in a standard manner on UNIX-like operating systems.
+- Makefile: A makefile for the project. This allows our graders to prepare your
+  project for execution in a standard manner on UNIX-like operating systems.
+- Main.py: The project's main .py file.
+- Parser.py: Handles the parsing of a single .vm file.
+- CodeWriter.py: Translates VM commands into Hack assembly code.
+
+## What To Submit
+
+- You can change the template however you want, or even not use it at all.
+  But, your project should use the same standard installation and running
+  procedures, and standard inputs that the template uses.
+- You should submit a zip file with the following files:
+  A run-file named “VMtranslator”, a Makefile called “Makefile”, an AUTHORS file,
+  and the source code for your implementation.
+- The submission should not contain any folder.
+- The AUTHORS file must contain the following:
+  - In the first line: login(s) of the author(s), separated by commas and
+    nothing else! If you work alone, do not include a comma.
+    Logins should be identical to the names of your home folders and are
+    case-sensitive.
+  - Name(s), email(s) and ID(s) of the project's author(s).
+  - Any remarks you have about your submission.
+
+## License
 
 This file is part of nand2tetris, as taught in The Hebrew University, and
 was written by Aviv Yaish. It is an extension to the specifications given

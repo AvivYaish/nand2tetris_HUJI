@@ -1,44 +1,4 @@
-partner1_username, partner2_username
-
 # Project 12: The Operating System
-
-## Submitter details
-
-- Partner1FirstName Partner1LastName, ID 011111111, Partner1Mail@mail.huji.ac.il
-- Partner2FirstName Partner2LastName, ID 022222222, Partner2Mail@mail.huji.ac.il
-
-## Submitted Files
-
-- README.md: This file.
-- Array.jack:
-- Keyboard.jack:
-- Math.jack:
-- Memory.jack:
-- Output.jack:
-- Screen.jack:
-- String.jack:
-- Sys.jack:
-
-## Remarks
-
-- In any case where the expected behavior is unclear, you should match the
-  built-in OS.
-- Your submission should compile successfully on the built in JackCompiler and
-  run successfully on the built in VMEmulator.
-- You should submit a zip file with the following files:
-  README.md, Array.jack, Keyboard.jack, Math.jack, Memory.jack, Output.jack,
-  Screen.jack, String.jack, Sys.jack.
-- Include other files required by your project, if there are any.
-- The submission should not contain any folder.
-- The README.md file must contain the following:
-  - In the first line: login(s) of the author(s), separated by commas and
-    nothing else! If you work alone, do not include a comma.
-    Logins should be identical to the names of your home folders and are
-    case-sensitive.
-  - Name(s), email(s) and ID(s) of the project's author(s).
-  - Any remarks you have about your submission.
-
-## Overview
 
 The OS is implemented as a collection of 8 Jack classes.
 Each class can be implemented and unit-tested in isolation, and in any desired
@@ -124,9 +84,39 @@ freeList data-structure.
 ## Corner cases
 
 Anything not mentioned here or within the .jack template files supplied to you
-should be implemented to match the built-in OS, so if you're wondering how to
+should be implemented to match the built-in OS. So, if you're wondering how to
 support various input/output characters or anything else, you should write a
 short .jack file that tests this and run it using the built-in OS.
+
+## The End
+
+After testing successfully each OS class in isolation, test your entire OS
+implementation using the Pong game, whose source code is available in your
+projects/11/Pong directory. Put all your OS .jack files in this directory,
+compile it, and execute the game in the supplied VM Emulator.
+
+If the game works, then congratulations: you are the proud owner of an operating
+system written entirely by you. And, by the way, you've just completed the
+construction of a complete general-purpose computer system. Go celebrate!
+
+## What To Submit
+
+- In any case where the expected behavior is unclear, you should match the
+  built-in OS.
+- Your submission should compile successfully on the built-in JackCompiler and
+  run successfully on the built-in VMEmulator.
+- You should submit a zip file with the following files:
+  AUTHORS, Array.jack, Keyboard.jack, Math.jack, Memory.jack, Output.jack,
+  Screen.jack, String.jack, Sys.jack.
+- Include other files required by your project, if there are any.
+- The submission should not contain any folder.
+- The AUTHORS file must contain the following:
+  - In the first line: login(s) of the author(s), separated by commas and
+    nothing else! If you work alone, do not include a comma.
+    Logins should be identical to the names of your home folders and are
+    case-sensitive.
+  - Name(s), email(s) and ID(s) of the project's author(s).
+  - Any remarks you have about your submission.
 
 ## OS API
 
@@ -261,15 +251,7 @@ You can assume valid input, so there is no need to handle these errors.
 | 19   | String.setInt        | Insufficient string capacity                    |
 | 20   | Output.moveCursor    | Illegal cursor location                         |
 
-## The End
-
-After testing successfully each OS class in isolation, test your entire OS
-implementation using the Pong game, whose source code is available in your
-projects/11/Pong directory. Put all your OS .jack files in this directory,
-compile it, and execute the game in the supplied VM Emulator. If the game
-works, then congratulations: you are the proud owner of an operating system
-written entirely by you. And, by the way, you've just completed the
-construction of a complete general-purpose computer system. Go celebrate!
+## License
 
 This file is part of nand2tetris, as taught in The Hebrew University, and
 was written by Aviv Yaish. It is an extension to the specifications given
