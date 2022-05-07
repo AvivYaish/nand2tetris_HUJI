@@ -17,6 +17,7 @@ Build all the chips described in this folder, leading up to a RAM16K (RAM) unit.
 
 - Projects 1 and 2
 - Unit 3 of the lectures and book
+- The Hardware Simulator
 
 ## Contract
 

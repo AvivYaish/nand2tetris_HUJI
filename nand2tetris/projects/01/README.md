@@ -12,6 +12,7 @@ Build all the logic gates given in this folder.
 
 - Unit 1 of the lectures and book
 - Appendices 1-4 of the book
+- The Hardware Simulator
 
 ## Contract
 
@@ -98,26 +99,34 @@ wise to outsource that logic to a new chip.
 
 ### Use All Resources Given To You
 
-We recommend going over the relevant lectures and book chapters!
-They contain heavy hints for almost every part of this project.
+The relevant lectures and book chapters contain in-depth explanations and heavy
+hints for almost every part of this project! Let's go over some examples.
 
 The only building blocks that you can use in this project are primitive Nand
 gates and the composite gates that you will gradually build on top of them.
 If you already forgot (we're all human!), we learned about the Nand gate in
 Unit 1.3 of the English lectures, and Unit 1.4 of the Hebrew lectures.
 
-To build these gates, you will have to use the Hardware Descriptive Language,
-or HDL, in short. We learned about this language in Unit 1.4 of the English
-lectures, Unit 1.6 of the Hebrew lectures, and Appendix 2 in the book.
+To write the chips for this project, you will have to use the Hardware
+Descriptive Language, or HDL, in short. We learned about this language in Unit
+1.4 of the English lectures, Unit 1.6 of the Hebrew lectures, and Appendix 2 in
+the book.
 
 To test your implementations, you will have to use the supplied Hardware
 Simulator, which is given in the folder nand2tet/tools.
 We show how to use the tool in Unit 1.5 of the English lectures and
 in Units 1.7 and 1.8 of the Hebrew lectures.
+
 If you use Windows, to start it you should simply double-click the file called
 HardwareSimulator.bat.
 If you use MacOS or Linux, we provide installation details in the file
 nand2tet/tools/README.md.
+
+Note:
+In order to use the nand2tetris software tools, your computer must be equipped
+with a Java Run-time Environment. The JRE can be downloaded freely from many
+sites, including [here](http://java.com/en/download/index.jsp).
+For best performance, download the latest available version.
 
 ### Built-in Chips
 

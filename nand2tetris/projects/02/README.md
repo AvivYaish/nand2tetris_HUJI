@@ -17,6 +17,7 @@ Build all the chips in this folder, leading up to the Hack computer's ALU.
 
 - Project 1
 - Unit 2 of the lectures and book
+- The Hardware Simulator
 
 ## Contract
 
@@ -74,7 +75,8 @@ We recommend building this functionality in two stages:
   well. This stage is tested by the ALU.tst test.
 
 This way, any problems detected by ALU.tst can be attributed to the incremental
-code that you've added in stage two. We thank Mark Armbrust for proposing this staged implementation plan, and for supplying the test files to support it.
+code that you've added in stage two. We thank Mark Armbrust for proposing this
+staged implementation plan, and for supplying the test files to support it.
 
 ## Correctness, Efficiency, and Code-reuse
 
