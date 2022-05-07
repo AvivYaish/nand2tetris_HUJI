@@ -4,6 +4,23 @@
 // as allowed by the Creative Common Attribution-NonCommercial-ShareAlike 3.0
 // Unported [License](https://creativecommons.org/licenses/by-nc-sa/3.0/).
 
+/**
+ * ShiftLeft.
+ * The chip receives a 16-bit input called "in", and has a 16-bit input called
+ * "out".
+The output is a "left-shift" of the input:
+- Every input bit is moved one position to the left,
+- A new "0" bit is inserted as the right-most bit.
+Note that this operation is (usually) equivalent to multiplying the input by 2.
+This definition is also called an arithmetic left-shift, and is useful for the efficient
+implementation of various operations which we will see later on in the course.
+
+For example:
+ShiftLeft(0000000000000001)=0000000000000010 // ShiftLeft(1)=2
+ShiftLeft(0100000000000000)=1000000000000000
+ShiftLeft(1000000000000000)=0000000000000000
+ */
+
 CHIP ShiftLeft{
     IN in[16];
     OUT out[16];

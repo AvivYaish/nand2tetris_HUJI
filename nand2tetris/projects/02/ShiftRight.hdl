@@ -4,6 +4,23 @@
 // as allowed by the Creative Common Attribution-NonCommercial-ShareAlike 3.0
 // Unported [License](https://creativecommons.org/licenses/by-nc-sa/3.0/).
 
+/**
+ * ShiftRight
+ The chip receives a 16-bit input called "in", and has a 16-bit input called "out".
+The output is a "right-shift" of the input:
+- Every input bit is moved one position to the right,
+- A new bit which is equal to the sign bit is inserted as the left-most bit.
+Note that this operation is (usually) equivalent to dividing the input by 2.
+This definition is also called an arithmetic right-shift, and is useful for the efficient
+implementation of various operations which we will see later on in the course.
+Another variant is the logical right-shift, which always inserts a new '0' bit.
+
+For example:
+ShiftRight(0000000000000001)=0000000000000000 // ShiftRight(1)=0
+ShiftRight(0100000000000000)=0010000000000000
+ShiftRight(1100000000000000)=1110000000000000
+ */
+
 CHIP ShiftRight{
 	IN in[16];
     OUT out[16];
