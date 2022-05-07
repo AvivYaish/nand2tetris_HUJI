@@ -25,9 +25,9 @@ be learned in the context of writing and testing a few low-level programs.
 
 ## Contract
 
-Write and test the programs described above. When executed on the supplied
-CPUEmulator, your programs should generate the results mandated by the specified
-tests.
+Write and test the programs described in this folder.
+When executed on the supplied CPUEmulator, your programs should generate the
+results mandated by the requirements given in each .asm file.
 
 ## What To Submit
 
@@ -65,11 +65,35 @@ different symbols. This bug is difficult to detect, so be aware of it!
 
 ### Tools
 
-The supplied Hack Assembler can be used in either command mode (from the command shell), or interactively. The latter mode of operation allows observing the translation process in a visual and step-wise fashion, as shown below:
+### CPUEmulator
 
-The machine language programs produced by the assembler can be tested in two different ways. First, one can run the resulting .hack program in the supplied CPU emulator. Alternatively, one can run the same program directly on the Hack hardware, using the supplied hardware simulator used in projects 1-3. To do so, one can load the Computer.hdl chip (built in project 5) into the hardware simulator, and then proceed to load the binary code (from the .hack file) into the computer's Instruction Memory (also called ROM). Since we will complete building the hardware platform and the Computer.hdl chip only in the next project, at this stage we recommend testing machine-level programs using the supplied CPU emulator.
+The supplied CPU Emulator includes a ROM (also called Instruction Memory)
+representation, into which the binary code is loaded, and a RAM representation,
+which holds data.
 
-The supplied CPU Emulator includes a ROM (also called Instruction Memory) representation, into which the binary code is loaded, and a RAM representation, which holds data. For ease of use, the emulator enables the user to view the loaded ROM-resident code in either binary mode, or in symbolic / assembly mode. In fact, the CPU emulator even allows loading symbolic code written in assembly directly into the ROM, in which case the emulator translates the loaded code into binary code on the fly. This utility seems to render the supplied assembler unnecessary, but this is not the case. First, the supplied assembler shows the translation process visually, for instructive purposes. Second, the assembler generates a persistent binary file. This file can be executed either on the CPU emulator, as we illustrate below, or directly on the hardware platform, as we'll do in the next project.
+For ease of use, the emulator enables the user to view the loaded ROM-resident
+code in either binary mode, or in symbolic / assembly mode. In fact, the
+CPUEmulator even allows loading symbolic code written in assembly directly into
+the ROM, in which case the emulator translates the loaded code into binary code
+on the fly.
+
+This utility seems to render the supplied Assembler unnecessary, but this is not
+the case. First, the supplied assembler shows the translation process visually,
+for instructive purposes. Second, the assembler generates a persistent binary
+file. This .hack file can be executed either on the CPUEmulator, exactly like
+.asm files are executed, or directly on the hardware platform, as we'll do in
+the next project.
+
+If you're eager to try running your low-level programs directly on the computer
+you'll build in the next project, you can do the following:
+
+- Start the HardwareSimulator
+- Load the Computer.hdl chip (which we will build in project 5)
+- Load the binary code from the .hack file into the computer's ROM
+
+Since we will complete building the hardware platform and the Computer.hdl chip
+only in the next project, at this stage we recommend testing machine-level
+programs using the supplied CPU emulator.
 
 ### Aviv's (Optional) Challenges
 
