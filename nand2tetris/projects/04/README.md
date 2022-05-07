@@ -50,7 +50,7 @@ and finishing with swap/Swap.asm. For each, follow these steps:
 
 - Start by loading and editing the supplied skeletal .asm file
 - Use your favorite text editor to write your code
-- Use the supplied CPU emulator to load, and then execute, the .asm file.
+- Use the supplied CPUEmulator to load, and then execute, the .asm file.
   This can be done either interactively, or using the supplied .tst script.
 - If there are any errors, goto step 1.
 
@@ -76,24 +76,6 @@ code in either binary mode, or in symbolic / assembly mode. In fact, the
 CPUEmulator even allows loading symbolic code written in assembly directly into
 the ROM, in which case the emulator translates the loaded code into binary code
 on the fly.
-
-This utility seems to render the supplied Assembler unnecessary, but this is not
-the case. First, the supplied assembler shows the translation process visually,
-for instructive purposes. Second, the assembler generates a persistent binary
-file. This .hack file can be executed either on the CPUEmulator, exactly like
-.asm files are executed, or directly on the hardware platform, as we'll do in
-the next project.
-
-If you're eager to try running your low-level programs directly on the computer
-you'll build in the next project, you can do the following:
-
-- Start the HardwareSimulator
-- Load the Computer.hdl chip (which we will build in project 5)
-- Load the binary code from the .hack file into the computer's ROM
-
-Since we will complete building the hardware platform and the Computer.hdl chip
-only in the next project, at this stage we recommend testing machine-level
-programs using the supplied CPU emulator.
 
 ### Aviv's (Optional) Challenges
 
