@@ -26,6 +26,9 @@ If you enjoyed this course, here are some recommendations:
 - [**`Stanford's Operating Systems course`**](https://cs140e.sergio.bz/about/)
   covers building an operating system for the Raspberry Pi computer.
 
+- [**`Writing an OS in Rust`**](https://os.phil-opp.com/) is a blog that guides
+  you through the process of writing an Operating System in Rust!
+
 - [**`Web Browser Engineering`**](https://browser.engineering/) is a course
   that shows you how to build a web browser, step-by-step. Web-browsing is maybe
   the major task people use computers for, so this is quite important.
