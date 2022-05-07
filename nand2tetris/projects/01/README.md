@@ -1,62 +1,44 @@
 partner1_username, partner2_username
 
-# Project 1: Boolean Logic
-
-## Submitter details
-
 - Partner 1: FirstName LastName, email@mail.huji.ac.il, ID
 - Partner 2: FirstName LastName, email@mail.huji.ac.il, ID
 
-## Remarks
-
-- Before you start this project, please go over the relevant videos and book
-  chapters!
-- You should submit a zip file with the following files:
-  README.md, Not.hdl, And.hdl, Or.hdl, Xor.hdl, Mux.hdl, DMux.hdl, Not16.hdl,
-  And16.hdl, Or16.hdl, Mux16.hdl, Or8Way.hdl, Mux4Way16.hdl, Mux8Way16.hdl,
-  DMux4Way.hdl, DMux8Way.hdl
-- You can create & use new chips, but should include them in the submission.
-- The submission should not contain any folder.
-- The README.md file must contain the following:
-  - In the first line: login(s) of the author(s), separated by commas and
-    nothing else! If you work alone, do not include a comma.
-    Logins should be identical to the names of your home folders and are
-    case-sensitive.
-  - Name(s), email(s) and ID(s) of the project's author(s).
-  - Any remarks you have about your submission.
-
-## Implementation Details
+# Project 1: Boolean Logic
 
 This project engages you in the construction of a typical set of basic logic
 gates. These gates form the elementary building blocks for the computer that we
 will build in this course!
 
-### Objective
+## Objective
 
-Build all the logic gates given in this folder, yielding a basic chip-set.
+Build all the logic gates given in this folder.
+
 The only building blocks that you can use in this project are primitive Nand
 gates and the composite gates that you will gradually build on top of them.
+If you already forgot (we're all human!), we went over the Nand gate in Unit 1.3
+of the English lectures, and Unit 1.4 of the Hebrew lectures.
 
 To build these gates, you will have to use the Hardware Descriptive Language,
-or HDL, in short. To test your implementations, you will have to use the
-supplied Hardware Simulator.
+or HDL, in short. We learned about this language in Unit 1.4 of the English
+lectures, Unit 1.4 of the Hebrew lectures, and Appendix 2 in the book.
 
-For additional details:
+To test your implementations, you will have to use the supplied Hardware
+Simulator, which is given in the folder nand2tet/tools.
+We show how to use the tool in Unit 1.5 of the English lectures and
+in Units 1.7 and 1.8 of the Hebrew lectures.
+If you use Windows, to start it you should simply double-click the file called
+HardwareSimulator.bat.
+If you use MacOS or Linux, we provide installation details in the file
+nand2tet/tools/README.md.
 
-- We go over the Nand gate in Unit 1.3 of the English lectures, and Unit 1.4
-  of the Hebrew lectures.
-- We go over the Hardware Descriptive Language in Unit 1.4 of the English
-  lectures, Unit 1.4 of the Hebrew lectures, and Appendix 2 in the book.
-- The HardwareSimulator is given in the folder nand2tet/tools.
-  If you use Windows, to start it you should simply double-click the file
-  called HardwareSimulator.bat
-  If you use MacOS or Linux, we provide installation details in the file
-  nand2tet/tools/README.md.
-  We show how to use the tool in Unit 1.5 of the English
-  lectures and in Units 1.7 and 1.8 of the Hebrew lectures.
-  ![Hardware Simulator](HardwareSimulatorImage.gif)
+![Hardware Simulator](HardwareSimulatorImage.gif)
 
-### Project
+## Proposed Working Method
+
+We recommend implementing all the gates in this project in the order in which
+they appear in Chapter 1:
+Not, And, Or, Xor, Mux, DMux, Not16, And16, Or16, Mux16, Or8Way, Mux4Way16,
+Mux8Way16, DMux4Way, DMux8Way.
 
 For each chip, we supply a skeletal .hdl file with a placeholder for a missing
 implementation part. In addition, for each chip we supply a .tst script that
@@ -69,15 +51,46 @@ Proceed in the following manner:
 - Write an implementation for chip Xxx in Xxx.hdl,
 - Test your implementation by loading Xxx.tst into the HardwareSimulator,
 - If you have any errors, fix them and go back to the first step.
+- If you find yourself stuck, please go over the relevant lectures and book
+  chapters! They contain heavy hints for almost every part of this project.
 
-We recommend implementing all the gates in this project in the order in which
-they appear in Chapter 1:
-Not, And, Or, Xor, Mux, DMux, Not16, And16, Or16, Mux16, Or8Way, Mux4Way16,
-Mux8Way16, DMux4Way, DMux8Way.
-The book and accompanying video lectures contain very heavy hints regarding
-almost all of these chips.
+## Correctness, Efficiency & Code Reuse
 
-### Built-in chips
+When building a chip, the most important part is making sure the chip produces
+the correct output for each possible input. The chips that we are building now
+form the base of the computer that we will build throughout this course. If one
+of your chips produces even a single wrong output, your computer might not work
+at all!
+
+Besides making sure our chips work as intended, we also care about their
+efficiency: the lower the number of Nand chips your implementation uses,
+the better!
+
+You will not lose points in this assignment if your implementations contain
+extra Nand gates, but you still need to know how implement chips as
+efficiently as possible, for example using the techniques presented in
+Appendix A of the book, or in lecture 1.2 (both in English and Hebrew).
+
+Here is a table of the basic gates, to help you:
+
+| Gate | Minimal number of Nand gates required |
+|:----:|:-------------------------------------:|
+|  Not |                   1                   |
+|  And |                   2                   |
+|  Or  |                   3                   |
+|  Xor |                   4                   |
+|  Mux |                   4                   |
+| DMux |                   4                   |
+
+After you've made sure your implementations are both correct and efficient,
+make sure that you're reusing your code: if you want to use a previously
+implemented chip X in the implementation of chip Y, don't re-implement X in the
+HDL of Y.
+
+Also, if two chips share a substantial amount of logic, it might be
+wise to outsource that logic to a new chip.
+
+## Built-in chips
 
 The Nand gate is considered a “primitive” gate and thus there is no need to
 implement it: whenever a Nand gate is encountered in your HDL code, the
@@ -106,52 +119,23 @@ chipName.hdl file, or remove it from the directory.
 When you are ready to develop this chip in HDL, put the file chipName.hdl back
 in the directory, and proceed to edit it with your HDL code.
 
-### The Complete Hack Chip-set
+## What To Submit
 
-The following list provides the API for all chips we will build in the course,
-including those from future projects.
+- You should submit a zip file with the following files:
+  README.md, Not.hdl, And.hdl, Or.hdl, Xor.hdl, Mux.hdl, DMux.hdl, Not16.hdl,
+  And16.hdl, Or16.hdl, Mux16.hdl, Or8Way.hdl, Mux4Way16.hdl, Mux8Way16.hdl,
+  DMux4Way.hdl, DMux8Way.hdl
+- You can create & use new chips, but should include them in the submission.
+- The submission should not contain any folder.
+- The README.md file must contain the following:
+  - In the first line: login(s) of the author(s), separated by commas and
+    nothing else! If you work alone, do not include a comma.
+    Logins should be identical to the names of your home folders and are
+    case-sensitive.
+  - Name(s), email(s) and ID(s) of the project's author(s).
+  - Any remarks you have about your submission.
 
-- Add16(a=,b=,out=). Adds up two 16-bit two's complement values.
-- ALU(x=,y=,zx=,nx=,zy=,ny=,f=,no=,out=,zr=,ng=). Hack ALU.
-- And(a=,b=,out=). And gate.
-- And16(a=,b=,out=). 16-bit And.
-- ARegister(in=,load=,out=). Address register (built-in).
-- Bit(in=,load=,out=). 1-bit register.
-- CPU(inM=,instruction=,reset=,outM=,writeM=,addressM=,pc=). Hack CPU.
-- CpuMul(inM=,instruction=,reset=,outM=,writeM=,addressM=,pc=). Extended CPU.
-- DFF(in=,out=). Data flip-flop gate (built-in).
-- DMux(in=,sel=,a=,b=). Channels the input to one out of two outputs.
-- DMux4Way(in=,sel=,a=,b=,c=,d=). Channels the input to one out of four outputs.
-- DMux8Way(in=,sel=,a=,b=,c=,d=,e=,f=,g=,h=). A DMux with eight outputs.
-- DRegister(in=,load=,out=). Data register (built-in).
-- ExtendAlu(x=,y=,instruction=,out=,zr=,ng=). Extended ALU.
-- HalfAdder(a=,b=,sum=, carry=). Adds up 2 bits.
-- FullAdder(a=,b=,c=,sum=,carry=). Adds up 3 bits.
-- Inc16(in=,out=). Sets out to in + 1.
-- Keyboard(out=). Keyboard memory map (built-in).
-- Memory(in=,load=,address=,out=). Data memory of the Hack platform (RAM).
-- Mux(a=,b=,sel=,out=). Selects between two inputs.
-- Mux16(a=,b=,sel=,out=). Selects between two 16-bit inputs.
-- Mux4Way16(a=,b=,c=,d=,sel=,out=). Selects between four 16-bit inputs.
-- Mux8Way16(a=,b=,c=,d=,e=,f=,g=,h=,sel=,out=). A Mux with 8 inputs.
-- Nand(a=,b=,out=). Nand gate (built-in).
-- Not16(in=,out=). 16-bit Not.
-- Not(in=,out=). Not gate.
-- Or(a=,b=,out=). Or gate.
-- Or8Way(in=,out=). 8-way Or.
-- Or16(a=,b=,out=). 16-bit Or.
-- PC(in=,load=,inc=,reset=,out=). Program Counter.
-- RAM8(in=,load=,address=,out=). 8-word RAM.
-- RAM64(in=,load=,address=,out=). 64-word RAM.
-- RAM512(in=,load=,address=,out=). 512-word RAM.
-- RAM4K(in=,load=,address=,out=). 4K RAM.
-- RAM16K(in=,load=,address=,out=). 16K RAM.
-- Register(in=,load=,out=). 16-bit register.
-- ROM32K(address=,out=). Instruction memory of the Hack platform (built-in).
-- Screen(in=,load=,address=,out=). Screen memory map (built-in).
-- ShiftLeft(in=,out=). Shift the input one bit to the left.
-- ShiftRight(in=,out=). Shift the input one bit to the right.
-- Xor(a=,b=,out=). Xor gate.
+## License
 
 This file is part of nand2tetris, as taught in The Hebrew University, and
 was written by Aviv Yaish. It is an extension to the specifications given
