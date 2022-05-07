@@ -49,8 +49,6 @@ Proceed in the following manner:
 - Write an implementation for chip Xxx in Xxx.hdl,
 - Test your implementation by loading Xxx.tst into the HardwareSimulator,
 - If you have any errors, fix them and go back to the first step.
-- If you find yourself stuck, please go over the relevant lectures and book
-  chapters! They contain heavy hints for almost every part of this project.
 
 ## Correctness, Efficiency & Code Reuse
 
@@ -88,7 +86,14 @@ HDL of Y.
 Also, if two chips share a substantial amount of logic, it might be
 wise to outsource that logic to a new chip.
 
-## Built-in chips
+## Tips
+
+### Use All Resources Given To You
+
+We recommend going over the relevant lectures and book chapters!
+They contain heavy hints for almost every part of this project.
+
+### Built-in Chips
 
 The Nand gate is considered a “primitive” gate and thus there is no need to
 implement it: whenever a Nand gate is encountered in your HDL code, the
