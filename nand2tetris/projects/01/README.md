@@ -31,8 +31,6 @@ HardwareSimulator.bat.
 If you use MacOS or Linux, we provide installation details in the file
 nand2tet/tools/README.md.
 
-![Hardware Simulator](HardwareSimulatorImage.gif)
-
 ## Proposed Working Method
 
 We recommend implementing all the gates in this project in the order in which
