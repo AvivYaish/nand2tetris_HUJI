@@ -57,7 +57,10 @@ Please refer to the notes of project 1 regarding grading metrics.
 
 ## Tips
 
-When constructing RAM chips from lower-level RAM chip-parts, For example when
+We recommend building the chips in the following order:
+Bit, Register, RAM8, RAM64, RAM4K, RAM16K, RAM512, PC.
+
+When constructing RAM chips from lower-level RAM chip-parts, for example when
 building the RAM512 chip using the RAM64 chip, we recommend using built-in
 versions of the latter.
 
