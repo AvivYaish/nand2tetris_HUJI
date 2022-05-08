@@ -63,8 +63,6 @@ The Hack language is case-sensitive. A common error occurs when one writes, say,
 are treated as the same symbol. In fact, the assembler treats them as two
 different symbols. This bug is difficult to detect, so be aware of it!
 
-### Tools
-
 ### CPUEmulator
 
 The supplied CPU Emulator includes a ROM (also called Instruction Memory)
