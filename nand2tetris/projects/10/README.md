@@ -17,7 +17,7 @@ the JackTokenizer module. Specifically, you have to develop:
 1. A Tokenizer implementation, and
 2. a test program that goes through a given .jack input file.
 
-### Tokenizer Testing
+#### Tokenizer Testing
 
 Test your tokenizer on the Square Dance and the TestArray programs.
 
@@ -52,7 +52,7 @@ unit-testing, we recommend to begin by:
 
 The test programs supplied are designed to support this staged strategy.
 
-### Parser Testing
+#### Parser Testing
 
 - Apply your syntax analyzer to the supplied test programs, then use the
   supplied TextComparer utility to compare the generated output to the
@@ -63,7 +63,18 @@ The test programs supplied are designed to support this staged strategy.
 - Note that the indentation of the XML output is only for readability.
   Web browsers and the supplied TextComparer ignore white space.
 
-### Testing tools
+## Submission Template
+
+- JackAnalyzer: The executable for the project. This allows our graders to run
+  your project in a standard manner on UNIX-like operating systems.
+- Makefile: A makefile for the project. This allows our graders to prepare your
+  project for execution in a standard manner on UNIX-like operating systems.
+- JackAnalyzer.py: The project's main .py file.
+- JackTokenizer.py: Tokenizes an input .jack file according to Jack's grammar.
+- CompilationEngine.py: Gets input from a JackTokenizer and emits its parsed
+  structure into an output stream.
+
+## Tools
 
 If you are wondering whether some Jack program is valid or not, you should
 use the built-in JackCompiler to compile it; if compilation fails, it is
@@ -78,17 +89,6 @@ meaning, something that the syntax analyzer does not care about.
 For more information about our built-in tools, see the tutorials in the
 lectures and submission page, and additional information provided in
 tools/README.md.
-
-## Suggested Implementation
-
-- JackAnalyzer: The executable for the project. This allows our graders to run
-  your project in a standard manner on UNIX-like operating systems.
-- Makefile: A makefile for the project. This allows our graders to prepare your
-  project for execution in a standard manner on UNIX-like operating systems.
-- JackAnalyzer.py: The project's main .py file.
-- JackTokenizer.py: Tokenizes an input .jack file according to Jack's grammar.
-- CompilationEngine.py: Gets input from a JackTokenizer and emits its parsed
-  structure into an output stream.
 
 ## What To Submit
 

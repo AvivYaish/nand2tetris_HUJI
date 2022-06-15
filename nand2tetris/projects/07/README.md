@@ -1,5 +1,3 @@
-partner1_username, partner2_username
-
 # Project 7: Virtual Machine (Arithmetic)
 
 ## Implementation Details
@@ -83,14 +81,24 @@ proposed order, and to test it using the appropriate test programs at
 each stage. Implementing a later stage before an early one may cause the
 test programs to fail.
 
-### Tools
+## Submission Template
+
+- VMtranslator: The executable for the project. This allows our graders to run
+  your project in a standard manner on UNIX-like operating systems.
+- Makefile: A makefile for the project. This allows our graders to prepare your
+  project for execution in a standard manner on UNIX-like operating systems.
+- Main.py: The project's main .py file.
+- Parser.py: Handles the parsing of a single .vm file.
+- CodeWriter.py: Translates VM commands into Hack assembly code.
+
+## Tools
 
 Before setting out to develop your VM translator, we recommend getting
 acquainted with the virtual machine architecture model and language. As
 mentioned above, this can be done by running, and experimenting with, the
 supplied .vm test programs using the supplied VM emulator.
 
-#### The VM Emulator
+### The VM Emulator
 
 This program, located in your nand2tetris/tools directory, is designed to
 execute VM programs in a direct and visual way, without having to first
@@ -102,16 +110,6 @@ one of the supplied .vm test programs.
 For more information about our built-in tools, see the tutorials in the
 lectures and submission page, and additional information provided in
 tools/README.md.
-
-## Suggested Implementation
-
-- VMtranslator: The executable for the project. This allows our graders to run
-  your project in a standard manner on UNIX-like operating systems.
-- Makefile: A makefile for the project. This allows our graders to prepare your
-  project for execution in a standard manner on UNIX-like operating systems.
-- Main.py: The project's main .py file.
-- Parser.py: Handles the parsing of a single .vm file.
-- CodeWriter.py: Translates VM commands into Hack assembly code.
 
 ## What To Submit
 

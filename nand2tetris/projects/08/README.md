@@ -61,10 +61,10 @@ later stage before an early one may cause the test programs to fail.
 
 ### Initialization
 
-In order for the translated VM code to execute on the host computer
-platform, the translated code stream (written in the machine language of
-the host platform) must include some bootstrap code that maps the stack
-on the host RAM and starts executing the code proper.
+For the translated VM code to execute on the host computer platform, the
+translated code (written in the machine language of the host platform) must
+include some bootstrap code that maps the stack on the host RAM and starts
+executing the code proper.
 
 The first three test programs for this project assume that the bootstrap
 code was not yet implemented, and include test scripts that effect the
@@ -83,7 +83,17 @@ When executed on the supplied CPU emulator, the translated code generated
 by your VM translator should deliver the results mandated by the test
 scripts and compare files supplied.
 
-### Tools
+## Submission Template
+
+- VMtranslator: The executable for the project. This allows our graders to run
+  your project in a standard manner on UNIX-like operating systems.
+- Makefile: A makefile for the project. This allows our graders to prepare your
+  project for execution in a standard manner on UNIX-like operating systems.
+- Main.py: The project's main .py file.
+- Parser.py: Handles the parsing of a single .vm file.
+- CodeWriter.py: Translates VM commands into Hack assembly code.
+
+## Tools
 
 Before setting out to extend your basic VM translator, we recommend
 playing with the supplied .vm test programs. This will allow you to
@@ -93,16 +103,6 @@ the supplied VM emulator.
 For more information about our built-in tools, see the tutorials in the
 lectures and submission page, and additional information provided in
 tools/README.md.
-
-## Suggested Implementation
-
-- VMtranslator: The executable for the project. This allows our graders to run
-  your project in a standard manner on UNIX-like operating systems.
-- Makefile: A makefile for the project. This allows our graders to prepare your
-  project for execution in a standard manner on UNIX-like operating systems.
-- Main.py: The project's main .py file.
-- Parser.py: Handles the parsing of a single .vm file.
-- CodeWriter.py: Translates VM commands into Hack assembly code.
 
 ## What To Submit
 

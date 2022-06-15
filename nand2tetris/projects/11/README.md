@@ -13,7 +13,7 @@ be done in two main development stages, as follows.
 We suggest to start by building the compiler's symbol table module and
 using it to extend the syntax analyzer built in project 10. Presently,
 whenever an identifier is encountered in the source code, say foo, the
-syntax analyzer outputs the XML line "<identifier> foo </identifier>".
+syntax analyzer outputs the XML line `<identifier> foo </identifier>`.
 
 Instead, have your analyzer output the following information as part of
 its XML output (using some output format of your choice):
@@ -60,6 +60,19 @@ This way, you will end up building the compiler's code generation
 capabilities in stages, according to the unfolding demands of each test
 program.
 
+### Submission Template
+
+- JackCompiler: The executable for the project. This allows our graders to run
+  your project in a standard manner on UNIX-like operating systems.
+- Makefile: A makefile for the project. This allows our graders to prepare your
+  project for execution in a standard manner on UNIX-like operating systems.
+- JackCompiler.py: The project's main .py file.
+- JackTokenizer.py: Tokenizes an input .jack file according to Jack's grammar.
+- CompilationEngine.py: Gets input from a JackTokenizer and emits its parsed
+  structure into an output stream.
+- VMWriter.py: Writes VM commands into a file. Encapsulates VM command syntax.
+- SymbolTable.py: Associates names with information needed for Jack compilation.
+
 ### Testing Method
 
 Normally, when one compiles a program and runs into some problems, one
@@ -88,19 +101,6 @@ For each test program, go through the following routine:
 For more information about our built-in tools, see the tutorials in the
 lectures and submission page, and additional information provided in
 tools/README.md.
-
-## Suggested Implementation
-
-- JackCompiler: The executable for the project. This allows our graders to run
-  your project in a standard manner on UNIX-like operating systems.
-- Makefile: A makefile for the project. This allows our graders to prepare your
-  project for execution in a standard manner on UNIX-like operating systems.
-- JackCompiler.py: The project's main .py file.
-- JackTokenizer.py: Tokenizes an input .jack file according to Jack's grammar.
-- CompilationEngine.py: Gets input from a JackTokenizer and emits its parsed
-  structure into an output stream.
-- VMWriter.py: Writes VM commands into a file. Encapsulates VM command syntax.
-- SymbolTable.py: Associates names with information needed for Jack compilation.
 
 ## What To Submit
 

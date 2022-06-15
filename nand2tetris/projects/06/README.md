@@ -44,7 +44,7 @@ Now, we go again through the entire program, and parse each line like so:
     symbols).
 - After the command is translated, write the translation to the output file.
 
-## Suggested Implementation
+## Submission Template
 
 We provide a template for this project, it contains the following files:
 
@@ -59,7 +59,7 @@ We provide a template for this project, it contains the following files:
 - SymbolTable.py: Keeps a correspondence between symbolic labels and
   numeric addresses.
 
-### Tools
+## Tools
 
 Two useful tools are the supplied Assembler and the supplied CPU
 Emulator, both available in your tools directory. These tools allow
@@ -72,7 +72,7 @@ For more information about our built-in tools, see the tutorials in the
 lectures and submission page, and additional information provided in
 tools/README.md.
 
-### Testing
+## Testing
 
 The supplied (“built-in”) Hack Assembler is guaranteed to generate
 correct binary code. This guaranteed performance can be used to test if
@@ -94,7 +94,7 @@ Thus, one way to test a newly written assembler is as follows:
    comparison fails, the assembler that generated MyProg.hack must be buggy;
    otherwise, it may be OK.
 
-### Standard C Command Specification
+## Standard C Command Specification
 
 A standard c-command `dest = comp; jump` is translated into the following
 HACK command `1 1 1 a c1 c2 c3 c4 c5 c6 d1 d2 d3 j1 j2 j3`, where
@@ -159,7 +159,7 @@ Or, in tabular form:
 |  110   | JLE      | If `out <= 0`, jump |
 |  111   | JMP      | Jump                |
 
-### Extended C Command Specification
+## Extended C Command Specification
 
 | Instruction   | 15  | 14  | 13  |  a  | c1  | c2  | c3  | c4  | c5  | c6  |
 | ------------- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
