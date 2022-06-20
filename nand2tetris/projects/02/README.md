@@ -11,7 +11,7 @@ architecture to another.
 
 ## Objective
 
-Build all the chips in this folder, leading up to the Hack computer's ALU.
+Build all the chips given in this project, leading up to the Hack computer's ALU.
 
 ## Resources
 

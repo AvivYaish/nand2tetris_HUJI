@@ -6,7 +6,7 @@ course!
 
 ## Objective
 
-Build all the logic gates given in this folder.
+Build all the logic gates given in this project.
 
 ## Resources
 

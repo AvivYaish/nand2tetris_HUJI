@@ -20,5 +20,5 @@ CHIP ExtendAlu {
      OUT out[16], zr, ng;
      
      PARTS:
-     // Put you code here:
+     // Put your code here:
 }

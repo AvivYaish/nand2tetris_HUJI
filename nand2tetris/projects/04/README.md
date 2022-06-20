@@ -7,16 +7,16 @@ using a low-level symbolic language called assembly, and have them translated
 into binary code by a program called the Assembler.
 
 In this project you will write some low-level assembly programs, and will be
-forever thankful for high-level languages like Java and Python.
+forever thankful for high-level languages like Java and Python. In the process
+of working on this project, you will become familiar with the assembly process
+(translating from symbolic language to machine-language) and you will appreciate
+visually how native binary code executes on the target hardware platform. These
+lessons will be learned in the context of writing and testing a few low-level
+programs.
 
 ## Objective
 
-To get a taste of low-level programming in machine language, and to get
-acquainted with the Hack computer platform. In the process of working on this
-project, you will become familiar with the assembly process (translating from
-symbolic language to machine-language) and you will appreciate visually how
-native binary code executes on the target hardware platform. These lessons will
-be learned in the context of writing and testing a few low-level programs.
+Implement all assembly programs described in this project.
 
 ## Resources
 

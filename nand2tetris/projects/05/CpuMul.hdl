@@ -20,16 +20,18 @@
 // | dest=M>>;jump         |  1 |  0 |  1 | 1 |  0 |  0 |  0 |  0 |  0 |  0 |
 
 CHIP CpuMul {
-    IN  inM[16],         // M value input  (M = contents of RAM[A])
+    IN  
+        inM[16],         // M value input  (M = contents of RAM[A])
         instruction[16], // Instruction for execution
         reset;           // Signals whether to re-start the current
                          // program (reset=1) or continue executing
                          // the current program (reset=0).
-    OUT outM[16],        // M value output
+    OUT 
+        outM[16],        // M value output
         writeM,          // Write into M? 
         addressM[15],    // Address in data memory (of M)
         pc[15];          // address of next instruction
     
     PARTS:
-    // Put you code here:
+    // Put your code here:
 }

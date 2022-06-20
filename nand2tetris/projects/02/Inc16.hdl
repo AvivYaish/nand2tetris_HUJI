@@ -13,5 +13,5 @@ CHIP Inc16 {
     OUT out[16];
 
     PARTS:
-   // Put you code here:
+   // Put your code here:
 }

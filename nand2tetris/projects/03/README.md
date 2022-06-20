@@ -11,7 +11,7 @@ This involves two main issues:
 
 ## Objective
 
-Build all the chips described in this folder, leading up to a RAM16K (RAM) unit.
+Build all the chips described in this project, leading up to a RAM16K (RAM) unit.
 
 ## Resources
 

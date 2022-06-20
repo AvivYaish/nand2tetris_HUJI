@@ -44,10 +44,10 @@ CHIP ALU {
         ng; // 1 if (out < 0),  0 otherwise
 
     PARTS:
-   // You're advised to work on the ALU chip in two steps:
-   // - First, without handling status outputs (ALU-nostat)
-   // - Then, adding the missing functionality for the "full" chip (ALU). 
-   // You only need to submit the "full" ALU, no need to submit the partial
-   // implementation (ALU-nostat).
-   // Put you code here:
+    // You're advised to work on the ALU chip in two steps:
+    // - First, without handling status outputs (ALU-nostat)
+    // - Then, adding the missing functionality for the "full" chip (ALU). 
+    // You only need to submit the "full" ALU, no need to submit the partial
+    // implementation (ALU-nostat).
+    // Put your code here:
 }
