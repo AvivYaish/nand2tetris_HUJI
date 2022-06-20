@@ -11,7 +11,7 @@ University, for example:
   and additional guidance.
 - A [VSCode plugin](https://marketplace.visualstudio.com/items?itemName=AvivYaish.nand-ide)
   which can help writing code in our various languages.
-- All tools (Assembler, CPUEmulator, VMEmulator, JackCompiler) support shifts.
+- All tools (Assembler, CPUEmulator, VMEmulator, JackCompiler) support left and right arithmetic shifts.
 - ShiftLeft.hdl, ShiftRight.hdl: chips that perform shifts.
 - ExtendAlu.hdl, CpuMul.hdl: ALU & CPU that support shifts.
 - Memory.jack: has an additional method to make sure students follow the correct
