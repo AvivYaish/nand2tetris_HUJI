@@ -27,5 +27,5 @@ CHIP ShiftLeft {
     OUT out[16];
      
     PARTS:
-	// Put your code here:
+    // Put your code here:
 }
