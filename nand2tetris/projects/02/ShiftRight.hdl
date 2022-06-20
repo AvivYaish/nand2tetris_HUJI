@@ -25,9 +25,9 @@
  */
 
 CHIP ShiftRight{
-	IN in[16];
+    IN in[16];
     OUT out[16];
      
     PARTS:
-	// Put you code here:
+    // Put you code here:
 }
