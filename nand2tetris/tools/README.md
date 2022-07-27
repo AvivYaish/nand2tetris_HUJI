@@ -276,7 +276,7 @@ JackCompiler fikeName.jack Compiles the specified Jack file
 - Write / edit your Jack class files using a standard text editor. We
   recommend using [VSCode](https://code.visualstudio.com/) together with
   the recommended nand2tetris syntax highlighting
-  [plugin](https://marketplace.visualstudio.com/items?itemName=loyio.Nand2Tetris-vscode).
+  [plugin](https://marketplace.visualstudio.com/items?itemName=AvivYaish.nand-ide).
   If you prefer Notepad++ or Vim, see the syntax highlighting themes
   supplied in nand2tetris/syntax_highlighting
 - Compile your Jack files / directory using the supplied JackCompiler
