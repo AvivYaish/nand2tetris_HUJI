@@ -63,7 +63,7 @@ make manual, or to one of the many 'make' tutorials available online.
 ### Running
 
 You should include a run-file named ``Assembler`` which accepts a single input
-parameter, which we will described soon.
+parameter (that we will describe soon).
 After calling ``make``, your project should execute by calling the run-file, and
 the run-file should exit successfully.
 
