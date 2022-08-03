@@ -141,7 +141,9 @@ implementation.
 Note that the supplied hardware simulator features built-in implementations of
 all these chips. Therefore, you can use any one of these chips before
 implementing it: the simulator will automatically invoke their built-in
-versions.
+versions. When you attempt to use built-in chips (or user-created ones), note
+that the hardware simulator is case-sensitive and will not find chips which
+are mis-capitalized (e.g. NAND instead of Nand).
 
 For example, consider the supplied skeletal Mux.hdl program. Suppose that for
 one reason or another you did not complete the implementation of Mux, but you
