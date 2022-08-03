@@ -22,6 +22,7 @@ Implement all assembly programs described in this project.
 
 - Unit 4 of the lectures and book
 - The CPUEmulator
+- The CPUEmulator's tutorial
 
 ## Contract
 

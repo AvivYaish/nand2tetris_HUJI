@@ -15,7 +15,8 @@ front page of our course's website.
 
 - Unit 1 of the lectures and book
 - Appendices 1-4 of the book
-- The Hardware Simulator
+- The HardwareSimulator
+- The HardwareSimulator's tutorial
 
 ## Contract
 
