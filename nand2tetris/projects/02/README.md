@@ -12,6 +12,9 @@ architecture to another.
 ## Objective
 
 Build all the chips given in this project, leading up to the Hack computer's ALU.
+The project's folder is: nand2tetris/projects/02
+
+Recall that all template files are given on the front page of our site.
 
 ## Resources
 
@@ -50,7 +53,7 @@ in chapter 1 and the chips that you will gradually build in this project.
   - Name(s), email(s) and ID(s) of the project's author(s).
   - Any remarks you have about your submission.
 
-## Implementation Order
+## Proposed Working Method
 
 We recommend building the chips in the following order:
 ShiftLeft, ShiftRight, HalfAdder, FullAdder, Add16, Inc16, ALU.

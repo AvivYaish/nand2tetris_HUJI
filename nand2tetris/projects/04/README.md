@@ -43,16 +43,16 @@ results mandated by the requirements given in each .asm file.
   - Name(s), email(s) and ID(s) of the project's author(s).
   - Any remarks you have about your submission.
 
-## Proposed Implementation
+## Proposed Working Method
 
 We recommend starting with mult/Mult.asm, then proceeding to fill/Fill.asm,
 and finishing with swap/Swap.asm. For each, follow these steps:
 
-- Start by loading and editing the supplied skeletal .asm file
-- Use your favorite text editor to write your code
+- Start by loading and editing the supplied skeletal .asm file.
+- Use your favorite text editor to write your code.
 - Use the supplied CPUEmulator to load, and then execute, the .asm file.
   This can be done either interactively, or using the supplied .tst script.
-- If there are any errors, goto step 1.
+- If there are any errors, go to step 1.
 
 ## Tips
 
@@ -75,7 +75,7 @@ CPUEmulator even allows loading symbolic code written in assembly directly into
 the ROM, in which case the emulator translates the loaded code into binary code
 on the fly.
 
-### Aviv's (Optional) Challenges
+### (Optional) Challenges
 
 Assembly programming can be highly rewarding, allowing direct and complete
 control of the underlying machine. Many applications that require high
@@ -89,6 +89,8 @@ If you're brave -- it can be implemented using less than 50 ASM lines!
 An even harder task is to implement assembly programs in hardware. For example,
 can Mult.asm be implemented in hardware? This is actually not that complicated!
 If you're interested, this can be done using ShiftLeft chips (a lot of them!).
+
+![Meme](quicksort_meme.jpg "Meme about implementing quick sort in assembly")
 
 ## License
 

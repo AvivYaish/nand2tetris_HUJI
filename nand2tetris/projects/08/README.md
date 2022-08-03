@@ -106,9 +106,6 @@ tools/README.md.
 
 ## What To Submit
 
-- You can change the template however you want, or even not use it at all.
-  But, your project should use the same standard installation and running
-  procedures, and standard inputs that the template uses.
 - You should submit a zip file with the following files:
   A run-file named “VMtranslator”, a Makefile called “Makefile”, an AUTHORS file,
   and the source code for your implementation.
@@ -120,6 +117,9 @@ tools/README.md.
     case-sensitive.
   - Name(s), email(s) and ID(s) of the project's author(s).
   - Any remarks you have about your submission.
+- You can change the template however you want, or even not use it at all.
+  But, your project should use the same standard installation and running
+  procedures, and standard inputs that the template uses.
 
 ## License
 

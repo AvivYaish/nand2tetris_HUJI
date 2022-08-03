@@ -6,7 +6,10 @@ course!
 
 ## Objective
 
-Build all the logic gates given in this project.
+Build all the logic gates given in the project's folder: nand2tetris/projects/01
+
+The template files for these gates (and all future projects) is provided on the
+front page of our course's website.
 
 ## Resources
 

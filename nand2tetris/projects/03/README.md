@@ -12,6 +12,8 @@ This involves two main issues:
 ## Objective
 
 Build all the chips described in this project, leading up to a RAM16K (RAM) unit.
+As before, all template files are provided in a zip given on the course's web
+page, in the folder: nand2tetris/projects/03
 
 ## Resources
 
@@ -51,14 +53,16 @@ project.
   - Name(s), email(s) and ID(s) of the project's author(s).
   - Any remarks you have about your submission.
 
+## Proposed Working Method
+
+We recommend building the chips in the following order:
+Bit, Register, RAM8, RAM64, RAM4K, RAM16K, RAM512, PC.
+
 ## Correctness, Efficiency, and Code-reuse
 
 Please refer to the notes of project 1 regarding grading metrics.
 
 ## Tips
-
-We recommend building the chips in the following order:
-Bit, Register, RAM8, RAM64, RAM4K, RAM16K, RAM512, PC.
 
 When constructing RAM chips from lower-level RAM chip-parts, for example when
 building the RAM512 chip using the RAM64 chip, we recommend using built-in
