@@ -22,6 +22,9 @@ def assemble_file(
         output_file (typing.TextIO): writes all output to this file.
     """
     # Your code goes here!
+    # A good place to start is to initialize a new Parser object,
+    # Using something like:
+    # parser = Parser(input_file)
     pass
 
 
