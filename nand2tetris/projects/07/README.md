@@ -17,7 +17,7 @@ For the purpose of this project, chapter 8 can be ignored.
 ## Objective
 
 Build a basic VM translator, focusing on the implementation of the VM language's
-stack arithmetic and memory accesscommands.
+stack arithmetic and memory access commands.
 In Project 8, this basic translator will be extended into a full-scale VM
 translator.
 
@@ -238,6 +238,49 @@ one of the supplied .vm test programs.
 For more information about our built-in tools, see the tutorials in the
 lectures and submission page, and additional information provided in
 tools/README.md.
+
+### Input Validity
+
+You can assume your VMtranslator will only receive valid .vm files.
+So, for example, you should not support popping into the constant segment as it
+is considered invalid.
+On the other hand, our VM language does not have segment bounds checks, so you
+should support accessing the pointer and temp segments for all indices, and not
+only 0/1 for pointer and 0-6 for temp.
+
+### Output Validity
+
+Some notes regarding the .asm code which your VMtranslator should produce:
+
+- You should not end your programs with infinite loops like in project 4, we will
+  understand why in project 12.
+- Let's closely examine the comparison commands (<,>):
+  A naive translation can cause overflows when comparing certain numbers, thus
+  giving a wrong answer for some valid inputs.
+  This is bad - we want our hardware to handle comparisons between all valid
+  numbers correctly!
+  Can you think of a method that avoids overflows?
+- You should output correct, readable and fast .asm code, meaning code that runs
+  in as few CPU tick-tocks as possible. You will not lose points in this
+  assignment for code that is not the most efficient, but you should still know
+  how to write efficient .asm code.
+- Our computer can only run programs of a certain maximum length; hark back to
+  project 5 - what limits the maximal program length? 
+  Your job is to make sure that programs of reasonable length are translated to
+  asm code that doesn't exceed the maximal length.
+  More concretely:
+  - Your translator should succeed in translating every program, even if the
+    output asm file is too large for the computer. Although the output is not
+    valid because of its length, it should be correct in every other way.
+    As a general rule, no truncation of output code is allowed.
+  - Given an 800-line long VM program, your VMtranslator should output the
+    complete (with no truncation) ASM translation such that its length is at
+    most the longest valid program that our computer can run.
+    This can be achieved without using fancy tricks.
+- Translation order is not important.
+  For example, if folder T contains two files: T1.vm and T2.vm, the translation
+  of T2 can appear before that of T1 in the output file T.asm, and vice versa.
+  We will see why this doesn't matter in projects 8 and 12.
 
 ### Project 8
 
