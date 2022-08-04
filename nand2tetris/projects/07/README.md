@@ -24,7 +24,9 @@ translator.
 ## Resources
 
 - Unit 7 of the lectures and book
+- The built-in CPUEmulator
 - The built-in VMEmulator
+- The CPUEmulator's tutorial
 - The VMEmulator's tutorial
 
 ## Contract

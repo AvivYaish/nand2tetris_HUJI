@@ -1,5 +1,113 @@
 # Project 8: Virtual Machine (Control)
 
+We continue building the VM translator - a program that translates programs
+written in the VM language into programs written in the Hack machine language.
+This is a respectable chunk of engineering, so we are doing it in two stages.
+Welcome to stage II.
+
+## Objective
+
+Extend the basic VM translator built in project 7 into a full-scale VMtranslator.
+In particular, in project 7 we focused on handling the stack arithmetic and
+memory access commands of the VM language. We now turn to handle the VM
+language's branching and function calling commands.
+
+## Resources
+
+- Unit 8 of the lectures and book
+- The built-in CPUEmulator
+- The built-in VMEmulator
+- The CPUEmulator's tutorial
+- The VMEmulator's tutorial
+
+## Contract
+
+Write a full-scale VM-to-Hack translator, extending the basic translator
+developed in project 7, and conforming to the VM Specification, Part II
+(book section 8.2) and to the Standard VM-on-Hack Mapping, Part II (book section
+8.3.1). Use your VM translator to translate the VM programs supplied below,
+yielding corresponding programs written in the Hack assembly language.
+
+## What To Submit
+
+- You should submit a zip file with the following files:
+  A run-file named “VMtranslator”, a Makefile called “Makefile”, an AUTHORS file,
+  and the source code for your implementation.
+- The submission should not contain any folder.
+- The AUTHORS file must contain the following:
+  - In the first line: login(s) of the author(s), separated by commas and
+    nothing else! If you work alone, do not include a comma.
+    Logins should be identical to the names of your home folders and are
+    case-sensitive.
+  - Name(s), email(s) and ID(s) of the project's author(s).
+  - Any remarks you have about your submission.
+- You can change the template however you want, or even not use it at all.
+  But, your project should use the same standard installation and running
+  procedures, and standard inputs that the template uses.
+
+## Usage
+
+Your project should use the same standard installationת running procedures,
+and inputs that the supplied Python template uses. Note that the
+template already implements the following behavior, so everything is already
+taken care of for anyone who uses the template!
+
+### Installation
+
+Your project has to include a makefile called "Makefile". A makefile is an
+automated installation recipe that is executed by running the ``make`` command.
+The command should run successfully, and afterwards your project should be
+ready for execution (for example, code files should be compiled and run-files
+should have execution permissions).
+
+The Python template given to you contains a makefile that should work for all
+python projects.
+
+Note that the ``make`` command does not work on Windows.
+For more info regarding makefiles, refer to the sample Makefile for Python, the
+make manual, or to one of the many 'make' tutorials available online.
+
+### Running
+
+You should include a run-file named ``VMtranslator`` which accepts a single input
+parameter (that we will describe soon).
+After calling ``make``, your project should execute by calling the run-file, and
+the run-file should exit successfully.
+
+The python template given to you contains a run-file that runs the template's
+main function. Note that this file does not work on Windows.
+
+### Input Parameter
+
+The run-file should accept a single input parameter, which corresponds to a path
+to either some valid .vm file, or a folder.
+
+1. If a path to a single .vm file is given as an input, you should create the
+   relevant output in the same folder as the input.
+   For example, when running:
+   ```console
+   VMtranslator <path>/file.vm
+   ```
+   The following output file should be created: ``<path>/file.asm``
+2. If the input is a directory, you should translate all .vm files present in
+   the directory (ignore other file types and subdirectories) and store the 
+   output .asm files in the same directory.
+   For example, assume '~/nand/dir/' is a path to a directory which contains
+   two files: "t1.vm" and "t2.vm".
+   If we execute:
+   ```console
+   VMtranslator ~/nand/dir/
+   ```
+   The outputs ``t1.asm`` and ``t2.asm`` should be created in ``~/nand/dir/``.
+   The same behavior applies to the following execution:
+   ```console
+   VMtranslator ~/nand/dir
+   ```
+3. Your program should support both relative and absolute paths. 
+
+The Python template given to you contains code that handles such input
+parameters, and creates the corresponding output files in the correct paths.
+
 ## Implementation Details
 
 In this project, we will extend the basic translator developed in project
@@ -93,7 +201,9 @@ scripts and compare files supplied.
 - Parser.py: Handles the parsing of a single .vm file.
 - CodeWriter.py: Translates VM commands into Hack assembly code.
 
-## Tools
+## Tips
+
+### Tools
 
 Before setting out to extend your basic VM translator, we recommend
 playing with the supplied .vm test programs. This will allow you to
@@ -104,22 +214,52 @@ For more information about our built-in tools, see the tutorials in the
 lectures and submission page, and additional information provided in
 tools/README.md.
 
-## What To Submit
+### Testing
 
-- You should submit a zip file with the following files:
-  A run-file named “VMtranslator”, a Makefile called “Makefile”, an AUTHORS file,
-  and the source code for your implementation.
-- The submission should not contain any folder.
-- The AUTHORS file must contain the following:
-  - In the first line: login(s) of the author(s), separated by commas and
-    nothing else! If you work alone, do not include a comma.
-    Logins should be identical to the names of your home folders and are
-    case-sensitive.
-  - Name(s), email(s) and ID(s) of the project's author(s).
-  - Any remarks you have about your submission.
-- You can change the template however you want, or even not use it at all.
-  But, your project should use the same standard installation and running
-  procedures, and standard inputs that the template uses.
+#### Testing how the VM translator handles branching commands
+
+- BasicLoop.vm computes the sum 1+2+...+ n and pushes the result onto the stack.
+  This program tests the implementation of the VM language's branching commands
+  goto and if-goto.
+- FibonacciSeries.vm computes and stores in memory the first n elements of the
+  Fibonacci series. This typical array manipulation program provides a more
+  challenging test of the VM's branching commands.
+
+#### Testing how the VM translator handles function call and return commands
+
+- SimpleFunction.vm performs a simple calculation and returns the result.
+  This program provides a basic test of the implementation of the VM commands
+  `function` and `return`.
+- NestedCall tests several requirements of the function calling protocol. 
+  This is an optional and intermediate test, which may be useful when
+  SimpleFunction (the previous test) passes but FibonacciElement (the next test)
+  fails.
+  The test can be used with or without the VM bootstrap code.
+  For more information about this optional test, see the supplied guide and 
+  stack diagram.
+- FibonacciElement tests the handling of the VM's function calling commands, the
+  bootstrap section, and most of the other VM commands.
+  The program directory consists of two files, as follows:
+  - Main.vm contains one function named Main.fibonacci. This recursive function
+    returns the n'th element of the Fibonacci series, and is unrelated to the
+    Fibonacci series program described previously in this project. 
+  - Sys.vm contains a single function named Sys.init. This function calls the
+    Main.fibonacci function with n=4, and then loops indefinitely (the Sys.init
+    function, in turn, will be called by the VM implementation's bootstrap code).
+  Since the program consists of more than one .vm file, the entire directory
+  must be translated. The translation should yield a single assembly file named
+  FibonacciElement.asm.
+  Unlike the previous tests, this test assumes that the VMtranslator initializes
+  the VM implementation. If the generated assembly file will not begin with
+  bootstrap code, the test will fail.
+- StaticsTest is split into two main files, Class1.vm and Class2.vm, which have
+  functions designed to set and get various static values; this is done in order
+  to test the handling of the static memory segment. 
+  In addition, Sys.vm contains a single Sys.init function that calls the get/set
+  functions of Class1 and Class2
+  This test assumes that the VM translator initializes the VM implementation; if
+  the generated assembly file will not begin with bootstrap code, the test will
+  fail.
 
 ## License
 
