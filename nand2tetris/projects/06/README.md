@@ -38,6 +38,23 @@ There are three ways to describe the desired behavior of your assembler:
 3. Your assembler must implement the translation specification given in
    Chapter 6, Section 2.
 
+## What To Submit
+
+- You should submit a zip file with the following files:
+  A run-file named 'Assembler', a Makefile called "Makefile", an AUTHORS file,
+  and the source code for your implementation.
+- The submission should not contain any folder.
+- The AUTHORS file must contain the following:
+  - In the first line: login(s) of the author(s), separated by commas and
+    nothing else! If you work alone, do not include a comma.
+    Logins should be identical to the names of your home folders and are
+    case-sensitive.
+  - Name(s), email(s) and ID(s) of the project's author(s).
+  - Any remarks you have about your submission.
+- You can change the template however you want, or even not use it at all.
+  But, your project should use the same standard installation and running
+  procedures, and standard inputs that the template uses.
+
 ## Usage
 
 Your project should use the same standard installationת running procedures,
@@ -160,23 +177,6 @@ previously described implementation. It contains the following files:
 - Code.py: Translates Hack assembly-language mnemonics to binary code.
 - SymbolTable.py: Keeps a correspondence between symbolic labels and
   numeric addresses.
-
-## What To Submit
-
-- You should submit a zip file with the following files:
-  A run-file named 'Assembler', a Makefile called "Makefile", an AUTHORS file,
-  and the source code for your implementation.
-- The submission should not contain any folder.
-- The AUTHORS file must contain the following:
-  - In the first line: login(s) of the author(s), separated by commas and
-    nothing else! If you work alone, do not include a comma.
-    Logins should be identical to the names of your home folders and are
-    case-sensitive.
-  - Name(s), email(s) and ID(s) of the project's author(s).
-  - Any remarks you have about your submission.
-- You can change the template however you want, or even not use it at all.
-  But, your project should use the same standard installation and running
-  procedures, and standard inputs that the template uses.
 
 ## Tips
 

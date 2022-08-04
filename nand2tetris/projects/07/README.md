@@ -1,5 +1,118 @@
 # Project 7: Virtual Machine (Arithmetic)
 
+Java (or C#) compilers generate code written in an intermediate language called
+bytecode (or IL). This code is designed to run on a virtual machine architecture
+like the JVM (or CLR).
+
+One way to implement such VM programs is to translate them further into
+lower-level programs written in the machine language of some concrete (rather
+than virtual) host computer.
+
+In projects 7 and 8 we build such a VM translator, designed to translate
+programs written in the VM language into programs written in the Hack assembly
+language. The VM language, abstraction, and translation process are described in
+chapters 7 and 8 of the book.
+For the purpose of this project, chapter 8 can be ignored.
+
+## Objective
+
+Build a basic VM translator, focusing on the implementation of the VM language's
+stack arithmetic and memory accesscommands.
+In Project 8, this basic translator will be extended into a full-scale VM
+translator.
+
+## Resources
+
+- Unit 7 of the lectures and book
+- The built-in VMEmulator
+- The VMEmulator's tutorial
+
+## Contract
+
+Write a VM-to-Hack translator, conforming to the VM Specification, Part I
+(book section 7.2) and to the Standard VM-on-Hack Mapping, Part I (book section
+7.3.1).
+
+## What To Submit
+
+- You should submit a zip file with the following files:
+  A run-file named “VMtranslator”, a Makefile called “Makefile”, an AUTHORS file,
+  and the source code for your implementation.
+- The submission should not contain any folder.
+- The AUTHORS file must contain the following:
+  - In the first line: login(s) of the author(s), separated by commas and
+    nothing else! If you work alone, do not include a comma.
+    Logins should be identical to the names of your home folders and are
+    case-sensitive.
+  - Name(s), email(s) and ID(s) of the project's author(s).
+  - Any remarks you have about your submission.
+- You can change the template however you want, or even not use it at all.
+  But, your project should use the same standard installation and running
+  procedures, and standard inputs that the template uses.
+
+## Usage
+
+Your project should use the same standard installationת running procedures,
+and inputs that the supplied Python template uses. Note that the
+template already implements the following behavior, so everything is already
+taken care of for anyone who uses the template!
+
+### Installation
+
+Your project has to include a makefile called "Makefile". A makefile is an
+automated installation recipe that is executed by running the ``make`` command.
+The command should run successfully, and afterwards your project should be
+ready for execution (for example, code files should be compiled and run-files
+should have execution permissions).
+
+The Python template given to you contains a makefile that should work for all
+python projects.
+
+Note that the ``make`` command does not work on Windows.
+For more info regarding makefiles, refer to the sample Makefile for Python, the
+make manual, or to one of the many 'make' tutorials available online.
+
+### Running
+
+You should include a run-file named ``VMtranslator`` which accepts a single input
+parameter (that we will describe soon).
+After calling ``make``, your project should execute by calling the run-file, and
+the run-file should exit successfully.
+
+The python template given to you contains a run-file that runs the template's
+main function. Note that this file does not work on Windows.
+
+### Input Parameter
+
+The run-file should accept a single input parameter, which corresponds to a path
+to either some valid .vm file, or a folder.
+
+1. If a path to a single .vm file is given as an input, you should create the
+   relevant output in the same folder as the input.
+   For example, when running:
+   ```console
+   VMtranslator <path>/file.vm
+   ```
+   The following output file should be created: ``<path>/file.asm``
+2. If the input is a directory, you should translate all .vm files present in
+   the directory (ignore other file types and subdirectories) and store the 
+   output .asm files in the same directory.
+   For example, assume '~/nand/dir/' is a path to a directory which contains
+   two files: "t1.vm" and "t2.vm".
+   If we execute:
+   ```console
+   VMtranslator ~/nand/dir/
+   ```
+   The outputs ``t1.asm`` and ``t2.asm`` should be created in ``~/nand/dir/``.
+   The same behavior applies to the following execution:
+   ```console
+   VMtranslator ~/nand/dir
+   ```
+3. Your program should support both relative and absolute paths. 
+
+The Python template given to you contains code that handles such input
+parameters, and creates the corresponding output files in the correct paths.
+
 ## Implementation Details
 
 We propose implementing the basic VM translator in two stages. This allows
@@ -49,14 +162,27 @@ stage into the following sub-stages:
 ### Testing
 
 We supply VM programs designed to unit-test the staged implementation
-proposed above. For each program Xxx we supply four files. The Xxx.vm
-file contains the program's VM code. The XxxVME.tst script allows running
-the program on the supplied VM emulator, to experiment with the program’s
-intended operation. After translating the program using your VM
-translator, the supplied Xxx.tst script and Xxx.cmp compare file allow
-testing the translated assembly code on the supplied CPU emulator.
+proposed above. For each program Xxx we supply four files:
+- The Xxx.vm file contains the program's VM code
+- The XxxVME.tst script allows running the program on the supplied VM emulator,
+  to experiment with the program’s intended operation.
+- After translating the program using your VMtranslator, the supplied Xxx.tst
+  script and Xxx.cmp compare file allow testing the translated assembly code on
+  the supplied CPU emulator.
 
-For each one of the five test programs supplied above, follow these steps:
+We supply you with five test programs:
+
+- SimpleAdd.vm pushes two constants onto the stack and adds them up.
+- StackTest.vm executes a sequence of arithmetic and logical operations on the
+  stack.
+- BasicTest.vm executes push/pop operations using the virtual memory segments
+  constant, local, argument, this, that, and temp.
+- PointerTest executes push/pop operations using the virtual memory segments
+  pointer, this, and that.
+- StaticTest.vm executes push/pop operations using the virtual memory segment
+  static.
+
+For each one of the five test programs, follow these steps:
 
 - To get acquainted with the intended behavior of the supplied test
   program Xxx.vm, run it on the supplied VM emulator using the supplied
@@ -81,7 +207,7 @@ proposed order, and to test it using the appropriate test programs at
 each stage. Implementing a later stage before an early one may cause the
 test programs to fail.
 
-## Submission Template
+### Submission Template
 
 - VMtranslator: The executable for the project. This allows our graders to run
   your project in a standard manner on UNIX-like operating systems.
@@ -91,7 +217,9 @@ test programs to fail.
 - Parser.py: Handles the parsing of a single .vm file.
 - CodeWriter.py: Translates VM commands into Hack assembly code.
 
-## Tools
+## Tips
+
+### Tools
 
 Before setting out to develop your VM translator, we recommend getting
 acquainted with the virtual machine architecture model and language. As
@@ -111,22 +239,13 @@ For more information about our built-in tools, see the tutorials in the
 lectures and submission page, and additional information provided in
 tools/README.md.
 
-## What To Submit
+### Project 8
 
-- You should submit a zip file with the following files:
-  A run-file named “VMtranslator”, a Makefile called “Makefile”, an AUTHORS file,
-  and the source code for your implementation.
-- The submission should not contain any folder.
-- The AUTHORS file must contain the following:
-  - In the first line: login(s) of the author(s), separated by commas and
-    nothing else! If you work alone, do not include a comma.
-    Logins should be identical to the names of your home folders and are
-    case-sensitive.
-  - Name(s), email(s) and ID(s) of the project's author(s).
-  - Any remarks you have about your submission.
-- You can change the template however you want, or even not use it at all.
-  But, your project should use the same standard installation and running
-  procedures, and standard inputs that the template uses.
+Project 8 is a direct continuation of this project, keep this in mind if you
+don't want to use the proposed implementation.
+If you already finished project 8, you can use it as your submission for project
+7 too, as long as it fulfills all requirements. Note that the bootstrap code
+will cause the project to fail, so remove it before submission. 
 
 ## License
 
