@@ -221,7 +221,9 @@ tools/README.md.
 
 ### Testing
 
-#### Testing how the VM translator handles branching commands
+We provide you with five tests, which can be roughly split into two categories.
+
+#### Tests for the VMtranslator's branching commands
 
 - BasicLoop.vm computes the sum 1+2+...+ n and pushes the result onto the stack.
   This program tests the implementation of the VM language's branching commands
@@ -230,7 +232,7 @@ tools/README.md.
   Fibonacci series. This typical array manipulation program provides a more
   challenging test of the VM's branching commands.
 
-#### Testing how the VM translator handles function call and return commands
+#### Tests for the VMtranslator's call and return commands
 
 - SimpleFunction.vm performs a simple calculation and returns the result.
   This program provides a basic test of the implementation of the VM commands
