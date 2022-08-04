@@ -9,7 +9,7 @@ One of the key players in this translation process is the assembler, which is a
 program designed to translate code written in a symbolic machine language into
 code written in binary machine language.
 
-​This project marks an exciting landmark in our Nand to Tetris odyssey: it
+This project marks an exciting landmark in our Nand to Tetris odyssey: it
 deals with building the first rung up the software hierarchy, which will
 eventually end up in the construction of a compiler for a Java-like high-level
 language.
@@ -40,8 +40,8 @@ There are three ways to describe the desired behavior of your assembler:
 
 ## Usage
 
-Your project should use the same standard installation and running procedures,
-and standard inputs that the supplied Python template uses. Note that the
+Your project should use the same standard installationת running procedures,
+and inputs that the supplied Python template uses. Note that the
 template already implements the following behavior, so everything is already
 taken care of for anyone who uses the template!
 
@@ -63,7 +63,7 @@ make manual, or to one of the many 'make' tutorials available online.
 ### Running
 
 You should include a run-file named ``Assembler`` which accepts a single input
-parameter, which we will described soon.
+parameter (that we will describe soon).
 After calling ``make``, your project should execute by calling the run-file, and
 the run-file should exit successfully.
 
