@@ -87,6 +87,8 @@ class JackTokenizer:
     - op: '+' | '-' | '*' | '/' | '&' | '|' | '<' | '>' | '='
     - unaryOp: '-' | '~' | '^' | '#'
     - keywordConstant: 'true' | 'false' | 'null' | 'this'
+    
+    Note that ^, # correspond to shiftleft and shiftright, respectively.
     """
 
     def __init__(self, input_stream: typing.TextIO) -> None:
