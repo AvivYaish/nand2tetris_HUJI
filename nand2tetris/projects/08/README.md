@@ -191,6 +191,11 @@ When executed on the supplied CPU emulator, the translated code generated
 by your VM translator should deliver the results mandated by the test
 scripts and compare files supplied.
 
+Note that the final project should always include a call to Sys.init in *every*
+translation!
+This means that the BasicLoop, FibonacciSeries, SimpleFunction tests are *not*
+supposed to work with your final submission.
+
 ## Submission Template
 
 - VMtranslator: The executable for the project. This allows our graders to run
