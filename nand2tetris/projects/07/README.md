@@ -106,7 +106,7 @@ to either some valid .vm file, or a folder.
    ```console
    VMtranslator ~/nand/dir/
    ```
-   The outputs ``dir.asm`` should be created in ``~/nand/dir/``.
+   The output ``dir.asm`` should be created in ``~/nand/dir/``.
    The same behavior applies to the following execution:
    ```console
    VMtranslator ~/nand/dir
