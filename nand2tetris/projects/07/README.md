@@ -97,15 +97,16 @@ to either some valid .vm file, or a folder.
    ```
    The following output file should be created: ``<path>/file.asm``
 2. If the input is a directory, you should translate all .vm files present in
-   the directory (ignore other file types and subdirectories) and store the 
-   output .asm files in the same directory.
+   the directory (ignore other file types and subdirectories) and store a single
+   output .asm file in the same directory. The outpu's name should be the name
+   of the last subdirectory.
    For example, assume '~/nand/dir/' is a path to a directory which contains
    two files: "t1.vm" and "t2.vm".
    If we execute:
    ```console
    VMtranslator ~/nand/dir/
    ```
-   The outputs ``t1.asm`` and ``t2.asm`` should be created in ``~/nand/dir/``.
+   The outputs ``dir.asm`` should be created in ``~/nand/dir/``.
    The same behavior applies to the following execution:
    ```console
    VMtranslator ~/nand/dir
