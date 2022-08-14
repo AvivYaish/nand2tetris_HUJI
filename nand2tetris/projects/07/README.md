@@ -144,6 +144,10 @@ add
 
 The other arithmetic and logical commands are tested similarly:
 add, sub, neg, and, or, not, shiftleft, shiftright, eq, gt, lt
+
+Note that ``shiftleft`` and ``shiftright`` are standard "unary" operations which
+operate on the last stack value, similarly to ``neg`` and ``not``.
+
 This stage can be tested using SimpleAdd, which is relatively simple, and
 StackTest, which is slightly more complex.
 
