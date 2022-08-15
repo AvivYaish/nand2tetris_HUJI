@@ -29,7 +29,10 @@ class CodeWriter:
         """
         # Your code goes here!
         # This function is useful when translating code that handles the
-        # static segment.
+        # static segment. For example, in order to prevent collisions between two
+        # .vm files which push/pop to the static segment, one can use the current
+        # file's name in the assembly variable's name and thus differentiate between
+        # static variables belonging to different files.
         # To avoid problems with Linux/Windows/MacOS differences with regards
         # to filenames and paths, you are advised to parse the filename in
         # the function "translate_file" in Main.py using python's os library,
