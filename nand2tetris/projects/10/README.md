@@ -160,7 +160,7 @@ Your tokenizer should output the following XML code:
 ```
 
 Note that in the case of string constants, the tokenizer throws away the
-double-quote characters ``"``. This behavior is intended, and is part of our tokenizer
+double-quote characters (``"``). This behavior is intended, and is part of our tokenizer
 specification.
  
 Also note that three of the symbols used in the Jack language (``<``, ``>``, and
