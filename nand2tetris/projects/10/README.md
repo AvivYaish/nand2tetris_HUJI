@@ -160,15 +160,15 @@ Your tokenizer should output the following XML code:
 ```
 
 Note that in the case of string constants, the tokenizer throws away the
-double-quote characters. This behavior is intended, and is part of our tokenizer
+double-quote characters ``"``. This behavior is intended, and is part of our tokenizer
 specification.
  
-Also note that four of the symbols used in the Jack language (``<``, ``>``, and
+Also note that three of the symbols used in the Jack language (``<``, ``>``, and
 ``&``) are also used for XML markup, and thus they cannot appear verbatim as XML
 data. To solve the problem, we require the tokenizer to output these tokens as
 ``&lt;``, ``&gt;``, and ``&amp;``, respectively.
-For example, in order for the symbol "less than" to be displayed properly in a
-web browser, it should be generated as "<symbol>&lt;</symbol>".
+For example, in order for the symbol ``<`` to be displayed properly in a
+web browser, it should be generated as ``<symbol>&lt;</symbol>``.
 
 Finally, note that unlike the Tokeinizer module, the tokenizer test program that
 you are to write is not part of the syntax analyzer. This test program entails
