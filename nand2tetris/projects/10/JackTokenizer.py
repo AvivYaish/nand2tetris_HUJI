@@ -98,7 +98,7 @@ class JackTokenizer:
             input_stream (typing.TextIO): input stream.
         """
         # Your code goes here!
-        # A good place to start is:
+        # A good place to start is to read all the lines of the input:
         # input_lines = input_stream.read().splitlines()
         pass
 
