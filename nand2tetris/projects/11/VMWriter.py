@@ -16,6 +16,8 @@ class VMWriter:
     def __init__(self, output_stream: typing.TextIO) -> None:
         """Creates a new file and prepares it for writing VM commands."""
         # Your code goes here!
+        # Note that you can write to output_stream like so:
+        # output_stream.write("Hello world! \n")
         pass
 
     def write_push(self, segment: str, index: int) -> None:
