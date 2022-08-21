@@ -70,8 +70,8 @@ class CodeWriter:
 
     def write_label(self, label: str) -> None:
         """Writes assembly code that affects the label command. 
-        Let "foo" be a function within the file Xxx.vm. The handling of
-        each "label bar" command within "foo" generates and injects the symbol
+        Let "Xxx.foo" be a function within the file Xxx.vm. The handling of
+        each "label bar" command within "Xxx.foo" generates and injects the symbol
         "Xxx.foo$bar" into the assembly code stream.
         When translating "goto bar" and "if-goto bar" commands within "foo",
         the label "Xxx.foo$bar" must be used instead of "bar".
@@ -105,7 +105,7 @@ class CodeWriter:
     
     def write_function(self, function_name: str, n_vars: int) -> None:
         """Writes assembly code that affects the function command. 
-        The handling of each "function foo" command within the file Xxx.vm
+        The handling of each "function Xxx.foo" command within the file Xxx.vm
         generates and injects a symbol "Xxx.foo" into the assembly code stream,
         that labels the entry-point to the function's code.
         In the subsequent assembly process, the assembler translates this 
@@ -125,11 +125,11 @@ class CodeWriter:
     
     def write_call(self, function_name: str, n_args: int) -> None:
         """Writes assembly code that affects the call command. 
-        Let "foo" be a function within the file Xxx.vm.
-        The handling of each "call" command within foo's code generates and
+        Let "Xxx.foo" be a function within the file Xxx.vm.
+        The handling of each "call" command within Xxx.foo's code generates and
         injects a symbol "Xxx.foo$ret.i" into the assembly code stream, where
         "i" is a running integer (one such symbol is generated for each "call"
-        command within "foo").
+        command within "Xxx.foo").
         This symbol is used to mark the return address within the caller's 
         code. In the subsequent assembly process, the assembler translates this
         symbol into the physical memory address of the command immediately
