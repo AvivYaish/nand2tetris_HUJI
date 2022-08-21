@@ -21,6 +21,8 @@ class CompilationEngine:
         :param output_stream: The output stream.
         """
         # Your code goes here!
+        # Note that you can write to output_stream like so:
+        # output_stream.write("Hello world! \n")
         pass
 
     def compile_class(self) -> None:
