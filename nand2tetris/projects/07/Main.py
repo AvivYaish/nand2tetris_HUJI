@@ -21,6 +21,9 @@ def translate_file(
         output_file (typing.TextIO): writes all output to this file.
     """
     # Your code goes here!
+    # It might be good to start with something like:
+    # parser = Parser(input_file)
+    # code_writer = CodeWriter(output_file)
     pass
 
 
