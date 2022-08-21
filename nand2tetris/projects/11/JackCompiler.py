@@ -23,6 +23,8 @@ def compile_file(
         output_file (typing.TextIO): writes all output to this file.
     """
     # Your code goes here!
+    # This function should be relatively similar to "analyze_file" in
+    # JackAnalyzer.py from the previous project.
     pass
 
 
