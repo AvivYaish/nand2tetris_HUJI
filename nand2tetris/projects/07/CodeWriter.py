@@ -18,6 +18,8 @@ class CodeWriter:
             output_stream (typing.TextIO): output stream.
         """
         # Your code goes here!
+        # Note that you can write to output_stream like so:
+        # output_stream.write("Hello world! \n")
         pass
 
     def set_file_name(self, filename: str) -> None:
