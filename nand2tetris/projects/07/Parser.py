@@ -53,7 +53,7 @@ class Parser:
             input_file (typing.TextIO): input file.
         """
         # Your code goes here!
-        # A good place to start is:
+        # A good place to start is to read all the lines of the input:
         # input_lines = input_file.read().splitlines()
         pass
 
