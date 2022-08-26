@@ -129,17 +129,11 @@ Also, a great test for your OS implementation is your submission for project 9!
 
 The desired outputs for the String, Output and Screen classes are given here:
 
-String test:
+![String test](StringTest/StringTestOutput.jpg)
 
-![String test](./StringTest/StringTestOutput.gif)
+![Output test](OutputTest/OutputTestOutput.jpg)
 
-Output test:
-
-![Output test](./OutputTest/OutputTestOutput.gif)
-
-Screen test:
-
-![Screen test](./ScreenTest/ScreenTestOutput.gif)
+![Screen test](ScreenTest/ScreenTestOutput.jpg)
 
 #### Keyboard
 
@@ -154,7 +148,7 @@ function. If not, the program repeats the request for the same function.
 If all requests end successfully, the program prints "Test ended successfully",
 at which point the screen should look as follows:
 
-![Keyboard test](./KeyboardTest/KeyboardTestOutput.gif)
+![Keyboard test](KeyboardTest/KeyboardTestOutput.jpg)
 
 #### Memory
 
@@ -162,7 +156,7 @@ The Memory class has an image that doesn't correspond to any test.
 Instead, the image shows how allocating and deallocating memory affects the
 freeList data-structure.
 
-![Memory example](./MemoryTest/MemoryFreeListExample.jpg)
+![Memory example](MemoryTest/MemoryFreeListExample.jpg)
 
 #### Sys
 
