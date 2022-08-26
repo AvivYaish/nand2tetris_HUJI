@@ -123,8 +123,6 @@ The remaining test programs include no test scripts, and should be compiled and
 executed on the supplied VMEmulator, and then their outputs should be compared
 to the pictures supplied in each test directory.
 
-Also, a great test for your OS implementation is your submission for project 9!
-
 #### String, Output and Screen
 
 The desired outputs for the String, Output and Screen classes are given here:
@@ -203,9 +201,13 @@ implementation using the Pong game, whose source code is available in your
 projects/11/Pong directory. Put all your OS .jack files in this directory,
 compile it, and execute the game in the supplied VMEmulator.
 
+Also, a great test for your OS implementation is your submission for project 9!
+
 If the game works, then congratulations: you are the proud owner of an operating
 system written entirely by you. And, by the way, you've just completed the
-construction of a complete general-purpose computer system. Go celebrate!
+construction of a complete general-purpose computer system.
+
+Go celebrate!
 
 ## Tips
 
