@@ -176,11 +176,12 @@ supplied Pong game using your Sys.vm file.
 
 ### Additional Details
 
-- You can add new functions/methods to classes, but can't add classes to the OS.
 - Anything not mentioned here or within the .jack template files supplied to you
   should be implemented to match the built-in OS. So, if you're wondering how to
   support various input/output characters or anything else, you should write a
   short .jack file that tests this and run it using the built-in OS.
+- You can add new functions/methods to classes, but can't add classes to the OS.
+- You don't need to implement de-fragmentation, but I still recommend trying!
 - Regarding some graphic-related details:
   - The cursor should be drawn as a filled (black) square when receiving input
     from the user, as the first line of readChar's pseudocode says:
