@@ -211,6 +211,12 @@ Go celebrate!
 
 ## Tips
 
+### The Built-in JackCompiler
+
+We supply you with a built-in JackCompiler which produces valid .vm code when
+given Jack programs as input. For usage instructions, see the details given in
+project 9.
+
 ### Food For Thought
 
 After you've finished the project, think of the following questions:

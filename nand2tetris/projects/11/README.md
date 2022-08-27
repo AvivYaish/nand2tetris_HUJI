@@ -177,35 +177,15 @@ program.
 
 ## Tips
 
-### The Built-in JackCompiler
-
-We supply you with a built-in JackCompiler which produces valid .vm code when
-given Jack programs as input.
-
-The built-in compiler is a command-line program that is supplied together with
-the rest of the software-suite (e.g. HardwareSimulator, CPUEmulator, etc').
-
-When you open your command-line at the same directory of the built-in
-JackCompiler's executable file (``nand2tetris/tools/``), you can execite the
-compiler like so:
-
-- Compile a single file which is located in ``<path>\File.jack``:
-
-  ```console
-  JackCompiler <path>\File.jack
-  Compiling "<path>\File.jack"
-  ```
-
-- Compile all .jack files contained in a directory ``<path>\directory``:
-
-  ```console
-  JackCompiler <path>\directory
-  Compiling "<path>\directory"
-  ```
+### Tools
 
 Your generated VM code does not have to be identical to the one produced by the
 built-in compiler, but comparing yourselves to the built-in compiler can
 definitely help.
+
+For more information about our built-in tools, see the tutorials in the
+lectures and submission page, and additional information provided in
+tools/README.md.
 
 ### Possible Inputs and Outputs
 
