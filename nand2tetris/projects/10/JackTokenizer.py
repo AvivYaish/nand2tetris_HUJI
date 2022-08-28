@@ -43,7 +43,8 @@ class JackTokenizer:
     - StringConstant: '"' A sequence of Unicode characters not including 
                       double quote or newline '"'
     - identifier: A sequence of letters, digits, and underscore ('_') not 
-                  starting with a digit.
+                  starting with a digit. You can assume keywords cannot be
+                  identifiers, so 'self' cannot be an identifier, etc'.
 
     ## Program Structure
 
@@ -145,6 +146,9 @@ class JackTokenizer:
         Returns:
             str: the character which is the current token.
             Should be called only when token_type() is "SYMBOL".
+            Recall that symbol was defined in the grammar like so:
+            symbol: '{' | '}' | '(' | ')' | '[' | ']' | '.' | ',' | ';' | '+' | 
+              '-' | '*' | '/' | '&' | '|' | '<' | '>' | '=' | '~' | '^' | '#'
         """
         # Your code goes here!
         pass
@@ -154,6 +158,10 @@ class JackTokenizer:
         Returns:
             str: the identifier which is the current token.
             Should be called only when token_type() is "IDENTIFIER".
+            Recall that identifiers were defined in the grammar like so:
+            identifier: A sequence of letters, digits, and underscore ('_') not 
+                  starting with a digit. You can assume keywords cannot be
+                  identifiers, so 'self' cannot be an identifier, etc'.
         """
         # Your code goes here!
         pass
@@ -163,6 +171,8 @@ class JackTokenizer:
         Returns:
             str: the integer value of the current token.
             Should be called only when token_type() is "INT_CONST".
+            Recall that integerConstant was defined in the grammar like so:
+            integerConstant: A decimal number in the range 0-32767.
         """
         # Your code goes here!
         pass
@@ -172,6 +182,9 @@ class JackTokenizer:
         Returns:
             str: the string value of the current token, without the double 
             quotes. Should be called only when token_type() is "STRING_CONST".
+            Recall that StringConstant was defined in the grammar like so:
+            StringConstant: '"' A sequence of Unicode characters not including 
+                      double quote or newline '"'
         """
         # Your code goes here!
         pass
