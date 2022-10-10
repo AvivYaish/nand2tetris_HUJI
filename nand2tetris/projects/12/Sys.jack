@@ -14,7 +14,7 @@ class Sys {
         // 1. for each relevant OS class, do Class.init
         //    Some OS classes depend on others, so order is important here!
         // 2. do Main.main()
-        // 3. do halt()
+        // 3. do Sys.halt()
     }
 
     /** Halts program execution. */
