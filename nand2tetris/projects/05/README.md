@@ -83,8 +83,6 @@ logic to the "regular" chips where possible.
 
 ### Computer
 
-Note: it's important to unit-test the CPU and Memory chips before proceeding to
-build the overall Computer chip.
 After you've finished the CPU and Memory chips, the top-most Computer chip can
 be constructed according to the proposed implementation shown in Figure 5.10 of
 Chapter 5.
@@ -93,6 +91,8 @@ instruction memory) in previous projects. There is no need to build this chip
 yourselves - you can use the built-in ROM32K chip.
 
 You can test the Computer chip by running some Hack programs on it.
+Note: it's important to unit-test the CPU and Memory chips before proceeding to
+build the overall Computer chip.
 A natural way to test the Computer chip is to have it execute some sample
 programs written in the Hack machine language. In order to perform such a test,
 one can write a test script that:
