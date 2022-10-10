@@ -28,10 +28,6 @@ You should implement each gate using the Hardware Description Language (HDL).
 For each gate, your implementation should exactly match the logic given in
 the gate's .hdl file.
 
-The only building blocks that you can use are the Nand and DFF chips, the chips
-described in chapters 1-2, and the chips that you will gradually build in this
-project.
-
 ## What To Submit
 
 - You should submit a zip file with the following files:
@@ -42,8 +38,7 @@ project.
 - If a chip from directory 'a' uses external chips, say X.hdl, these chips
   should be placed in 'a', too. The same goes for directory 'b'. If chips from
   both directories use X.hdl, it should be placed in both.
-- External chips are chips that you were not requested to build in the current
-  or previous projects, and that are not built-in.
+- You can create & use new chips, but should include them in the submission.
 - Include other files required by your project, if there are any.
 - The AUTHORS file must contain the following:
   - In the first line: login(s) of the author(s), separated by commas and

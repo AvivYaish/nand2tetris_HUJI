@@ -18,7 +18,11 @@
 // | dest=A>>;jump         |  1 |  0 |  1 | 0 |  0 |  0 |  0 |  0 |  0 |  0 |
 // | dest=D>>;jump         |  1 |  0 |  1 | 0 |  0 |  1 |  0 |  0 |  0 |  0 |
 // | dest=M>>;jump         |  1 |  0 |  1 | 1 |  0 |  0 |  0 |  0 |  0 |  0 |
-// Where dest and jump can take the same values as in the regular CPU.
+// Where:
+// - "<<" is a left shift, and ">>" is a right shift, as defined in project 2.
+//   These notations were chosen because they are used in real programming
+//   languages.
+// - dest and jump can take the same values as in the regular CPU.
 
 CHIP CpuMul {
     IN  

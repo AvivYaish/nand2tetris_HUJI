@@ -25,9 +25,6 @@ You should implement each gate using the Hardware Description Language (HDL).
 For each gate, your implementation should exactly match the logic given in
 the gate's .hdl file.
 
-The only building blocks that you can use in this project are Nand gates and the
-composite gates that you will gradually build on top of them.
-
 ## What To Submit
 
 - You should submit a zip file with the following files:

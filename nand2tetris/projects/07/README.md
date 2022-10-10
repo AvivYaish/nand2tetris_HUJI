@@ -279,11 +279,14 @@ Some notes regarding the .asm code which your VMtranslator should produce:
   - Your translator should succeed in translating every program, even if the
     output asm file is too large for the computer. Although the output is not
     valid because of its length, it should be correct in every other way.
-    As a general rule, no truncation of output code is allowed.
+    As a general rule, no truncation of output code is allowed. Note that this
+    clarification is given because it allows you to avoid all kinds of weird
+    corner cases (e.g. there is no need to stop the translation because the
+    output file is too large).
   - Given an 800-line long VM program, your VMtranslator should output the
     complete (with no truncation) ASM translation such that its length is at
     most the longest valid program that our computer can run.
-    This can be achieved without using fancy tricks.
+    This can be achieved without using fancy tricks!
 - Translation order is not important.
   For example, if folder T contains two files: T1.vm and T2.vm, the translation
   of T2 can appear before that of T1 in the output file T.asm, and vice versa.
