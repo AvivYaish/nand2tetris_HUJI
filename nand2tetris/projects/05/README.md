@@ -85,7 +85,7 @@ logic to the "regular" chips where possible.
 
 After you've finished the CPU and Memory chips, the top-most Computer chip can
 be constructed according to the proposed implementation shown in Figure 5.10 of
-Chapter 5.
+Chapter 5. Note that you should use the standard CPU, and not the CpuMul chip.
 As before, we haven't built the ROM32K chip (which is used for our Computer's
 instruction memory) in previous projects. There is no need to build this chip
 yourselves - you can use the built-in ROM32K chip.
