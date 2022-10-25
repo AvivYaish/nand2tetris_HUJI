@@ -17,7 +17,7 @@
 // 
 // Assumptions:
 // Your program may blacken and clear the screen's pixels in any spatial/visual
-// Order, as long as pressing a key continuously for long enough results in a
+// order, as long as pressing a key continuously for long enough results in a
 // fully blackened screen, and not pressing any key for long enough results in a
 // fully cleared screen.
 //
