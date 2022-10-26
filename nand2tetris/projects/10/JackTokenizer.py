@@ -18,8 +18,8 @@ class JackTokenizer:
     valid program, it can be tokenized into a stream of valid tokens. The
     tokens may be separated by an arbitrary number of whitespace characters, 
     and comments, which are ignored. There are three possible comment formats: 
-    /* comment until closing */ , /** API comment until closing */ , and 
-    // comment until the line’s end.
+    /* comment until first closing */ , /** API comment until first closing */
+    and // comment until the line’s end.
 
     - ‘xxx’: quotes are used for tokens that appear verbatim (‘terminals’).
     - xxx: regular typeface is used for names of language constructs 
