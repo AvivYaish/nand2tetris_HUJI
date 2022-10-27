@@ -339,8 +339,9 @@ Screen size is 256 rows by 512 columns.
 
 ### Operating system error codes
 
-All errors which the built-in operating system detects are given here.
-You can assume valid input, so there is no need to handle these errors.
+You can assume valid input, so there is no need to detect possible invalid inputs.
+Still, if you are interested - all errors which the built-in operating system
+detects are given here.
 
 | Code | Method/Function      | Description                                     |
 | ---- | -------------------- | ----------------------------------------------- |
