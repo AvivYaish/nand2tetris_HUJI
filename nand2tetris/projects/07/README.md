@@ -170,6 +170,7 @@ stage into the following sub-stages:
 
 We supply VM programs designed to unit-test the staged implementation
 proposed above. For each program Xxx we supply four files:
+
 - The Xxx.vm file contains the program's VM code
 - The XxxVME.tst script allows running the program on the supplied VM emulator,
   to experiment with the program’s intended operation.
@@ -187,7 +188,9 @@ We supply you with five test programs:
 - PointerTest executes push/pop operations using the virtual memory segments
   pointer, this, and that.
 - StaticTest.vm executes push/pop operations using the virtual memory segment
-  static.
+  static. Note that the StaticTestVME test might allocate static variables to
+  "weird" memory addresses (e.g. addresses which do not follow the logic
+  which we specified in unit 6) - this is OK and can be ignored.
 
 For each one of the five test programs, follow these steps:
 
