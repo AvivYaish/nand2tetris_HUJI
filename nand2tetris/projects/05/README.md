@@ -124,7 +124,8 @@ We supply all the files necessary to run three such tests, as follows:
 ### Input Validity
 
 Our Computer is complex and supports all kinds of "advanced" functionality.
-Here are some input validity assumptions which can help:
+You can assume you will only be tested on valid input - just like in all other
+projects! Here are some clarifications which can help:
 
 - Writing into Memory addresses 24576 and after is undefined, there is no need
   to deal with it.
