@@ -30,6 +30,10 @@ Write and test the programs described in this folder.
 When executed on the supplied CPUEmulator, your programs should generate the
 results mandated by the requirements given in each .asm file.
 
+Note: if you want, you can end your programs with an infinite loop, like in
+the instructions given in the videos. This is not mandatory, and will not be
+checked.
+
 ## What To Submit
 
 - You should submit a zip file with the following files:
