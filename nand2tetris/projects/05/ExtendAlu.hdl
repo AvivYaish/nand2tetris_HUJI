@@ -16,7 +16,7 @@
 // Else, if instruction[8]=0 and instruction[7]=1, the output is a shift:
 // - If instruction[4] == 0, the input "y" will be shifted, otherwise "x".
 // - If instruction[5] == 0, the shift will be a right-shift, otherwise left.
-// - All other inputs are undefined.
+// - All other inputs are undefined and can be ignored.
 
 CHIP ExtendAlu {
      IN x[16], y[16], instruction[9];
