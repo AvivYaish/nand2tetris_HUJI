@@ -7,10 +7,9 @@
 // The program should swap between the max. and min. elements of an array.
 // Assumptions:
 // - The array's start address is stored in R14, and R15 contains its length
+// - R14 >= 2048, R15 >= 1, and R14+R15 <= 16383
+// - Changing R14, R15 is not allowed
 // - Each array value x is between -16384 < x < 16384
 // - The min. and max. elements appear only once
-// - The address in R14 is at least >= 2048
-// - R14 + R15 <= 16383
-// - Changing R14, R15 is not allowed.
 
 // Put your code here.
