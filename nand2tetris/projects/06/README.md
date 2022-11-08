@@ -253,16 +253,24 @@ graphical behavior of the program. And don't worry! as we continue to build the
 software platform in the next few projects, Pong and and other games will run
 much faster.
 
-### Possible C Commands
+### Possible Commands
 
-To help you, we will now provide you with tables that summarize the c-commands
+To help you, we will now provide you with tables that summarize the commands
 which your Assembler should support.
+
+### Labels and Symbols
+
+A label can be defined only once and can be used anywhere in the assembly
+program, even before the line in which it is defined.
+A user-defined symbol can be any sequence of letters, digits, underscore (_),
+dot (.), dollar sign ($), and colon (:) that does not begin with a digit.
+User-defined labels and variable names are case sensitive.
 
 #### Standard C Command Specification
 
 A standard c-command `dest = comp; jump` is translated into the following
-HACK command `1 1 1 a c1 c2 c3 c4 c5 c6 d1 d2 d3 j1 j2 j3`, where
-each bit is defined like so:
+HACK command: `1 1 1 a c1 c2 c3 c4 c5 c6 d1 d2 d3 j1 j2 j3`, where each
+bit is defined like so:
 
 - Three left-most bits: `111`
 - Then, the `a` bit, which chooses whether to pass the Aregister's output
@@ -342,6 +350,8 @@ the same values as standard c-commands.
 You can assume you will only receive valid .asm files as inputs.
 Some notes regarding validity:
 
+- All assembly mnemonics must be written in uppercase.
+- Constants must be non-negative and are written in decimal notation.
 - Some commands can be written in multiple ways, all of which are valid. For 
   example: `D=A+D` and `D=D+A` are both valid and perform the same operation.
   For simplicity's sake, you are allowed to support only the commands as they
