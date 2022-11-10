@@ -31,8 +31,8 @@ class Parser:
       - add, sub, and, or, eq, gt, lt
       - neg, not, shiftleft, shiftright
     - Memory segment manipulation:
-      - push <segment> <number>
-      - pop <segment that is not constant> <number>
+      - push <segment> <non negative number>
+      - pop <segment that is not constant> <non negative number>
       - <segment> can be any of: argument, local, static, constant, this, that, 
                                  pointer, temp
     - Branching (only relevant for project 8):
