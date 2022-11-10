@@ -160,6 +160,13 @@ chipName.hdl file, or remove it from the directory.
 When you are ready to develop this chip in HDL, put the file chipName.hdl back
 in the directory, and proceed to edit it with your HDL code.
 
+### Meaningful Pin Names
+
+We recommend giving your pins meaningful names, for example ``out=aAndB``.
+This is not obligatory, but just a general tip that might help you when building
+more complex chips.
+Note that you cannot use underlines in pin names, so ``out=a_and_b`` is invalid.
+
 ## License
 
 This file is part of nand2tetris, as taught in The Hebrew University, and
