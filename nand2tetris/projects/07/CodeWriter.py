@@ -75,6 +75,7 @@ class CodeWriter:
         Let "Xxx.foo" be a function within the file Xxx.vm. The handling of
         each "label bar" command within "Xxx.foo" generates and injects the symbol
         "Xxx.foo$bar" into the assembly code stream.
+        You can assume labels can only appear within functions.
         When translating "goto bar" and "if-goto bar" commands within "foo",
         the label "Xxx.foo$bar" must be used instead of "bar".
 
@@ -110,6 +111,8 @@ class CodeWriter:
         The handling of each "function Xxx.foo" command within the file Xxx.vm
         generates and injects a symbol "Xxx.foo" into the assembly code stream,
         that labels the entry-point to the function's code.
+        You can assume that function names are always prefixed with the name
+        of the file they are contained within.
         In the subsequent assembly process, the assembler translates this 
         symbol into the physical address where the function code starts.
 
