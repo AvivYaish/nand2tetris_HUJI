@@ -136,10 +136,14 @@ command will be eventually loaded.
 
 This number starts at 0 and is incremented by 1 whenever a C-instruction
 or an A-instruction is encountered, but does not change when a label
-pseudo-command or a comment is encountered. Each time a pseudo-command
-(Xxx) is encountered, add a new entry to the symbol table, associating
-Xxx with the ROM address that will eventually store the next command in
-the program.
+pseudo-command or a comment is encountered.
+Comments are defined to start with two slashes (//) and end at the end
+of the line. Comments can appear either on "standalone" lines (e.g. a
+line which only contains a comment) or on the same line of valid command,
+where the comment starts only after the command (e.g. ``A=1 // Comment``).
+Each time a pseudo-command (Xxx) is encountered, add a new entry to the
+symbol table, associating Xxx with the ROM address that will eventually
+store the next command in the program.
 
 This pass results in entering all the program’s labels along with their
 ROM addresses into the symbol table.
