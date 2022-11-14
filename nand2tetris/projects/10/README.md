@@ -289,7 +289,8 @@ You can assume you will only be asked to handle valid code:
 
 - Use Jack's grammar table! It is included in the documentation of
   ``JackTokenizer.py``, and can help you understand which code is considered
-  valid.
+  valid. In addition, the built-in JackCompiler can help: if it can compile
+  some code, then the code is considered valid.
 - Code is considered valid only if after removing all comments and
   non-functional whitespaces and replacing each one of them with one white space
   it is valid.
