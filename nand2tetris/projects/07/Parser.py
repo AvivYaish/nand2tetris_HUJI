@@ -21,11 +21,11 @@ class Parser:
 
     A .vm file is a stream of characters. If the file represents a
     valid program, it can be translated into a stream of valid assembly 
-    commands. VM commands may be separated by an arbitrary number of whitespace
-    characters and comments, which are ignored. Comments begin with "//" and
-    last until the line’s end.
-    The different parts of each VM command may also be separated by an arbitrary
-    number of non-newline whitespace characters.
+    commands. Two VM commands cannot be written in the same line, but may be
+    separated by an arbitrary number of whitespace characters and comments,
+    which are ignored. The different parts of each VM command may also be
+    separated by an arbitrary number of non-newline whitespace characters.
+    Comments begin with "//" and last until the line’s end.
 
     - Arithmetic commands:
       - add, sub, and, or, eq, gt, lt
