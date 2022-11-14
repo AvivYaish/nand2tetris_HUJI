@@ -193,6 +193,8 @@ yourself. In addition, the supplied assembler provides a visual
 line-level translation GUI, and allows code comparisons with the outputs
 that your assembler will generate.
 
+![The built-in Assembler.](AssemblerOnePicTutorial.png)
+
 For more information about our built-in tools, see the tutorials in the
 lectures and submission page, and additional information provided in
 tools/README.md.
