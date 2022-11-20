@@ -253,7 +253,8 @@ tools/README.md.
 
 You can assume your VMtranslator will only receive valid .vm files.
 So, for example, you should not support popping into the constant segment as it
-is considered invalid.
+is considered invalid, and you can assume that programs will not attempt to
+pop items from the stack when the stack is empty.
 On the other hand, our VM language does not have segment bounds checks, so you
 should support accessing the pointer and temp segments for all indices, and not
 only 0/1 for pointer and 0-6 for temp.
