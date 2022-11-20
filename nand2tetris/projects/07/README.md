@@ -265,6 +265,8 @@ Some notes regarding the .asm code which your VMtranslator should produce:
 
 - You should not end your programs with infinite loops like in project 4, we will
   understand why in project 12.
+- If you run out of registers (you only have two: D and A), you can use R13, R14,
+  and R15.
 - Let's closely examine the comparison commands (<,>):
   A naive translation can cause overflows when comparing certain numbers, thus
   giving a wrong answer for some valid inputs.
