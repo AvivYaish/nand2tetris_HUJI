@@ -11,7 +11,9 @@ import typing
 class SymbolTable:
     """A symbol table that associates names with information needed for Jack
     compilation: type, kind and running index. The symbol table has two nested
-    scopes (class/subroutine).
+    scopes (class/subroutine), with symbols being first looked up in the
+    subroutine scope. If they are not found there, they are looked up in the
+    class scope.
     """
 
     def __init__(self) -> None:
