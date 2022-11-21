@@ -54,7 +54,7 @@ Write a VM-to-Hack translator, conforming to the VM Specification, Part I
 
 ## Usage
 
-Your project should use the same standard installationת running procedures,
+Your project should use the same standard installation, running procedures,
 and inputs that the supplied Python template uses. Note that the
 template already implements the following behavior, so everything is already
 taken care of for anyone who uses the template!
