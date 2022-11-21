@@ -112,10 +112,16 @@ be done in two main development stages, as follows.
 
 ### Stage I: Symbol Table
 
-We suggest to start by building the compiler's symbol table module and
-using it to extend the syntax analyzer built in project 10. Presently,
-whenever an identifier is encountered in the source code, say foo, the
-syntax analyzer outputs the XML line `<identifier> foo </identifier>`.
+The compiler's symbol table associates variable names with information
+needed for Jack compilation. The symbol table has two nested scopes
+(class / subroutine), with symbols being first looked up in the
+subroutine scope. If they are not found there, they are looked up in the
+class scope.
+
+We suggest to start the project by building the compiler's symbol table
+module and then using it to extend the syntax analyzer built in project 10.
+Presently, whenever an identifier is encountered in the source code, say
+foo, the syntax analyzer outputs the XML line `<identifier> foo </identifier>`.
 
 Instead, have your analyzer output the following information as part of
 its XML output (using some output format of your choice):
