@@ -254,22 +254,22 @@ Here are some examples:
 - Compile the current directory:
 
   ```console
-  C:\...\nand2tetris\tools>JackCompiler C:\...\projects\09\Reflect
-  Compiling "c:\...\projects\09\Reflect"
+  C:\nand2tetris\tools>JackCompiler .
+  Compiling "C:\nand2tetris\tools"
   ```
 
 - Compile a single file:
 
   ```console
-  C:\...\projects\09\Reflect>JackCompiler Mirrors.jack
-  Compiling "C:\...\projects\09\Reflect\Mirrors.jack"
+  C:\nand2tetris\tools>JackCompiler C:\nand2tetris\projects\09\Fraction\Main.jack
+  Compiling "C:\nand2tetris\projects\09\Fraction\Main.jack"
   ```
 
 - Compile the "Reflect" directory (for example):
 
   ```console
-  C:\...\projects\09>JackCompiler Reflect
-  Compiling "C:\...\projects\09\Reflect"
+  C:\nand2tetris\tools>JackCompiler C:\nand2tetris\projects\09\Fraction
+  Compiling "C:\nand2tetris\projects\09\Fraction"
   ```
 
 ### Additional Help
