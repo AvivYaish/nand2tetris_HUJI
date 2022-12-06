@@ -232,14 +232,29 @@ available in most operating systems. For more info (in Hebrew) on how to use
 
 ### JackCompiler
 
-Typing "JackCompiler fileName.jack" will compile the supplied Jack file. Typing
-"JackCompiler directoryName" will compile all Jack files that are found in the
-specified directory. Wildcards are not supported. Here are some examples:
+When the terminal is located at the same directory that houses the JackCompiler
+(in: ``nand2tetris\tools``), one can invoke the JackCompiler. The specific
+invocation method depends on the operating system, in Windows it is:
+
+``.\JackCompiler.bat <argument>``
+
+And in Linux it is:
+``./JackCompiler.sh <argument>``
+
+For simplicity, from now on we will give examples that are operating system
+agnostic, and thus we will only use "JackCompiler" and assume that you replace
+this with the method which corresponds to your operating system.
+
+Typing "JackCompiler fileName.jack" will compile the supplied Jack file.
+Typing "JackCompiler directoryName" will compile all Jack files that are found
+in the specified directory. Wildcards are not supported.
+
+Here are some examples:
 
 - Compile the current directory:
 
   ```console
-  C:\...\projects\09\Reflect>JackCompiler
+  C:\...\nand2tetris\tools>JackCompiler C:\...\projects\09\Reflect
   Compiling "c:\...\projects\09\Reflect"
   ```
 
