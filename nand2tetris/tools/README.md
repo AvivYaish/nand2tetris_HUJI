@@ -233,17 +233,23 @@ available in most operating systems. For more info (in Hebrew) on how to use
 ### JackCompiler
 
 When the terminal is located at the same directory that houses the JackCompiler
-(in: ``nand2tetris\tools``), one can invoke the JackCompiler. The specific
-invocation method depends on the operating system, in Windows it is:
+(in: ``nand2tetris\tools``), one can invoke the JackCompiler.
 
-``.\JackCompiler.bat <argument>``
+
+#### Operating System Differences
+
+The specific invocation method depends on the operating system, in Windows it is:
+
+``.\JackCompiler <argument>``
 
 And in Linux it is:
-``./JackCompiler.sh <argument>``
 
-For simplicity, from now on we will give examples that are operating system
-agnostic, and thus we will only use "JackCompiler" and assume that you replace
-this with the method which corresponds to your operating system.
+``./JackCompiler <argument>``
+
+For simplicity, from now on we will only use "JackCompiler" and assume that
+you replace this with the method which corresponds to your operating system.
+
+#### Compiling Files and Folders
 
 Typing "JackCompiler fileName.jack" will compile the supplied Jack file.
 Typing "JackCompiler directoryName" will compile all Jack files that are found
