@@ -44,7 +44,7 @@ class JackTokenizer:
                       double quote or newline '"'
     - identifier: A sequence of letters, digits, and underscore ('_') not 
                   starting with a digit. You can assume keywords cannot be
-                  identifiers, so 'self' cannot be an identifier, etc'.
+                  identifiers, so 'this' cannot be an identifier, etc'.
 
     ## Program Structure
 
