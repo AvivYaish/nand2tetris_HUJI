@@ -27,6 +27,8 @@ def translate_file(
     pass
 
 
+# The following code handles the input/output requirements for the project.
+# This should not be changed!
 if "__main__" == __name__:
     # Parses the input path and calls translate_file on each input file.
     # This opens both the input and the output files!
@@ -39,7 +41,7 @@ if "__main__" == __name__:
     if os.path.isdir(argument_path):
         files_to_translate = [
             os.path.join(argument_path, filename)
-            for filename in os.listdir(argument_path)]
+            for filename in sorted(os.listdir(argument_path))]
         output_path = os.path.join(argument_path, os.path.basename(
             argument_path))
     else:
