@@ -27,6 +27,8 @@ def analyze_file(
     pass
 
 
+# The following code handles the input/output requirements for the project.
+# This should not be changed!
 if "__main__" == __name__:
     # Parses the input path and calls analyze_file on each input file.
     # This opens both the input and the output files!
