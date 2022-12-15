@@ -31,7 +31,7 @@ class Output {
     
         let charMaps = Array.new(127);
         
-        // Black square, used for displaying non-printable characters.
+        // Black square, used for displaying non-printable characters and the cursor.
         do Output.create(0,63,63,63,63,63,63,63,63,63,0,0);
 
         // Assigns the bitmap for each character in the charachter set.
