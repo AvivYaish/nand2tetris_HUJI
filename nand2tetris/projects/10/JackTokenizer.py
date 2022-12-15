@@ -169,7 +169,7 @@ class JackTokenizer:
     def int_val(self) -> int:
         """
         Returns:
-            str: the integer value of the current token.
+            int: the integer value of the current token.
             Should be called only when token_type() is "INT_CONST".
             Recall that integerConstant was defined in the grammar like so:
             integerConstant: A decimal number in the range 0-32767.
