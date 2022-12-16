@@ -13,12 +13,15 @@ from CodeWriter import CodeWriter
 
 
 def translate_file(
-        input_file: typing.TextIO, output_file: typing.TextIO) -> None:
+        input_file: typing.TextIO, output_file: typing.TextIO,
+        bootstrap: bool) -> None:
     """Translates a single file.
-
     Args:
         input_file (typing.TextIO): the file to translate.
         output_file (typing.TextIO): writes all output to this file.
+        bootstrap (bool): if this is True, the current file is the 
+            first file we are translating. This is only relevant for
+            project 8 and can be ignored while working on project 7.
     """
     # Your code goes here!
     # It might be good to start with something like:
@@ -48,10 +51,12 @@ if "__main__" == __name__:
         files_to_translate = [argument_path]
         output_path, extension = os.path.splitext(argument_path)
     output_path += ".asm"
+    bootstrap = True
     with open(output_path, 'w') as output_file:
         for input_path in files_to_translate:
             filename, extension = os.path.splitext(input_path)
             if extension.lower() != ".vm":
                 continue
             with open(input_path, 'r') as input_file:
-                translate_file(input_file, output_file)
+                translate_file(input_file, output_file, bootstrap)
+            bootstrap = False
