@@ -126,7 +126,9 @@ shortcuts' properties and set "Run" to "minimized."
 Depending on your OS and commandline, you may or may not be required to prefix
 our scripts with "./" or ".\", for example:
 
-![prefixingScriptsOnWindows](https://user-images.githubusercontent.com/12000894/145036984-da96e986-f731-405d-b150-42d56aca102b.png)
+![prefixingScriptsOnPowerShell](https://user-images.githubusercontent.com/12000894/209081664-50d563e2-c4fe-434f-982e-d37e16bbfe0d.png)
+
+![prefixingScriptsOnWindowsCmd](https://user-images.githubusercontent.com/12000894/209081802-47a60982-a2b3-4e24-8a81-62dfe07d1c7c.png)
 
 ### Hardware Simulator
 
