@@ -20,7 +20,7 @@ If you enjoyed this course, here are some recommendations:
   delves deeper into the fascinating world of processor design.
 
 - [**`Stanford's Compilers course`**](https://www.edx.org/course/compilers)
-  dives deeper into compilers, and guides you in building a modern compiler from
+  dives into compilers, and guides you in building a modern compiler from
   scratch! Although our compiler works, it is quite simplistic in comparison.
 
 - [**`Stanford's Operating Systems course`**](https://cs140e.sergio.bz/about/)
