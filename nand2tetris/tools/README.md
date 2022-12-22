@@ -240,13 +240,14 @@ When the terminal is located at the same directory that houses the JackCompiler
 
 #### Operating System Differences
 
-The specific invocation method depends on the operating system, in Windows it is:
-
-``.\JackCompiler <argument>``
-
-And in Linux it is:
+Recall that the specific invocation method depends on the operating system
+and command line which you use. In Linux it is:
 
 ``./JackCompiler <argument>``
+
+In Windows, it can either be the former command (if you use PowerShell), or:
+
+``JackCompiler <argument>``
 
 For simplicity, from now on we will only use "JackCompiler" and assume that
 you replace this with the method which corresponds to your operating system.
