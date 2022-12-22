@@ -124,7 +124,7 @@ shortcuts' properties and set "Run" to "minimized."
 ## Usage
 
 Depending on your OS and commandline, you may or may not be required to prefix
-our scripts with "./" or ".\", for example:
+our scripts with "./", for example:
 
 ![prefixingScriptsOnPowerShell](https://user-images.githubusercontent.com/12000894/209081664-50d563e2-c4fe-434f-982e-d37e16bbfe0d.png)
 
