@@ -295,7 +295,8 @@ For each test program, go through the following routine:
 - If the test program behaves unexpectedly or some error message is
   displayed by the VMEmulator, fix your compiler and go to to step 1.
 - Don't forget: we supply you with a "built-in" JackCompiler, you can use
-  it and compare your compiler to it.
+  it and compare your compiler to it. We remind you that the built-in
+  JackCompiler does not have a GUI and can only be used from the command-line.
 
 For more information about our built-in tools, see the tutorials in the
 lectures and submission page, and additional information provided in
