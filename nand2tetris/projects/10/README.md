@@ -247,6 +247,8 @@ supplied VM emulator to run the compiled code. This shows that the
 test programs are not just plain text; they also have semantics, or
 meaning, something that the syntax analyzer does not care about.
 
+We remind you that the built-in JackCompiler does not have a GUI and
+can only be used from the command-line.
 For more information about our built-in tools, see the tutorials in the
 lectures and submission page, and additional information provided in
 tools/README.md.
