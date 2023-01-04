@@ -188,7 +188,7 @@ class Output {
         // For example, you can draw multiple pixels at once, for each row.
     }
 
-    /** displays the given string starting at the cursor location,
+    /** Displays the given string starting at the cursor location,
      *  and advances the cursor appropriately. */
     function void printString(String s) {
     }
