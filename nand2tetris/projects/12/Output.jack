@@ -21,11 +21,12 @@ class Output {
     // Character map for displaying characters
     static Array charMaps; 
 
-    /** Initializes the screen, and locates the cursor at the screen's top-left. */
+    /** Initializes the screen, and locates the cursor at the screen's top-left.
+     *  This only initializes the cursor's location, and does not show the cursor. */
     function void init() {
     }
 
-    // Initializes the character map array
+    /** Initializes the character map array. */
     function void initMap() {
         var int i;
     
@@ -142,7 +143,7 @@ class Output {
 	return;
     }
 
-    // Creates the character map array of the given character index, using the given values.
+    /** Creates the character map array of the given character index, using the given values. */
     function void create(int index, int a, int b, int c, int d, int e,
                          int f, int g, int h, int i, int j, int k) {
 	var Array map;
@@ -165,9 +166,9 @@ class Output {
         return;
     }
     
-    // Returns the character map (array of size 11) of the given character.
-    // If the given character is invalid or non-printable, returns the
-    // character map of a black square.
+    /** Returns the character map (array of size 11) of the given character.
+     *  If the given character is invalid or non-printable, returns the
+     * character map of a black square. */
     function Array getMap(char c) {
         if ((c < 32) | (c > 126)) {
             let c = 0;
