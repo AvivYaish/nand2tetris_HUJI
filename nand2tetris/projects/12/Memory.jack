@@ -39,8 +39,8 @@ class Memory {
         // 3. block[-1] = size + 1 // Remember block size, for de-allocation
         // 4. Update freeList to reflect the allocation
         // 5. Return block
-        // The figure MemoryTest/MemoryFreeListExample.png illustrates how
-        // the freeList should look like.
+        // The figure given in `MemoryTest/MemoryFreeListExample.png`
+        // illustrates how the freeList should look like.
     }
 
     /** De-allocates the given object (cast as an array) by making
