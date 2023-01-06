@@ -288,9 +288,9 @@ Screen size is 256 rows by 512 columns.
 - function void setColor(boolean b): sets a color (white=false, black=true) to
   be used for all further drawXXX commands.
 - function void drawPixel(int x, int y): draws the (x,y) pixel.
-- function void drawLine(int xl, int yl, int x2, int y2): draws a line from
-  (xl,yl) to (x2,y2).
-- function void drawRectangle(int xl, int yl, int x2, int y2): draws a filled
+- function void drawLine(int x1, int y1, int x2, int y2): draws a line from
+  (x1,y1) to (x2,y2).
+- function void drawRectangle(int x1, int y1, int x2, int y2): draws a filled
   rectangle whose top left corner is (x1,y1) and bottom right corner is (x2,y2).
 - function void drawCircle(int x, int y, int r): draws a filled circle of
   radius r <=181 around (x,y).
