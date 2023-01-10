@@ -184,7 +184,10 @@ class JackTokenizer:
             quotes. Should be called only when token_type() is "STRING_CONST".
             Recall that StringConstant was defined in the grammar like so:
             StringConstant: '"' A sequence of Unicode characters not including 
-                      double quote or newline '"'
+            double quote or newline '"'.
+            You can assume input code can only contain user-visible characters
+            from Jack’s character set, specifically characters 32-126. You
+            can find this character set in Appendix 5 of the book.
         """
         # Your code goes here!
         pass
