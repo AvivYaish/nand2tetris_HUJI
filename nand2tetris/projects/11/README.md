@@ -197,8 +197,38 @@ tools/README.md.
 
 Refer to project 10's notes regarding possible inputs and corresponding outputs.
 You can assume Jack code can only contain user-visible characters from Jack's
-character set, specifically characters 32-126. You can find this character set
-in Appendix 5 of the book.
+character set, specifically characters 32-126.
+
+### Jack's character set
+
+| ASCII: char | ASCII: char | ASCII: char | ASCII: char | ASCII: char     |
+|-------------|-------------|-------------|-------------|-----------------|
+| 32: space   |             | 80:  P      | 104: h      | 127: DEL        |
+| 33: !       |             | 81:  Q      | 105: i      | 128: newLine    |
+| 34: "       | 58: :       | 82:  R      | 106: j      | 129: backSpace  |
+| 35: #       | 59: ;       | 83:  S      | 107: k      | 130: leftArrow  |
+| 36: $       | 60: <       | 84:  T      | 108: l      | 131: upArrow    |
+| 37: %       | 61: =       | 85:  U      | 109: m      | 132: rightArrow |
+| 38: &       | 62: >       | 86:  V      | 110: n      | 133: downArrow  |
+| 39: '       | 63: ?       | 87:  W      | 111: o      | 134: home       |
+| 40: (       | 64: @       | 88:  X      | 112: p      | 135: end        |
+| 41: )       | 65: A       | 89:  Y      | 113: q      | 136: pageUp     |
+| 42: *       | 66: B       | 90:  Z      | 114: r      | 137: pageDown   |
+| 43: +       | 67: C       | 91:  [      | 115: s      | 138: insert     |
+| 44: ,       | 68: D       | 92:  /      | 116: t      | 139: delete     |
+| 45: -       | 69: E       | 93:  ]      | 117: u      | 140: esc        |
+| 46: .       | 70: F       | 94:  ^      | 118: v      | 141: f1         |
+| 47: /       | 71: G       | 95:  _      | 119: w      | 142: f2         |
+| 48: 0       | 72: H       | 96:  `      | 120: x      | 143: f3         |
+| 49: 1       | 73: I       | 97:  a      | 121: y      | 144: f4         |
+| 50: 2       | 74: J       | 98:  b      | 122: z      | 145: f5         |
+| 51: 3       | 75: K       | 99:  c      | 123: {      | 146: f6         |
+| 52: 4       | 76: L       | 100: d      | 124:        | 147: f7         |
+| 53: 5       | 77: M       | 101: e      | 125: }      | 148: f8         |
+| 54: 6       | 78: N       | 102: f      | 126: ~      | 149: f9         |
+| 55: 7       | 79: O       | 103: g      |             | 150: f10        |
+| 56: 8       |             |             |             | 151: f11        |
+| 57: 9       |             |             |             | 152: f12        |
 
 ### Tests
 
