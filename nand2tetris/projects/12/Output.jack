@@ -24,6 +24,8 @@ class Output {
     /** Initializes the screen, and locates the cursor at the screen's top-left.
      *  This only initializes the cursor's location, and does not show the cursor. */
     function void init() {
+    	// When you implement this function, don't forget to also write the
+	// character map for the letter 'A' in the function 'initMap'!
     }
 
     /** Initializes the character map array. */
@@ -186,6 +188,7 @@ class Output {
     function void printChar(char c) {
         // Your implementation should be as efficient as possible.
         // For example, you can draw multiple pixels at once, for each row.
+	// Additionally, you should avoid the use of inefficient operators.
     }
 
     /** Displays the given string starting at the cursor location,
