@@ -44,6 +44,7 @@ class String {
     /** Returns the integer value of this string, 
      *  until a non-digit character is detected. */
     method int intValue() {
+        // You should implement this function without usint multiplication.
         // Pseudocode:
         // 1. let val = 0
         // 2. for (i = 0 .. str.length()) do
@@ -54,13 +55,15 @@ class String {
 
     /** Sets this string to hold a representation of the given value. */
     method void setInt(int val) {
-        // Pseudocode:
+        // We recommend splitting using a recursive helper method to
+        // implement this method. You are allowed to use division and
+        // multiplication in your implementation.
+        // Pseudocode for the recursive function:
         // 1. let lastDigit = val % 10
         // 2. let c = character representing lastDigit
-        // 3. if (val < 10)
-        // 4.   return c (as a string)
-        // 5. else
-        // 6.   return int2String(val / 10).appendChar(c)
+        // 3. if (val >= 10)
+        // 4.   do setIntHelper(val / 10)
+        // 5. do appendChar(c)
     }
 
     /** Returns the new line character. */
