@@ -55,10 +55,10 @@ class String {
 
     /** Sets this string to hold a representation of the given value. */
     method void setInt(int val) {
-        // We recommend splitting using a recursive helper method to
-        // implement this method. You are allowed to use division and
-        // multiplication in your implementation.
-        // Pseudocode for the recursive function:
+        // We recommend using a recursive helper method to implement this
+        // method. You are allowed to use division and multiplication in
+        // your implementation.
+        // Pseudocode for the recursive helper function:
         // 1. let lastDigit = val % 10
         // 2. let c = character representing lastDigit
         // 3. if (val >= 10)
