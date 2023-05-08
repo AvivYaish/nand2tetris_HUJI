@@ -5,5 +5,4 @@ authors:
   given-names: "Aviv"
   orcid: "https://orcid.org/0000-0002-7971-2494"
 title: "HUJI's version of nand2tetris"
-version: 1
 url: "https://github.com/AvivYaish/nand2tetris_HUJI/"
