@@ -35,9 +35,8 @@ If you enjoyed this course, here are some recommendations:
 
 - [**`Berkeley's Intro2AI course`**](http://ai.berkeley.edu/project_overview.html)
   is a perfect fit for those of you who liked the tetris part of our course.
-  This course uses very hands-on and visual projects to teach you the basics of
-  Artificial Intelligence. HUJI offers an equivalent course called
-  [Introduction to Artificial Intelligence (67842)](https://moodle2.cs.huji.ac.il/nu20/course/view.php?name=ai).
+  This course uses very hands-on projects to teach you the basics of AI.
+  HUJI offers an equivalent course called [Introduction to Artificial Intelligence (67842)](https://moodle2.cs.huji.ac.il/nu20/course/view.php?name=ai).
 
 ## License
 
